@@ -22,7 +22,7 @@ weight = 5
 # year = 2012
 
 [[education.courses]]
-  course = "BSc in Mathametics Staistics & computer science"
+  course = "BSc in Mathemetics, Staistics & Computer Science"
   institution = "Aurora college (Kakatiya University)"
 # year = 2009
 
