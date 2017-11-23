@@ -1,0 +1,81 @@
+---
+title: Importing Techniques Used in Spatial Data Analysis
+author: sumendar
+date: '2017-11-23'
+slug: importing-techniques-used-in-spatial-data-analysis
+categories: []
+tags: []
+---
+
+**In this post we are going to take a look at various data importing techniques used for spatial data analysis**
+
+## Importing Data from Tables (read.table)
+
+* Opening data
+* Importing csv files
+* Checking the data structure for consistency
+
+**Accessing and importing open access environmental data is a crucial skill for data scientists. This section teaches you how to download data from the Web, import it in R and check it for consistency.**
+
+* Download open-access data from the USGS website
+* Import it in R using read.table
+* Check its structure to start exploring the data
+
+
+
+
+```{r}
+#Set the URL with the CSV Files
+URL <- "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.csv"
+```
+
+```{r}
+#Load the CSV File
+Data <- read.table(file=URL, 
+                   sep=",", 
+                   header=TRUE, 
+                   na.string="")
+```
+
+```{r}
+#Help function
+help(read.table)
+
+#Examining the data
+str(Data)
+```
+
+##Downloading Open Data from FTP Sites 
+
+**Often times, datasets are provided for free, but on FTP, websites and practitioners need to be able to access them. R is perfectly capable of downloading and importing data from FTP sites.**
+
+Understand the basics of downloading data in R
+Download the data with the download.file function
+Learn how to handle compressed formats
+
+```{r}
+#Load required packages
+library(RCurl)
+library(XML)
+```
+
+
+```{r}
+#Create a list with all the files on the FTP site
+list <- getURL("ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2016/", 
+               dirlistonly = TRUE) 
+```
+
+```{r}
+#Clean the list 
+FileList <- strsplit(list, split="\r\n")
+```
+
+##sample interactive plotly
+
+```{r}
+library(plotly)
+p <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+p
+```
+
