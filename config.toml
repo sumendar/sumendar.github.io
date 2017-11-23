@@ -142,7 +142,7 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-    custom_css = ["academicons.min.css", "bootstrap.min.css", "font-awesome.min.css", "highlight.min.css", "hugo-academic.css"]
+    custom_css = []
     custom_js  = []
 
   # Publication types.
