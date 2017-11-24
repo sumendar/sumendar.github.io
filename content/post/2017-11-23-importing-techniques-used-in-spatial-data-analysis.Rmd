@@ -172,7 +172,12 @@ str(data.clean)
 names(data.clean) <- c("STN", "WBAN", "YEARMODA", "TEMP")
 ```
 
-
+## adding plotly code
+```{r}
+library(plotly)
+p <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+p
+```
 
 
 
