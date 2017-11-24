@@ -304,47 +304,33 @@
 
 
       <div class="article-style" itemprop="articleBody">
-        
-
-<p><strong>In this post we are going to take a look at various data importing techniques used for spatial data analysis</strong></p>
-
-<h2 id="importing-data-from-tables-read-table">Importing Data from Tables (read.table)</h2>
-
+        <p><strong>In this post we are going to take a look at various data importing techniques used for spatial data analysis</strong></p>
+<div id="importing-data-from-tables-read.table" class="section level2">
+<h2>Importing Data from Tables (read.table)</h2>
 <ul>
 <li>Opening data</li>
 <li>Importing csv files</li>
 <li>Checking the data structure for consistency</li>
 </ul>
-
 <p><strong>Accessing and importing open access environmental data is a crucial skill for data scientists. This section teaches you how to download data from the Web, import it in R and check it for consistency.</strong></p>
-
 <ul>
 <li>Download open-access data from the USGS website</li>
 <li>Import it in R using read.table</li>
 <li>Check its structure to start exploring the data</li>
 </ul>
-
-<pre><code class="language-r">#Set the URL with the CSV Files
-URL &lt;- &quot;http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.csv&quot;
-</code></pre>
-
-<pre><code class="language-r">#Load the CSV File
+<pre class="r"><code>#Set the URL with the CSV Files
+URL &lt;- &quot;http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.csv&quot;</code></pre>
+<pre class="r"><code>#Load the CSV File
 Data &lt;- read.table(file=URL, 
                    sep=&quot;,&quot;, 
                    header=TRUE, 
-                   na.string=&quot;&quot;)
-</code></pre>
-
-<pre><code class="language-r">#Help function
-help(read.table)
-</code></pre>
-
-<pre><code class="language-r">#Examining the data
-str(Data)
-</code></pre>
-
-<pre><code>## 'data.frame':    115 obs. of  22 variables:
-##  $ time           : Factor w/ 115 levels &quot;2017-11-23T09:48:07.728Z&quot;,..: 115 114 113 112 111 110 109 108 107 106 ...
+                   na.string=&quot;&quot;)</code></pre>
+<pre class="r"><code>#Help function
+help(read.table)</code></pre>
+<pre class="r"><code>#Examining the data
+str(Data)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    113 obs. of  22 variables:
+##  $ time           : Factor w/ 113 levels &quot;2017-11-23T10:00:13.155Z&quot;,..: 113 112 111 110 109 108 107 106 105 104 ...
 ##  $ latitude       : num  38.8 38.8 38.8 37.5 46.7 ...
 ##  $ longitude      : num  -123 -123 -123 -119 -121 ...
 ##  $ depth          : num  2.01 1.57 1.57 4.36 12.34 ...
@@ -355,9 +341,9 @@ str(Data)
 ##  $ dmin           : num  0.00347 0.00293 0.00198 0.04735 0.206 ...
 ##  $ rms            : num  0.02 0.04 0.05 0.02 0.08 0.03 0.51 0.08 0.23 0.71 ...
 ##  $ net            : Factor w/ 9 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 4 4 4 4 9 4 1 4 2 1 ...
-##  $ id             : Factor w/ 115 levels &quot;ak17388233&quot;,&quot;ak17388250&quot;,..: 83 82 81 80 115 79 25 78 49 24 ...
-##  $ updated        : Factor w/ 115 levels &quot;2017-11-23T10:00:52.149Z&quot;,..: 115 114 113 112 110 111 106 108 105 104 ...
-##  $ place          : Factor w/ 105 levels &quot;103km WNW of Talkeetna, Alaska&quot;,..: 103 104 103 23 30 87 1 31 21 2 ...
+##  $ id             : Factor w/ 113 levels &quot;ak17388250&quot;,&quot;ak17388255&quot;,..: 82 81 80 79 113 78 24 77 48 23 ...
+##  $ updated        : Factor w/ 113 levels &quot;2017-11-23T10:05:43.686Z&quot;,..: 112 113 111 110 108 109 104 106 103 102 ...
+##  $ place          : Factor w/ 103 levels &quot;103km WNW of Talkeetna, Alaska&quot;,..: 101 102 101 23 29 86 1 30 21 2 ...
 ##  $ type           : Factor w/ 1 level &quot;earthquake&quot;: 1 1 1 1 1 1 1 1 1 1 ...
 ##  $ horizontalError: num  0.29 0.35 0.14 0.3 5.63 0.35 NA 0.83 0.34 NA ...
 ##  $ depthError     : num  0.71 0.35 0.23 0.81 5.85 0.45 0.3 2 1.2 0.3 ...
@@ -365,76 +351,51 @@ str(Data)
 ##  $ magNst         : int  2 4 30 15 4 19 NA 8 26 NA ...
 ##  $ status         : Factor w/ 2 levels &quot;automatic&quot;,&quot;reviewed&quot;: 1 1 1 1 1 1 1 1 1 1 ...
 ##  $ locationSource : Factor w/ 9 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 4 4 4 4 9 4 1 4 2 1 ...
-##  $ magSource      : Factor w/ 9 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 4 4 4 4 9 4 1 4 2 1 ...
-</code></pre>
-
-<p>##Downloading Open Data from FTP Sites</p>
-
+##  $ magSource      : Factor w/ 9 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 4 4 4 4 9 4 1 4 2 1 ...</code></pre>
+</div>
+<div id="downloading-open-data-from-ftp-sites" class="section level2">
+<h2>Downloading Open Data from FTP Sites</h2>
 <p><strong>Often times, datasets are provided for free, but on FTP, websites and practitioners need to be able to access them. R is perfectly capable of downloading and importing data from FTP sites.</strong></p>
-
-<p>Understand the basics of downloading data in R
-Download the data with the download.file function
-Learn how to handle compressed formats</p>
-
-<pre><code class="language-r">#Load required packages
-library(RCurl)
-</code></pre>
-
-<pre><code>## Loading required package: bitops
-</code></pre>
-
-<pre><code class="language-r">library(XML)
-</code></pre>
-
-<pre><code class="language-r">#Create a list with all the files on the FTP site
+<p>Understand the basics of downloading data in R Download the data with the download.file function Learn how to handle compressed formats</p>
+<pre class="r"><code>#Load required packages
+library(RCurl)</code></pre>
+<pre><code>## Loading required package: bitops</code></pre>
+<pre class="r"><code>library(XML)</code></pre>
+<pre class="r"><code>#Create a list with all the files on the FTP site
 list &lt;- getURL(&quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2016/&quot;, 
-               dirlistonly = TRUE) 
-</code></pre>
-
-<pre><code class="language-r">#Clean the list 
-FileList &lt;- strsplit(list, split=&quot;\r\n&quot;)
-</code></pre>
-
-<pre><code class="language-r">#Create a new directory where to download these files
+               dirlistonly = TRUE) </code></pre>
+<pre class="r"><code>#Clean the list 
+FileList &lt;- strsplit(list, split=&quot;\r\n&quot;)</code></pre>
+<pre class="r"><code>#Create a new directory where to download these files
 DIR &lt;- paste(getwd(),&quot;/NOAAFiles&quot;,sep=&quot;&quot;)
-dir.create(DIR)
-</code></pre>
-
-<pre><code>## Warning in dir.create(DIR): 'E:\Projects\sumendar.github.io\content\post
-## \NOAAFiles' already exists
-</code></pre>
-
-<pre><code class="language-r">#Loop to download the files
+dir.create(DIR)</code></pre>
+<pre><code>## Warning in dir.create(DIR): &#39;E:\Projects\sumendar.github.io\content\post
+## \NOAAFiles&#39; already exists</code></pre>
+<pre class="r"><code>#Loop to download the files
 for(FileName in unlist(FileList)){
   URL &lt;- paste0(&quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2016/&quot;,FileName)
   download.file(URL, destfile=paste0(DIR,&quot;/&quot;,FileName), method=&quot;auto&quot;, 
                 mode=&quot;wb&quot;)
-}
-</code></pre>
-
-<pre><code class="language-r">#A more elegant way
+}</code></pre>
+<pre class="r"><code>#A more elegant way
 DownloadFile &lt;- function(x){
   URL &lt;- paste0(&quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2016/&quot;,x)
   download.file(URL, destfile=paste0(DIR,&quot;/&quot;,x), method=&quot;auto&quot;, mode=&quot;wb&quot;)
 }
-lapply(unlist(FileList)[1:5], DownloadFile)
-</code></pre>
-
-<pre><code class="language-r">#Dowload a compressed file
+lapply(unlist(FileList)[1:5], DownloadFile)</code></pre>
+<pre class="r"><code>#Dowload a compressed file
 URL &lt;- &quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2015/gsod_2015.tar&quot;
 download.file(URL, destfile=paste0(DIR,&quot;/gsod_2015.tar&quot;),
               method=&quot;auto&quot;,mode=&quot;wb&quot;)
 
 untar(paste0(getwd(),&quot;/NOAAFiles/&quot;,&quot;gsod_2015.tar&quot;), 
-      exdir=paste0(getwd(),&quot;/NOAAFiles&quot;))
-</code></pre>
-
-<pre><code class="language-r">help(unzip)
+      exdir=paste0(getwd(),&quot;/NOAAFiles&quot;))</code></pre>
+<pre class="r"><code>help(unzip)
 
 
 #For more information on the full experiment please visit:
-#http://r-video-tutorial.blogspot.ch/2014/12/accessing-cleaning-and-plotting-noaa.html
-</code></pre>
+#http://r-video-tutorial.blogspot.ch/2014/12/accessing-cleaning-and-plotting-noaa.html</code></pre>
+</div>
 
       </div>
 
