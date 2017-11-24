@@ -28,11 +28,9 @@ deploy:
   steps:
     - install-packages:
         packages: git ssh-client
-      - leipert/git-push:
-        gh_oauth: $GIT_TOKEN
-        repo: sumendar/sumendar.github.io
+    - master:
+        token: $GIT_TOKEN
         domain: www.sumendar.com
-        branch: master
         basedir: public
   steps:
     - script:
