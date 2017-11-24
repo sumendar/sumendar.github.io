@@ -26,14 +26,17 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
 deploy:
   steps:
+    - script:
+        name: ls output
+        code: |
+          ls -haltr /pipeline/output
+    - script:
+        name: ls source
+        code: |
+          ls -haltr /pipeline/source
     - install-packages:
-        packages: git ssh-client
-    - master:
+        packages: git ssh-client liberror-perl
+    - lukevivier/gh-pages@0.2.1:
         token: $GIT_TOKEN
         domain: www.sumendar.com
         basedir: public
-  steps:
-    - script:
-        name: echo
-        code: |
-          echo "hello world!"
