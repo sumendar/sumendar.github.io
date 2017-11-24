@@ -37,6 +37,6 @@ weight = 5
 
 I have 4 years of professional experience as software programmer, 2 years in VBA macros, automation scripting processing analytics and 2 years of statistical analysis, data science and machine learning 
 
-My specialities include but are not limited to: regression analysis, multi variate analysis, time series analysis, spatial temportal data mining. 
+My specialties include but are not limited to: regression analysis, multivariate analysis, time series analysis, spatial temporal data mining. 
 
-Please connnect with me about any of your data science and analytic needs so we can discuss how i can help you and your team.
+Please connect with me about any of your data science and analytic needs so we can discuss how i can help you and your team.
