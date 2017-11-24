@@ -25,6 +25,7 @@
 &lt;li&gt;Checking the data structure for consistency&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Accessing and importing open access environmental data is a crucial skill for data scientists. This section teaches you how to download data from the Web, import it in R and check it for consistency.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In this section, we are going to take a look at…&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Download open-access data from the USGS website&lt;/li&gt;
 &lt;li&gt;Import it in R using read.table&lt;/li&gt;
@@ -41,34 +42,39 @@ Data &amp;lt;- read.table(file=URL,
 help(read.table)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Examining the data
 str(Data)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## &amp;#39;data.frame&amp;#39;:    113 obs. of  22 variables:
-##  $ time           : Factor w/ 113 levels &amp;quot;2017-11-23T10:00:13.155Z&amp;quot;,..: 113 112 111 110 109 108 107 106 105 104 ...
-##  $ latitude       : num  38.8 38.8 38.8 37.5 46.7 ...
-##  $ longitude      : num  -123 -123 -123 -119 -121 ...
-##  $ depth          : num  2.01 1.57 1.57 4.36 12.34 ...
-##  $ mag            : num  0.93 0.97 2.82 1.25 1.42 1.38 1.6 1.47 1.18 1.1 ...
-##  $ magType        : Factor w/ 5 levels &amp;quot;mb&amp;quot;,&amp;quot;mb_lg&amp;quot;,&amp;quot;md&amp;quot;,..: 3 3 3 3 3 3 4 3 4 4 ...
-##  $ nst            : int  12 12 41 18 7 24 NA 10 47 NA ...
-##  $ gap            : num  85 114 59 149 304 88 NA 190 119 NA ...
-##  $ dmin           : num  0.00347 0.00293 0.00198 0.04735 0.206 ...
-##  $ rms            : num  0.02 0.04 0.05 0.02 0.08 0.03 0.51 0.08 0.23 0.71 ...
-##  $ net            : Factor w/ 9 levels &amp;quot;ak&amp;quot;,&amp;quot;ci&amp;quot;,&amp;quot;hv&amp;quot;,..: 4 4 4 4 9 4 1 4 2 1 ...
-##  $ id             : Factor w/ 113 levels &amp;quot;ak17388250&amp;quot;,&amp;quot;ak17388255&amp;quot;,..: 82 81 80 79 113 78 24 77 48 23 ...
-##  $ updated        : Factor w/ 113 levels &amp;quot;2017-11-23T10:05:43.686Z&amp;quot;,..: 112 113 111 110 108 109 104 106 103 102 ...
-##  $ place          : Factor w/ 103 levels &amp;quot;103km WNW of Talkeetna, Alaska&amp;quot;,..: 101 102 101 23 29 86 1 30 21 2 ...
+&lt;pre&gt;&lt;code&gt;## &amp;#39;data.frame&amp;#39;:    112 obs. of  22 variables:
+##  $ time           : Factor w/ 112 levels &amp;quot;2017-11-23T11:50:50.090Z&amp;quot;,..: 112 111 110 109 108 107 106 105 104 103 ...
+##  $ latitude       : num  61.6 61.4 38.8 36.1 65.3 ...
+##  $ longitude      : num  -146 -142 -123 -118 -163 ...
+##  $ depth          : num  19.1 58.1 2.55 5.8 7.8 5.85 5.78 6.29 1.99 3.3 ...
+##  $ mag            : num  3.1 2.5 0.9 1.21 2.9 1.84 0.18 0.79 1.31 1.19 ...
+##  $ magType        : Factor w/ 5 levels &amp;quot;mb&amp;quot;,&amp;quot;mb_lg&amp;quot;,&amp;quot;md&amp;quot;,..: 4 4 3 4 4 3 4 4 3 3 ...
+##  $ nst            : int  NA NA 17 17 NA 27 14 21 13 15 ...
+##  $ gap            : num  NA NA 73 101 NA 76 46 72 87 77 ...
+##  $ dmin           : num  NA NA 0.000959 0.05882 NA ...
+##  $ rms            : num  0.88 0.86 0.04 0.12 0.52 0.06 0.09 0.19 0.03 0.04 ...
+##  $ net            : Factor w/ 9 levels &amp;quot;ak&amp;quot;,&amp;quot;ci&amp;quot;,&amp;quot;hv&amp;quot;,..: 1 1 4 2 1 4 2 2 4 4 ...
+##  $ id             : Factor w/ 112 levels &amp;quot;ak17388290&amp;quot;,&amp;quot;ak17388302&amp;quot;,..: 22 23 83 46 21 82 45 44 81 80 ...
+##  $ updated        : Factor w/ 112 levels &amp;quot;2017-11-23T12:51:02.351Z&amp;quot;,..: 112 110 111 107 105 106 103 101 104 102 ...
+##  $ place          : Factor w/ 101 levels &amp;quot;103km WNW of Talkeetna, Alaska&amp;quot;,..: 58 17 87 67 24 15 4 54 98 20 ...
 ##  $ type           : Factor w/ 1 level &amp;quot;earthquake&amp;quot;: 1 1 1 1 1 1 1 1 1 1 ...
-##  $ horizontalError: num  0.29 0.35 0.14 0.3 5.63 0.35 NA 0.83 0.34 NA ...
-##  $ depthError     : num  0.71 0.35 0.23 0.81 5.85 0.45 0.3 2 1.2 0.3 ...
-##  $ magError       : num  0.05 0.07 0.13 0.09 0.3 0.15 NA 0.26 0.132 NA ...
-##  $ magNst         : int  2 4 30 15 4 19 NA 8 26 NA ...
+##  $ horizontalError: num  NA NA 0.29 0.31 NA 0.33 0.19 0.41 0.37 0.31 ...
+##  $ depthError     : num  0.5 2.2 0.53 0.59 0.2 0.99 0.57 0.74 0.6 0.45 ...
+##  $ magError       : num  NA NA 0.05 0.185 NA 0.15 0.062 0.121 0.13 0.08 ...
+##  $ magNst         : int  NA NA 4 19 NA 15 7 14 4 13 ...
 ##  $ status         : Factor w/ 2 levels &amp;quot;automatic&amp;quot;,&amp;quot;reviewed&amp;quot;: 1 1 1 1 1 1 1 1 1 1 ...
-##  $ locationSource : Factor w/ 9 levels &amp;quot;ak&amp;quot;,&amp;quot;ci&amp;quot;,&amp;quot;hv&amp;quot;,..: 4 4 4 4 9 4 1 4 2 1 ...
-##  $ magSource      : Factor w/ 9 levels &amp;quot;ak&amp;quot;,&amp;quot;ci&amp;quot;,&amp;quot;hv&amp;quot;,..: 4 4 4 4 9 4 1 4 2 1 ...&lt;/code&gt;&lt;/pre&gt;
+##  $ locationSource : Factor w/ 9 levels &amp;quot;ak&amp;quot;,&amp;quot;ci&amp;quot;,&amp;quot;hv&amp;quot;,..: 1 1 4 2 1 4 2 2 4 4 ...
+##  $ magSource      : Factor w/ 9 levels &amp;quot;ak&amp;quot;,&amp;quot;ci&amp;quot;,&amp;quot;hv&amp;quot;,..: 1 1 4 2 1 4 2 2 4 4 ...&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;downloading-open-data-from-ftp-sites&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Downloading Open Data from FTP Sites&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Often times, datasets are provided for free, but on FTP, websites and practitioners need to be able to access them. R is perfectly capable of downloading and importing data from FTP sites.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Understand the basics of downloading data in R Download the data with the download.file function Learn how to handle compressed formats&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In this section, we are going to take a look at…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Understand the basics of downloading data in R&lt;/li&gt;
+&lt;li&gt;Download the data with the download.file function&lt;/li&gt;
+&lt;li&gt;Learn how to handle compressed formats&lt;/li&gt;
+&lt;/ul&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Load required packages
 library(RCurl)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Loading required package: bitops&lt;/code&gt;&lt;/pre&gt;
@@ -103,11 +109,259 @@ download.file(URL, destfile=paste0(DIR,&amp;quot;/gsod_2015.tar&amp;quot;),
 untar(paste0(getwd(),&amp;quot;/NOAAFiles/&amp;quot;,&amp;quot;gsod_2015.tar&amp;quot;), 
       exdir=paste0(getwd(),&amp;quot;/NOAAFiles&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;help(unzip)
-
-
 #For more information on the full experiment please visit:
 #http://r-video-tutorial.blogspot.ch/2014/12/accessing-cleaning-and-plotting-noaa.html&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+&lt;div id=&#34;fixed-width-format&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Fixed-Width Format&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;In this section, we are going to take a look at…&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Creating a list of files in a folder&lt;/li&gt;
+&lt;li&gt;Opening data compressed in gzip&lt;/li&gt;
+&lt;li&gt;Opening data in fixed width format&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;help(list.files)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;setwd(&amp;quot;./NOAAFiles&amp;quot;)
+#Open the first file in the list
+data &amp;lt;- read.fwf(gzfile(FileList[1],open=&amp;quot;rt&amp;quot;),
+                 header=F,
+                 skip=1,
+                 widths=c(6,1,5,2,8,4,4,108))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in readLines(file, n = skip): seek on a gzfile connection returned
+## an internal error&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in readLines(file, n = thisblock): seek on a gzfile connection
+## returned an internal error&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning in readLines(file, n = thisblock): incomplete final line found on
+## &amp;#39;339240-99999-2016.op.gz&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;str(data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## &amp;#39;data.frame&amp;#39;:    325 obs. of  8 variables:
+##  $ V1: int  339240 339240 339240 339240 339240 339240 339240 339240 339240 339240 ...
+##  $ V2: logi  NA NA NA NA NA NA ...
+##  $ V3: int  99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 ...
+##  $ V4: logi  NA NA NA NA NA NA ...
+##  $ V5: int  20160101 20160102 20160103 20160104 20160105 20160106 20160107 20160108 20160109 20160110 ...
+##  $ V6: logi  NA NA NA NA NA NA ...
+##  $ V7: num  18.2 15.8 9.9 14 26.8 30.2 45.6 36.6 40.6 44.5 ...
+##  $ V8: Factor w/ 324 levels &amp;quot;  5    40.7  5  1008.9  5  1007.7  5    5.5  5    5.1  5    7.8  999.9    49.6    37.2   0.30F 999.9  010000&amp;quot;,..: 18 16 15 17 26 33 10 46 48 108 ...&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Clean it from unwanted columns
+data.clean &amp;lt;- data[,c(&amp;quot;V1&amp;quot;, &amp;quot;V3&amp;quot;, &amp;quot;V5&amp;quot;, &amp;quot;V7&amp;quot;)]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;str(data.clean)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## &amp;#39;data.frame&amp;#39;:    325 obs. of  4 variables:
+##  $ V1: int  339240 339240 339240 339240 339240 339240 339240 339240 339240 339240 ...
+##  $ V3: int  99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 ...
+##  $ V5: int  20160101 20160102 20160103 20160104 20160105 20160106 20160107 20160108 20160109 20160110 ...
+##  $ V7: num  18.2 15.8 9.9 14 26.8 30.2 45.6 36.6 40.6 44.5 ...&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Change the names of the columns
+names(data.clean) &amp;lt;- c(&amp;quot;STN&amp;quot;, &amp;quot;WBAN&amp;quot;, &amp;quot;YEARMODA&amp;quot;, &amp;quot;TEMP&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Importing Techniques Used in Spatial Data Analysis</title>
+      <link>/post/importing-techniques-used-in-spatial-data-analysis/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/importing-techniques-used-in-spatial-data-analysis/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;In this post we are going to take a look at various data importing techniques used for spatial data analysis&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;importing-data-from-tables-read-table&#34;&gt;Importing Data from Tables (read.table)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Opening data&lt;/li&gt;
+&lt;li&gt;Importing csv files&lt;/li&gt;
+&lt;li&gt;Checking the data structure for consistency&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Accessing and importing open access environmental data is a crucial skill for data scientists. This section teaches you how to download data from the Web, import it in R and check it for consistency.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In this section, we are going to take a look at&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Download open-access data from the USGS website&lt;/li&gt;
+&lt;li&gt;Import it in R using read.table&lt;/li&gt;
+&lt;li&gt;Check its structure to start exploring the data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Set the URL with the CSV Files
+URL &amp;lt;- &amp;quot;http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.csv&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Load the CSV File
+Data &amp;lt;- read.table(file=URL, 
+                   sep=&amp;quot;,&amp;quot;, 
+                   header=TRUE, 
+                   na.string=&amp;quot;&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Help function
+help(read.table)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Examining the data
+str(Data)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## &#39;data.frame&#39;:    112 obs. of  22 variables:
+##  $ time           : Factor w/ 112 levels &amp;quot;2017-11-23T11:50:50.090Z&amp;quot;,..: 112 111 110 109 108 107 106 105 104 103 ...
+##  $ latitude       : num  61.6 61.4 38.8 36.1 65.3 ...
+##  $ longitude      : num  -146 -142 -123 -118 -163 ...
+##  $ depth          : num  19.1 58.1 2.55 5.8 7.8 5.85 5.78 6.29 1.99 3.3 ...
+##  $ mag            : num  3.1 2.5 0.9 1.21 2.9 1.84 0.18 0.79 1.31 1.19 ...
+##  $ magType        : Factor w/ 5 levels &amp;quot;mb&amp;quot;,&amp;quot;mb_lg&amp;quot;,&amp;quot;md&amp;quot;,..: 4 4 3 4 4 3 4 4 3 3 ...
+##  $ nst            : int  NA NA 17 17 NA 27 14 21 13 15 ...
+##  $ gap            : num  NA NA 73 101 NA 76 46 72 87 77 ...
+##  $ dmin           : num  NA NA 0.000959 0.05882 NA ...
+##  $ rms            : num  0.88 0.86 0.04 0.12 0.52 0.06 0.09 0.19 0.03 0.04 ...
+##  $ net            : Factor w/ 9 levels &amp;quot;ak&amp;quot;,&amp;quot;ci&amp;quot;,&amp;quot;hv&amp;quot;,..: 1 1 4 2 1 4 2 2 4 4 ...
+##  $ id             : Factor w/ 112 levels &amp;quot;ak17388290&amp;quot;,&amp;quot;ak17388302&amp;quot;,..: 22 23 83 46 21 82 45 44 81 80 ...
+##  $ updated        : Factor w/ 112 levels &amp;quot;2017-11-23T12:51:02.351Z&amp;quot;,..: 112 110 111 107 105 106 103 101 104 102 ...
+##  $ place          : Factor w/ 101 levels &amp;quot;103km WNW of Talkeetna, Alaska&amp;quot;,..: 58 17 87 67 24 15 4 54 98 20 ...
+##  $ type           : Factor w/ 1 level &amp;quot;earthquake&amp;quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ horizontalError: num  NA NA 0.29 0.31 NA 0.33 0.19 0.41 0.37 0.31 ...
+##  $ depthError     : num  0.5 2.2 0.53 0.59 0.2 0.99 0.57 0.74 0.6 0.45 ...
+##  $ magError       : num  NA NA 0.05 0.185 NA 0.15 0.062 0.121 0.13 0.08 ...
+##  $ magNst         : int  NA NA 4 19 NA 15 7 14 4 13 ...
+##  $ status         : Factor w/ 2 levels &amp;quot;automatic&amp;quot;,&amp;quot;reviewed&amp;quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ locationSource : Factor w/ 9 levels &amp;quot;ak&amp;quot;,&amp;quot;ci&amp;quot;,&amp;quot;hv&amp;quot;,..: 1 1 4 2 1 4 2 2 4 4 ...
+##  $ magSource      : Factor w/ 9 levels &amp;quot;ak&amp;quot;,&amp;quot;ci&amp;quot;,&amp;quot;hv&amp;quot;,..: 1 1 4 2 1 4 2 2 4 4 ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##Downloading Open Data from FTP Sites&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Often times, datasets are provided for free, but on FTP, websites and practitioners need to be able to access them. R is perfectly capable of downloading and importing data from FTP sites.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In this section, we are going to take a look at&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Understand the basics of downloading data in R&lt;/li&gt;
+&lt;li&gt;Download the data with the download.file function&lt;/li&gt;
+&lt;li&gt;Learn how to handle compressed formats&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Load required packages
+library(RCurl)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Loading required package: bitops
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(XML)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Create a list with all the files on the FTP site
+list &amp;lt;- getURL(&amp;quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2016/&amp;quot;, 
+               dirlistonly = TRUE) 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Clean the list 
+FileList &amp;lt;- strsplit(list, split=&amp;quot;\r\n&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Create a new directory where to download these files
+DIR &amp;lt;- paste(getwd(),&amp;quot;/NOAAFiles&amp;quot;,sep=&amp;quot;&amp;quot;)
+dir.create(DIR)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Warning in dir.create(DIR): &#39;E:\Projects\sumendar.github.io\content\post
+## \NOAAFiles&#39; already exists
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Loop to download the files
+for(FileName in unlist(FileList)){
+  URL &amp;lt;- paste0(&amp;quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2016/&amp;quot;,FileName)
+  download.file(URL, destfile=paste0(DIR,&amp;quot;/&amp;quot;,FileName), method=&amp;quot;auto&amp;quot;, 
+                mode=&amp;quot;wb&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#A more elegant way
+DownloadFile &amp;lt;- function(x){
+  URL &amp;lt;- paste0(&amp;quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2016/&amp;quot;,x)
+  download.file(URL, destfile=paste0(DIR,&amp;quot;/&amp;quot;,x), method=&amp;quot;auto&amp;quot;, mode=&amp;quot;wb&amp;quot;)
+}
+lapply(unlist(FileList)[1:5], DownloadFile)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Dowload a compressed file
+URL &amp;lt;- &amp;quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2015/gsod_2015.tar&amp;quot;
+download.file(URL, destfile=paste0(DIR,&amp;quot;/gsod_2015.tar&amp;quot;),
+              method=&amp;quot;auto&amp;quot;,mode=&amp;quot;wb&amp;quot;)
+
+untar(paste0(getwd(),&amp;quot;/NOAAFiles/&amp;quot;,&amp;quot;gsod_2015.tar&amp;quot;), 
+      exdir=paste0(getwd(),&amp;quot;/NOAAFiles&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;help(unzip)
+#For more information on the full experiment please visit:
+#http://r-video-tutorial.blogspot.ch/2014/12/accessing-cleaning-and-plotting-noaa.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;##Fixed-Width Format
+&lt;strong&gt;In this section, we are going to take a look at&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Creating a list of files in a folder&lt;/li&gt;
+&lt;li&gt;Opening data compressed in gzip&lt;/li&gt;
+&lt;li&gt;Opening data in fixed width format&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;help(list.files)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;setwd(&amp;quot;./NOAAFiles&amp;quot;)
+#Open the first file in the list
+data &amp;lt;- read.fwf(gzfile(FileList[1],open=&amp;quot;rt&amp;quot;),
+                 header=F,
+                 skip=1,
+                 widths=c(6,1,5,2,8,4,4,108))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Warning in readLines(file, n = skip): seek on a gzfile connection returned
+## an internal error
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Warning in readLines(file, n = thisblock): seek on a gzfile connection
+## returned an internal error
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Warning in readLines(file, n = thisblock): incomplete final line found on
+## &#39;339240-99999-2016.op.gz&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str(data)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## &#39;data.frame&#39;:    325 obs. of  8 variables:
+##  $ V1: int  339240 339240 339240 339240 339240 339240 339240 339240 339240 339240 ...
+##  $ V2: logi  NA NA NA NA NA NA ...
+##  $ V3: int  99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 ...
+##  $ V4: logi  NA NA NA NA NA NA ...
+##  $ V5: int  20160101 20160102 20160103 20160104 20160105 20160106 20160107 20160108 20160109 20160110 ...
+##  $ V6: logi  NA NA NA NA NA NA ...
+##  $ V7: num  18.2 15.8 9.9 14 26.8 30.2 45.6 36.6 40.6 44.5 ...
+##  $ V8: Factor w/ 324 levels &amp;quot;  5    40.7  5  1008.9  5  1007.7  5    5.5  5    5.1  5    7.8  999.9    49.6    37.2   0.30F 999.9  010000&amp;quot;,..: 18 16 15 17 26 33 10 46 48 108 ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Clean it from unwanted columns
+data.clean &amp;lt;- data[,c(&amp;quot;V1&amp;quot;, &amp;quot;V3&amp;quot;, &amp;quot;V5&amp;quot;, &amp;quot;V7&amp;quot;)]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;str(data.clean)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## &#39;data.frame&#39;:    325 obs. of  4 variables:
+##  $ V1: int  339240 339240 339240 339240 339240 339240 339240 339240 339240 339240 ...
+##  $ V3: int  99999 99999 99999 99999 99999 99999 99999 99999 99999 99999 ...
+##  $ V5: int  20160101 20160102 20160103 20160104 20160105 20160106 20160107 20160108 20160109 20160110 ...
+##  $ V7: num  18.2 15.8 9.9 14 26.8 30.2 45.6 36.6 40.6 44.5 ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;#Change the names of the columns
+names(data.clean) &amp;lt;- c(&amp;quot;STN&amp;quot;, &amp;quot;WBAN&amp;quot;, &amp;quot;YEARMODA&amp;quot;, &amp;quot;TEMP&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
