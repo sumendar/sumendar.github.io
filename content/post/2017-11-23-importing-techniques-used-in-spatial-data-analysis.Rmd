@@ -172,6 +172,9 @@ str(data.clean)
 names(data.clean) <- c("STN", "WBAN", "YEARMODA", "TEMP")
 ```
 
+```{r}
+head(data.clean)
+```
 
 
 
