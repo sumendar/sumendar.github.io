@@ -2,5 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-sumendar.github.io.Rproj
-wercker.yml
+content/**/*.html
+README.html
+public/
