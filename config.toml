@@ -227,10 +227,10 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//github.com/sumendar"
     
-  [[params.social]]
-    icon = "facebook"
-    icon_pack = "fa"
-    link = ""
+#  [[params.social]]
+#    icon = "facebook"
+#    icon_pack = "fa"
+#    link = "//facebook.com/SumendarDotCom/"
 
 
 # Navigation Links
