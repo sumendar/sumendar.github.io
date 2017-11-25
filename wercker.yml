@@ -31,6 +31,6 @@ deploy:
             packages: git
     - leipert/git-push:
             gh_oauth: $GIT_TOKEN
-            repo: sumendar/sumendar.github.io
+            domain: www.sumendar.com
             branch: master
             basedir: public
