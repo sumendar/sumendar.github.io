@@ -173,7 +173,7 @@ names(data.clean) <- c("STN", "WBAN", "YEARMODA", "TEMP")
 ```
 
 ```{r}
-head(data.clean)
+head(data.clean, 3)
 ```
 
 
