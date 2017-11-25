@@ -14,6 +14,15 @@
     
     <url>
     
+      <loc>/publication/data-science-article/</loc>
+      <lastmod>2017-11-25T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/importing-techniques-used-in-spatial-data-analysis/</loc>
       <lastmod>2017-11-23T00:00:00+00:00</lastmod>
     </url>
@@ -204,7 +213,7 @@
     
     <url>
     
-      <loc>/tags/data-science/</loc>
+      <loc>/categories/data-science/</loc>
       <lastmod>2017-11-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -214,7 +223,7 @@
     
     <url>
     
-      <loc>/categories/data-science/</loc>
+      <loc>/tags/data-science/</loc>
       <lastmod>2017-11-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
