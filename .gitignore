@@ -2,6 +2,3 @@
 .Rhistory
 .RData
 .Ruserdata
-content/**/*.html
-README.html
-public/
