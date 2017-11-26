@@ -175,6 +175,14 @@
     
     <url>
     
+      <loc>/publication/2017-11-26-sample/</loc>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication_types/1/</loc>
       <lastmod>2013-07-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -204,7 +212,7 @@
     
     <url>
     
-      <loc>/categories/data-science/</loc>
+      <loc>/tags/data-science/</loc>
       <lastmod>2017-11-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -214,7 +222,7 @@
     
     <url>
     
-      <loc>/tags/data-science/</loc>
+      <loc>/categories/data-science/</loc>
       <lastmod>2017-11-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
