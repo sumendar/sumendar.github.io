@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>/teaching/my-sample-teaching-new/</loc>
+      <lastmod>2017-11-26T23:13:34+05:30</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/my-sample-publication-new/</loc>
+      <lastmod>2017-11-26T23:12:17+05:30</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/teaching/my-sample-teaching/</loc>
       <lastmod>2017-11-26T22:57:26+05:30</lastmod>
     </url>
@@ -220,7 +238,7 @@
     <url>
     
       <loc>/publication_types/0/</loc>
-      <lastmod>2017-11-26T17:07:16+05:30</lastmod>
+      <lastmod>2017-11-26T23:12:17+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -339,7 +357,7 @@
     <url>
     
       <loc>/publication_types/</loc>
-      <lastmod>2017-11-26T17:07:16+05:30</lastmod>
+      <lastmod>2017-11-26T23:12:17+05:30</lastmod>
       <priority>0</priority>
     </url>
     
@@ -399,7 +417,7 @@
     <url>
     
       <loc>/teaching/</loc>
-      <lastmod>2017-11-26T22:57:26+05:30</lastmod>
+      <lastmod>2017-11-26T23:13:34+05:30</lastmod>
       <priority>0</priority>
     </url>
     

@@ -11,6 +11,15 @@
     <atom:link href="/publication/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>My Sample Publication New</title>
+      <link>/publication/my-sample-publication-new/</link>
+      <pubDate>Sun, 26 Nov 2017 23:12:17 +0530</pubDate>
+      
+      <guid>/publication/my-sample-publication-new/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>My Paper Name</title>
       <link>/publication/my-paper-name/</link>
       <pubDate>Sun, 26 Nov 2017 17:07:16 +0530</pubDate>

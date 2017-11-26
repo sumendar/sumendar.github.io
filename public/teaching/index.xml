@@ -7,8 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 sumendar karupakala</copyright>
-    <lastBuildDate>Sun, 26 Nov 2017 22:57:26 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 26 Nov 2017 23:13:34 +0530</lastBuildDate>
     <atom:link href="/teaching/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My Sample Teaching New</title>
+      <link>/teaching/my-sample-teaching-new/</link>
+      <pubDate>Sun, 26 Nov 2017 23:13:34 +0530</pubDate>
+      
+      <guid>/teaching/my-sample-teaching-new/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>My Sample Teaching</title>
