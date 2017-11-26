@@ -1,7 +1,7 @@
 +++
 title = "My Sample Teaching"
 date = 2017-11-26T22:57:26+05:30
-draft = false
+draft = true
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
