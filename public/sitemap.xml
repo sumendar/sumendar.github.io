@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/teaching/my-sample-teaching/</loc>
+      <lastmod>2017-11-26T22:08:09+05:30</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/project/my-project-name/</loc>
       <lastmod>2017-11-26T17:17:33+05:30</lastmod>
     </url>
@@ -210,6 +219,14 @@
     
     <url>
     
+      <loc>/teaching/my-sample-teaching/</loc>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication_types/0/</loc>
       <lastmod>2017-11-26T17:07:16+05:30</lastmod>
       <priority>0</priority>
@@ -249,7 +266,7 @@
     
     <url>
     
-      <loc>/tags/data-science/</loc>
+      <loc>/categories/data-science/</loc>
       <lastmod>2017-11-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -259,7 +276,7 @@
     
     <url>
     
-      <loc>/categories/data-science/</loc>
+      <loc>/tags/data-science/</loc>
       <lastmod>2017-11-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -381,6 +398,16 @@
     
       <loc>/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/teaching/</loc>
+      <lastmod>2017-11-26T22:08:09+05:30</lastmod>
       <priority>0</priority>
     </url>
     
