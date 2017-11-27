@@ -190,7 +190,7 @@ download.file(URL, destfile=paste0(getwd(),"/",FileName), method="auto", mode="w
 
 ```{r}
 data.strings <- readLines(gzfile(FileName, open="rt"))
-data.strings
+head(data.strings)
 ```
 
 

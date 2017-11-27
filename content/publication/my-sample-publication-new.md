@@ -1,10 +1,10 @@
 +++
-title = "My Sample Publication New"
+title = "A Great way to learn Data Science by simply doing it"
 date = 2017-11-26T23:12:17+05:30
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = [""]
+authors = ["Sumendar Karupakala"]
 
 # Publication type.
 # Legend:
@@ -15,57 +15,51 @@ authors = [""]
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["0"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = ""
-publication_short = ""
+publication = "KDnuggets™ is a leading site on **Business Analytics, Big Data, Data Mining, Data Science, and Machine Learning**"
+publication_short = "KDnuggets"
 
 # Abstract and optional shortened version.
-abstract = ""
-abstract_short = ""
+abstract = "Due to the comprehensive nature of data science, which is blended with mathematics, statistics, economics, and computer science along with domain experience, hacking mindset and business implication skills, we could not find a single place where we can learn altogether, but there are tons of great online resources out there we can pick up separately and study them to become a master in data science field. If we want to expertise on this sector grab those courses from various online resources."
+abstract_short = "There are tons of great online resources out there we can pick up and learn them to become a master in data science. Here is a comprehensive list of data science course providers along with links to the data science courses."
 
 # Featured image thumbnail (optional)
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-#   E.g. `projects = ["deep-learning"]` references `content/project/deep-learning.md`.
-projects = []
-
-# Tags (optional).
-#   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = []
+# projects = ["example-external-project"]
 
 # Links (optional).
-url_pdf = ""
-url_preprint = ""
-url_code = ""
-url_dataset = ""
-url_project = ""
-url_slides = ""
-url_video = ""
-url_poster = ""
-url_source = ""
+url_source = "https://www.kdnuggets.com/2015/09/learn-data-science-by-doing.html"
+# url_pdf = "#"
+# url_preprint = "#"
+# url_code = "#"
+# url_dataset = "#"
+# url_project = "#"
+# url_slides = "#"
+# url_video = "#"
+# url_poster = "#"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-# url_custom = [{name = "Custom Link", url = "http://example.org"}]
+url_custom = [{name = "Read more", url = "https://www.kdnuggets.com/2015/09/learn-data-science-by-doing.html"}]
 
-# Does this page contain LaTeX math? (true/false)
-math = false
+# Does the content use math formatting?
+math = true
 
-# Does this page require source code highlighting? (true/false)
+# Does the content use source code highlighting?
 highlight = true
 
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = ""
-caption = ""
-
+image = "headers/prettydirt1.jpg"
+caption = "My caption :smile:"
 +++
