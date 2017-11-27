@@ -201,10 +201,12 @@ Ext.Latitude <- function(x){
 }
 ```
 
-
+#Functions for test 2
+```{r}
 Ext.Longitude <- function(x){
   substr(x, start=35, stop=41)
 }
+```
 
 Ext.Temp <- function(x){
   substr(x, start=88, stop=92)
