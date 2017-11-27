@@ -194,10 +194,13 @@ head(data.strings)
 ```
 
 
-#Functions
+#Functions for test
+```{r}
 Ext.Latitude <- function(x){
   substr(x, start=29, stop=34)
 }
+```
+
 
 Ext.Longitude <- function(x){
   substr(x, start=35, stop=41)
