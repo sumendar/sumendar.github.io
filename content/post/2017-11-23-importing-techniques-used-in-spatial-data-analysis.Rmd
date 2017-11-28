@@ -208,14 +208,19 @@ Ext.Longitude <- function(x){
 }
 ```
 
+#Functions for test 2
+```{r}
 Ext.Temp <- function(x){
   substr(x, start=88, stop=92)
 }
+```
 
+##lapply function usage
+```{r}
 LAT <- lapply(data.strings, Ext.Latitude)
 LON <- lapply(data.strings, Ext.Longitude)
 TEMP <- lapply(data.strings, Ext.Temp)
-
+```
 
 #Create a data.frame we can use for data analysis
 DATA <- data.frame(Latitude=as.numeric(unlist(LAT))/1000,
