@@ -190,6 +190,7 @@ download.file(URL, destfile=paste0(getwd(),"/",FileName), method="auto", mode="w
 
 ```{r}
 data.strings <- readLines(gzfile(FileName, open="rt"))
+
 head(data.strings)
 ```
 
@@ -229,12 +230,17 @@ DATA <- data.frame(Latitude=as.numeric(unlist(LAT))/1000,
                    Temperature=as.numeric(unlist(TEMP))/10)
 ```
 
-
+#Final note 
+```{r}
 DATA[DATA$Temperature==999.9,"Temperature"] <- NA
 
 str(DATA)
 
 hist(DATA$Temperature, main="Temperature")
+
+```
+
+
 
 
 
