@@ -230,7 +230,7 @@ DATA <- data.frame(Latitude=as.numeric(unlist(LAT))/1000,
                    Temperature=as.numeric(unlist(TEMP))/10)
 ```
 
-#Final note 
+#Final note code 
 ```{r}
 DATA[DATA$Temperature==999.9,"Temperature"] <- NA
 
