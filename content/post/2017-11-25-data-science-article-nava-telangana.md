@@ -1,5 +1,5 @@
 ---
-title: data science article - published by Nava Telangana 
+title: data science article-published by Nava Telangana 
 author: sumendar karupakala
 date: '2017-11-25'
 slug: data-science-article
