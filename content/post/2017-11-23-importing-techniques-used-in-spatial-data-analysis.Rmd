@@ -223,9 +223,12 @@ TEMP <- lapply(data.strings, Ext.Temp)
 ```
 
 #Create a data.frame we can use for data analysis
+```{r}
 DATA <- data.frame(Latitude=as.numeric(unlist(LAT))/1000,
                    Longitude=as.numeric(unlist(LON))/1000,
                    Temperature=as.numeric(unlist(TEMP))/10)
+```
+
 
 DATA[DATA$Temperature==999.9,"Temperature"] <- NA
 
