@@ -30,9 +30,9 @@ defaultContentLanguageInSubdir = false
 #  organization_url = "http://www.ohsu.edu/xd/"
   avatar = "portrait.jpg"
   email = "sumendar@gmail.com"
-  address = ""
+  address = "Nallakunta, Hyderabad - 500044"
   office_hours = ""
-  phone = ""
+  phone = "+919948880987"
   skype = "sumendar"
   telegram = ""
   twitter = "sumendar"
@@ -167,7 +167,8 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "linkedin"
     icon_pack = "fa"
-    link = "https://www.linkedin.com/in/sumendar/"
+    #link = "https://www.linkedin.com/in/sumendar/"
+    link = "//in.linkedin.com/in/sumendar"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
