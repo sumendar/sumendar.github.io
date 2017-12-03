@@ -1,5 +1,5 @@
 +++
-title = "data science article published by Nava Telangana"
+title = "Data Science Article Published by Nava Telangana"
 date= 2017-11-20T23:12:17+05:30
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Sumendar Karupakala"]
@@ -16,8 +16,8 @@ authors = ["Sumendar Karupakala"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = ""
-publication_short = ""
+publication = "**Nava Telangana** is a registered Telugu language newspaper in the Indian State of Telangana"
+publication_short = "Nava Telangana Newspaper"
 
 # Abstract and optional shortened version.
 abstract = ""
