@@ -129,10 +129,10 @@ defaultContentLanguageInSubdir = false
   #
   #   Full list: https://jpswalsh.github.io/academicons/
   
-  [[params.social]]
-    icon = "paper-plane"
-    icon_pack = "fa"
-    link = "sumendar@gmail.com"
+  #[[params.social]]
+  #  icon = "paper-plane"
+  #  icon_pack = "fa"
+  #  link = "sumendar@gmail.com"
 
   [[params.social]]
     icon = "twitter"
