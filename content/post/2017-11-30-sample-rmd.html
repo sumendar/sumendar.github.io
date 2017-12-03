@@ -1,0 +1,163 @@
+---
+title: sample rmd
+author: ''
+date: '2017-11-30'
+slug: sample-rmd
+categories:
+  - R
+tags:
+  - blogdown
+---
+
+
+
+<div id="performing-univariate-analysis" class="section level2">
+<h2>Performing Univariate Analysis</h2>
+<pre class="r"><code># install.packages(&quot;car&quot;)
+library(car)</code></pre>
+<pre class="r"><code>data(Prestige, package = &quot;car&quot;)
+ls()</code></pre>
+<pre><code>## [1] &quot;Prestige&quot;</code></pre>
+<pre class="r"><code>head(Prestige)</code></pre>
+<pre><code>##                     education income women prestige census type
+## gov.administrators      13.11  12351 11.16     68.8   1113 prof
+## general.managers        12.26  25879  4.02     69.1   1130 prof
+## accountants             12.77   9271 15.70     63.4   1171 prof
+## purchasing.officers     11.42   8865  9.11     56.8   1175 prof
+## chemists                14.62   8403 11.68     73.5   2111 prof
+## physicists              15.64  11030  5.13     77.6   2113 prof</code></pre>
+<pre class="r"><code>str(Prestige)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    102 obs. of  6 variables:
+##  $ education: num  13.1 12.3 12.8 11.4 14.6 ...
+##  $ income   : int  12351 25879 9271 8865 8403 11030 8258 14163 11377 11023 ...
+##  $ women    : num  11.16 4.02 15.7 9.11 11.68 ...
+##  $ prestige : num  68.8 69.1 63.4 56.8 73.5 77.6 72.6 78.1 73.1 68.8 ...
+##  $ census   : int  1113 1130 1171 1175 2111 2113 2133 2141 2143 2153 ...
+##  $ type     : Factor w/ 3 levels &quot;bc&quot;,&quot;prof&quot;,&quot;wc&quot;: 2 2 2 2 2 2 2 2 2 2 ...</code></pre>
+<pre class="r"><code>mean(Prestige$income)</code></pre>
+<pre><code>## [1] 6797.902</code></pre>
+<pre class="r"><code>mean(Prestige$income, na.rm = T)</code></pre>
+<pre><code>## [1] 6797.902</code></pre>
+<pre class="r"><code>median(Prestige$income, na.rm = T)</code></pre>
+<pre><code>## [1] 5930.5</code></pre>
+<pre class="r"><code>sd(Prestige$income, na.rm = T)</code></pre>
+<pre><code>## [1] 4245.922</code></pre>
+<pre class="r"><code>var(Prestige$income, na.rm = T)</code></pre>
+<pre><code>## [1] 18027856</code></pre>
+<pre class="r"><code>quantile(Prestige$income, probs = c(0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.90, 0.95))</code></pre>
+<pre><code>##       1%       5%      10%      25%      50%      75%      90%      95% 
+##   925.38  2455.30  3026.00  4106.00  5930.50  8187.25 11029.30 14156.45</code></pre>
+<pre class="r"><code>summary(Prestige)</code></pre>
+<pre><code>##    education          income          women           prestige    
+##  Min.   : 6.380   Min.   :  611   Min.   : 0.000   Min.   :14.80  
+##  1st Qu.: 8.445   1st Qu.: 4106   1st Qu.: 3.592   1st Qu.:35.23  
+##  Median :10.540   Median : 5930   Median :13.600   Median :43.60  
+##  Mean   :10.738   Mean   : 6798   Mean   :28.979   Mean   :46.83  
+##  3rd Qu.:12.648   3rd Qu.: 8187   3rd Qu.:52.203   3rd Qu.:59.27  
+##  Max.   :15.970   Max.   :25879   Max.   :97.510   Max.   :87.20  
+##      census       type   
+##  Min.   :1113   bc  :44  
+##  1st Qu.:3120   prof:31  
+##  Median :5135   wc  :23  
+##  Mean   :5402   NA&#39;s: 4  
+##  3rd Qu.:8312            
+##  Max.   :9517</code></pre>
+<pre class="r"><code>install.packages(&quot;pastecs&quot;)</code></pre>
+<pre class="r"><code>??pastecs</code></pre>
+<pre class="r"><code>pastecs::stat.desc(Prestige)</code></pre>
+<pre><code>##                 education       income       women     prestige
+## nbr.val       102.0000000 1.020000e+02  102.000000  102.0000000
+## nbr.null        0.0000000 0.000000e+00    5.000000    0.0000000
+## nbr.na          0.0000000 0.000000e+00    0.000000    0.0000000
+## min             6.3800000 6.110000e+02    0.000000   14.8000000
+## max            15.9700000 2.587900e+04   97.510000   87.2000000
+## range           9.5900000 2.526800e+04   97.510000   72.4000000
+## sum          1095.2800000 6.933860e+05 2955.860000 4777.0000000
+## median         10.5400000 5.930500e+03   13.600000   43.6000000
+## mean           10.7380392 6.797902e+03   28.979020   46.8333333
+## SE.mean         0.2701562 4.204089e+02    3.141236    1.7034979
+## CI.mean.0.95    0.5359173 8.339783e+02    6.231368    3.3792816
+## var             7.4444080 1.802786e+07 1006.471223  295.9943234
+## std.dev         2.7284442 4.245922e+03   31.724931   17.2044856
+## coef.var        0.2540915 6.245930e-01    1.094755    0.3673556
+##                    census type
+## nbr.val      1.020000e+02   NA
+## nbr.null     0.000000e+00   NA
+## nbr.na       0.000000e+00   NA
+## min          1.113000e+03   NA
+## max          9.517000e+03   NA
+## range        8.404000e+03   NA
+## sum          5.509810e+05   NA
+## median       5.135000e+03   NA
+## mean         5.401775e+03   NA
+## SE.mean      2.618934e+02   NA
+## CI.mean.0.95 5.195260e+02   NA
+## var          6.995989e+06   NA
+## std.dev      2.644993e+03   NA
+## coef.var     4.896527e-01   NA</code></pre>
+<pre class="r"><code>dim(Prestige)</code></pre>
+<pre><code>## [1] 102   6</code></pre>
+<pre class="r"><code>library(Hmisc)</code></pre>
+<pre><code>## Loading required package: lattice</code></pre>
+<pre><code>## Loading required package: survival</code></pre>
+<pre><code>## Loading required package: Formula</code></pre>
+<pre><code>## Loading required package: ggplot2</code></pre>
+<pre><code>## 
+## Attaching package: &#39;Hmisc&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     format.pval, round.POSIXt, trunc.POSIXt, units</code></pre>
+<pre class="r"><code>describe(Prestige)</code></pre>
+<pre><code>## Prestige 
+## 
+##  6  Variables      102  Observations
+## ---------------------------------------------------------------------------
+## education 
+##        n  missing distinct     Info     Mean      Gmd      .05      .10 
+##      102        0       96        1    10.74    3.136    6.844    7.522 
+##      .25      .50      .75      .90      .95 
+##    8.445   10.540   12.648   14.703   15.429 
+## 
+## lowest :  6.38  6.60  6.67  6.69  6.74, highest: 15.64 15.77 15.94 15.96 15.97
+## ---------------------------------------------------------------------------
+## income 
+##        n  missing distinct     Info     Mean      Gmd      .05      .10 
+##      102        0      100        1     6798     4167     2455     3026 
+##      .25      .50      .75      .90      .95 
+##     4106     5930     8187    11029    14156 
+## 
+## lowest :   611   918  1656  1890  2370, highest: 14558 17498 19263 25308 25879
+## ---------------------------------------------------------------------------
+## women 
+##        n  missing distinct     Info     Mean      Gmd      .05      .10 
+##      102        0       96        1    28.98    33.98    0.522    0.783 
+##      .25      .50      .75      .90      .95 
+##    3.592   13.600   52.203   82.104   92.805 
+## 
+## lowest :  0.00  0.52  0.56  0.58  0.61, highest: 95.97 96.12 96.14 96.53 97.51
+## ---------------------------------------------------------------------------
+## prestige 
+##        n  missing distinct     Info     Mean      Gmd      .05      .10 
+##      102        0       92        1    46.83    19.72    21.59    25.92 
+##      .25      .50      .75      .90      .95 
+##    35.23    43.60    59.28    71.82    74.83 
+## 
+## lowest : 14.8 17.3 20.1 20.2 20.8, highest: 77.6 78.1 82.3 84.6 87.2
+## ---------------------------------------------------------------------------
+## census 
+##        n  missing distinct     Info     Mean      Gmd      .05      .10 
+##      102        0      101        1     5402     3023     2114     2161 
+##      .25      .50      .75      .90      .95 
+##     3120     5135     8312     8782     9130 
+## 
+## lowest : 1113 1130 1171 1175 2111, highest: 9171 9173 9313 9511 9517
+## ---------------------------------------------------------------------------
+## type 
+##        n  missing distinct 
+##       98        4        3 
+##                             
+## Value         bc  prof    wc
+## Frequency     44    31    23
+## Proportion 0.449 0.316 0.235
+## ---------------------------------------------------------------------------</code></pre>
+</div>

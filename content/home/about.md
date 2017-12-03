@@ -1,42 +1,46 @@
 +++
 # About/Biography widget.
-widget = "about"
-active = true
+
 date = "2016-04-20T00:00:00"
+draft = false
+
+widget = "about"
 
 # Order that this section will appear in.
-weight = 5
+weight = 1
 
 # List your academic interests.
 [interests]
   interests = [
-    "Data Science",
-    "Machine Learning",
-    "Artificial Intelligence"
+    "Autism Spectrum Disorders",
+    "Natural Language Processing",
+    "Computational Behavioral Science",
+    "Eye Tracking",
+    "Outcomes",
+    "R"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Master of Computer Application"
-  institution = "RG Kedia College (Osmania University)"
-# year = 2012
+  course = "PhD in Developmental Psychology & Quantitative Methods"
+  institution = "Vanderbilt University"
+  year = 2008
 
 [[education.courses]]
-  course = "BSc in Mathemetics, Staistics & Computer Science"
-  institution = "Aurora college (Kakatiya University)"
-# year = 2009
+  course = "MSc in Developmental Psychology"
+  institution = "Vanderbilt University"
+  year = 2005
 
-# [[education.courses]]
-# course = "BSc in Artificial Intelligence"
-# institution = "Massachusetts Institute of Technology"
-# year = 2008
+[[education.courses]]
+  course = "BSc in Applied Psychology"
+  institution = "Georgia Institute of Technology"
+  year = 2002
  
 +++
 
-# Biography
+# About me
 
-I have 4 years of professional experience as software programmer, 2 years in VBA macros, automation scripting processing analytics and 2 years of statistical analysis, data science and machine learning 
+I am an associate professor of pediatrics in OHSU's <a href = "https://www.ohsu.edu/xd/research/centers-institutes/center-for-spoken-language-understanding/" target = "_blank">Center for Spoken Language Understanding</a> in Portland, Oregon. I earned my doctorate in developmental psychology, with a concentration in quantitative methods. I focus on developing more sensitive tools to capture subtle yet meaningful clinical changes in children's language and social functioning. Currently, my research is driven by the need for good outcome measures to evaluate the impact of new treatments and interventions for children with autism and other neurodevelopmental disorders such as Fragile X Syndrome. I am passionate about using technology to improve how we measure children's behavior in a way that is both objective and quantitative. I believe using technology like eye-tracking makes participating in research studies more fun, and reduces the burdens placed on participating families. 
 
-My specialties include but are not limited to: regression analysis, multivariate analysis, time series analysis, spatial temporal data mining, data cleaning, modeling and visualisation.  
+In addition to research, I teach graduate-level courses at OHSU on statistics, data science, and data visualization using R. I also have developed and led several R workshops and smaller team-based training sessions, and love to train new "useRs".
 
-Please connect with me about any of your data science and analytic needs so we can discuss how i can help you and your team.

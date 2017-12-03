@@ -1,0 +1,59 @@
+---
+title: sample rmd
+author: ''
+date: '2017-11-30'
+slug: sample-rmd
+categories:
+  - R
+tags:
+  - blogdown
+---
+
+##Performing Univariate Analysis
+
+```{r}
+# install.packages("car")
+library(car)
+```
+
+```{r}
+data(Prestige, package = "car")
+ls()
+head(Prestige)
+```
+```{r}
+str(Prestige)
+```
+
+
+```{r}
+mean(Prestige$income)
+mean(Prestige$income, na.rm = T)
+median(Prestige$income, na.rm = T)
+sd(Prestige$income, na.rm = T)
+var(Prestige$income, na.rm = T)
+quantile(Prestige$income, probs = c(0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.90, 0.95))
+```
+
+```{r}
+summary(Prestige)
+```
+
+```{r, eval=FALSE, include=TRUE}
+install.packages("pastecs")
+```
+
+```{r,eval=FALSE, include=TRUE}
+??pastecs
+```
+
+```{r}
+pastecs::stat.desc(Prestige)
+dim(Prestige)
+```
+
+```{r}
+library(Hmisc)
+describe(Prestige)
+```
+
