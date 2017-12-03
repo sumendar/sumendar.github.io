@@ -30,7 +30,7 @@ math = false
 highlight = true
 
 # Featured image thumbnail (optional)
-image_preview = "img/Nava-Telangana-data science-article-26_12_2015_0111.jpg"
+image_preview = ""
 
 # Is this a selected publication? (true/false)
 selected = true
@@ -45,7 +45,7 @@ url_video = ""
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "img/Nava-Telangana-data science-article-26_12_2015_0111.jpg"
+image = ""
 caption = ""
 
 +++
