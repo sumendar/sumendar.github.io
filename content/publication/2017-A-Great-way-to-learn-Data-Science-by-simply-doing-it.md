@@ -49,7 +49,7 @@ url_source = "https://www.kdnuggets.com/2015/09/learn-data-science-by-doing.html
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{name = "Read more", url = "https://www.kdnuggets.com/2015/09/learn-data-science-by-doing.html"}]
+url_custom = [{name = "Source", url = "https://www.kdnuggets.com/2015/09/learn-data-science-by-doing.html"}]
 
 # Does the content use math formatting?
 math = true

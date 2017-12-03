@@ -1,0 +1,173 @@
+---
+title: Importing Techniques Used in Spatial Data Analysis
+author: sumendar
+date: '2017-12-03'
+slug: importing-techniques-used-in-spatial-data-analysis
+categories: []
+tags: []
+output: 
+  html_document: 
+    self_contained: no
+    toc: yes
+---
+
+
+
+<p><strong>In this post we are going to take a look at various data importing techniques used for spatial data analysis</strong></p>
+<div id="importing-data-from-tables-read.table" class="section level2">
+<h2>Importing Data from Tables (read.table)</h2>
+<ul>
+<li>Opening data</li>
+<li>Importing csv files</li>
+<li>Checking the data structure for consistency</li>
+</ul>
+<p><strong>Accessing and importing open access environmental data is a crucial skill for data scientists. This section teaches you how to download data from the Web, import it in R and check it for consistency.</strong></p>
+<p><strong>In this section, we are going to take a look at…</strong></p>
+<ul>
+<li>Download open-access data from the USGS website</li>
+<li>Import it in R using read.table</li>
+<li>Check its structure to start exploring the data</li>
+</ul>
+<pre class="r"><code>#Set the URL with the CSV Files
+URL &lt;- &quot;http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.csv&quot;</code></pre>
+<pre class="r"><code>#Load the CSV File
+Data &lt;- read.table(file=URL, 
+                   sep=&quot;,&quot;, 
+                   header=TRUE, 
+                   na.string=&quot;&quot;)</code></pre>
+<pre class="r"><code>#Help function
+help(read.table)</code></pre>
+<pre class="r"><code>#Examining the data
+str(Data)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    131 obs. of  22 variables:
+##  $ time           : Factor w/ 131 levels &quot;2017-12-02T17:45:25.080Z&quot;,..: 131 130 129 128 127 126 125 124 123 122 ...
+##  $ latitude       : num  38.85 19.38 9.85 34.86 33.31 ...
+##  $ longitude      : num  -122.8 -155.2 -40.6 -118.9 -117 ...
+##  $ depth          : num  1.6 3.2 10 7.99 22.27 ...
+##  $ mag            : num  0.57 2.71 5.1 1.36 0.61 0.7 1.7 1.09 0.98 0.56 ...
+##  $ magType        : Factor w/ 6 levels &quot;mb&quot;,&quot;mb_lg&quot;,&quot;md&quot;,..: 3 4 1 4 4 4 4 4 3 3 ...
+##  $ nst            : int  6 47 NA 18 14 11 NA 18 12 8 ...
+##  $ gap            : num  105 48 76 61 193 ...
+##  $ dmin           : num  0.00983 NA 12.803 0.0612 0.1953 ...
+##  $ rms            : num  0.02 0.17 0.68 0.22 0.27 ...
+##  $ net            : Factor w/ 8 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 4 3 7 2 2 5 1 2 4 4 ...
+##  $ id             : Factor w/ 131 levels &quot;ak17434604&quot;,&quot;ak17434625&quot;,..: 100 68 128 64 63 105 34 62 99 98 ...
+##  $ updated        : Factor w/ 131 levels &quot;2017-12-02T17:51:06.970Z&quot;,..: 131 128 127 124 121 126 117 115 119 116 ...
+##  $ place          : Factor w/ 119 levels &quot;104km W of Talkeetna, Alaska&quot;,..: 118 92 119 82 12 51 2 81 103 105 ...
+##  $ type           : Factor w/ 1 level &quot;earthquake&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ horizontalError: num  0.48 0.31 10.5 0.51 1.31 NA NA 0.7 0.49 0.43 ...
+##  $ depthError     : num  1.11 0.25 1.9 0.89 2.81 2.6 0.3 1.32 0.77 0.66 ...
+##  $ magError       : num  NA 0.27 0.03 0.277 0.127 0.38 NA 0.408 0.08 NA ...
+##  $ magNst         : int  2 23 362 26 7 7 NA 28 3 2 ...
+##  $ status         : Factor w/ 2 levels &quot;automatic&quot;,&quot;reviewed&quot;: 1 1 2 1 1 2 1 1 1 1 ...
+##  $ locationSource : Factor w/ 8 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 4 3 7 2 2 5 1 2 4 4 ...
+##  $ magSource      : Factor w/ 8 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 4 3 7 2 2 5 1 2 4 4 ...</code></pre>
+</div>
+<div id="downloading-open-data-from-ftp-sites" class="section level2">
+<h2>Downloading Open Data from FTP Sites</h2>
+<p><strong>Often times, datasets are provided for free, but on FTP, websites and practitioners need to be able to access them. R is perfectly capable of downloading and importing data from FTP sites.</strong></p>
+<p><strong>In this section, we are going to take a look at…</strong></p>
+<ul>
+<li>Understand the basics of downloading data in R</li>
+<li>Download the data with the download.file function</li>
+<li>Learn how to handle compressed formats</li>
+</ul>
+<pre class="r"><code>#Load required packages
+library(RCurl)</code></pre>
+<pre><code>## Loading required package: bitops</code></pre>
+<pre class="r"><code>library(XML)</code></pre>
+<pre class="r"><code>#Create a list with all the files on the FTP site
+list &lt;- getURL(&quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2016/&quot;, 
+               dirlistonly = TRUE) </code></pre>
+<pre class="r"><code>#Clean the list 
+FileList &lt;- strsplit(list, split=&quot;\r\n&quot;)</code></pre>
+<pre class="r"><code>#Create a new directory where to download these files
+DIR &lt;- paste(getwd(),&quot;/NOAAFiles&quot;,sep=&quot;&quot;)
+dir.create(DIR)</code></pre>
+<pre><code>## Warning in dir.create(DIR): &#39;E:\Projects\sumendar.github.io\content\post
+## \NOAAFiles&#39; already exists</code></pre>
+<pre class="r"><code>#Loop to download the files
+for(FileName in unlist(FileList)){
+  URL &lt;- paste0(&quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2016/&quot;,FileName)
+  download.file(URL, destfile=paste0(DIR,&quot;/&quot;,FileName), method=&quot;auto&quot;, 
+                mode=&quot;wb&quot;)
+}</code></pre>
+<pre class="r"><code>#A more elegant way
+DownloadFile &lt;- function(x){
+  URL &lt;- paste0(&quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2016/&quot;,x)
+  download.file(URL, destfile=paste0(DIR,&quot;/&quot;,x), method=&quot;auto&quot;, mode=&quot;wb&quot;)
+}
+lapply(unlist(FileList)[1:5], DownloadFile)</code></pre>
+<pre class="r"><code>#Dowload a compressed file
+URL &lt;- &quot;ftp://ftp.ncdc.noaa.gov/pub/data/gsod/2015/gsod_2015.tar&quot;
+download.file(URL, destfile=paste0(DIR,&quot;/gsod_2015.tar&quot;),
+              method=&quot;auto&quot;,mode=&quot;wb&quot;)
+
+untar(paste0(getwd(),&quot;/NOAAFiles/&quot;,&quot;gsod_2015.tar&quot;), 
+      exdir=paste0(getwd(),&quot;/NOAAFiles&quot;))</code></pre>
+<pre class="r"><code>help(unzip)
+#For more information on the full experiment please visit:
+#http://r-video-tutorial.blogspot.ch/2014/12/accessing-cleaning-and-plotting-noaa.html</code></pre>
+</div>
+<div id="importing-with-read.lines-the-last-resort" class="section level2">
+<h2>Importing with read.lines (The Last Resort)</h2>
+<p>Some data cannot be open with neither <code>read.table</code> nor <code>read.fwf</code><br />
+In this desperate cases in <em><code>readLines</code></em> can help<br />
+<strong>In this section, we are going to take a look at…</strong> *</p>
+<pre class="r"><code>#Download the data from the FTP site
+URL &lt;- &quot;ftp://ftp.ncdc.noaa.gov/pub/data/noaa/2015/010231-99999-2015.gz&quot;
+FileName &lt;- &quot;010231-99999-2015.gz&quot;
+download.file(URL, destfile=paste0(getwd(),&quot;/&quot;,FileName), method=&quot;auto&quot;, mode=&quot;wb&quot;)</code></pre>
+<pre class="r"><code>data.strings &lt;- readLines(gzfile(FileName, open=&quot;rt&quot;))</code></pre>
+<pre><code>## Warning in readLines(gzfile(FileName, open = &quot;rt&quot;)): seek on a gzfile
+## connection returned an internal error</code></pre>
+<pre class="r"><code>head(data.strings)</code></pre>
+<pre><code>## [1] &quot;0071010231999992015010100204+64350+007800FM-15+000099999V0202201N021119999999N999999999+00801+00701999999ADDMA1100401999999REMMET044METAR ENDR 010020Z AUTO 22041KT 08/07 Q1004=&quot;
+## [2] &quot;0071010231999992015010100504+64350+007800FM-15+000099999V0202201N020619999999N999999999+00801+00701999999ADDMA1100301999999REMMET044METAR ENDR 010050Z AUTO 22040KT 08/07 Q1003=&quot;
+## [3] &quot;0071010231999992015010101204+64350+007800FM-15+000099999V0202201N020619999999N999999999+00801+00701999999ADDMA1100301999999REMMET044METAR ENDR 010120Z AUTO 22040KT 08/07 Q1003=&quot;
+## [4] &quot;0071010231999992015010101504+64350+007800FM-15+000099999V0202201N019019999999N999999999+00801+00701999999ADDMA1100301999999REMMET044METAR ENDR 010150Z AUTO 22037KT 08/07 Q1003=&quot;
+## [5] &quot;0071010231999992015010102204+64350+007800FM-15+000099999V0202201N017519999999N999999999+00801+00801999999ADDMA1100301999999REMMET044METAR ENDR 010220Z AUTO 22034KT 08/08 Q1003=&quot;
+## [6] &quot;0071010231999992015010102504+64350+007800FM-15+000099999V0202201N017519999999N999999999+00801+00701999999ADDMA1100201999999REMMET044METAR ENDR 010250Z AUTO 22034KT 08/07 Q1002=&quot;</code></pre>
+</div>
+<div id="functions-for-test" class="section level1">
+<h1>Functions for test</h1>
+<pre class="r"><code>Ext.Latitude &lt;- function(x){
+  substr(x, start=29, stop=34)
+}</code></pre>
+</div>
+<div id="functions-for-test-2" class="section level1">
+<h1>Functions for test 2</h1>
+<pre class="r"><code>Ext.Longitude &lt;- function(x){
+  substr(x, start=35, stop=41)
+}</code></pre>
+</div>
+<div id="functions-for-test-2-1" class="section level1">
+<h1>Functions for test 2</h1>
+<pre class="r"><code>Ext.Temp &lt;- function(x){
+  substr(x, start=88, stop=92)
+}</code></pre>
+<div id="lapply-function-usage" class="section level2">
+<h2>lapply function usage</h2>
+<pre class="r"><code>LAT &lt;- lapply(data.strings, Ext.Latitude)
+LON &lt;- lapply(data.strings, Ext.Longitude)
+TEMP &lt;- lapply(data.strings, Ext.Temp)</code></pre>
+</div>
+</div>
+<div id="create-a-data.frame-we-can-use-for-data-analysis" class="section level1">
+<h1>Create a data.frame we can use for data analysis</h1>
+<pre class="r"><code>DATA &lt;- data.frame(Latitude=as.numeric(unlist(LAT))/1000,
+                   Longitude=as.numeric(unlist(LON))/1000,
+                   Temperature=as.numeric(unlist(TEMP))/10)</code></pre>
+</div>
+<div id="final-note-code" class="section level1">
+<h1>Final note code</h1>
+<pre class="r"><code>DATA[DATA$Temperature==999.9,&quot;Temperature&quot;] &lt;- NA
+
+str(DATA)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    17291 obs. of  3 variables:
+##  $ Latitude   : num  64.3 64.3 64.3 64.3 64.3 ...
+##  $ Longitude  : num  7.8 7.8 7.8 7.8 7.8 7.8 7.8 7.8 7.8 7.8 ...
+##  $ Temperature: num  8 8 8 8 8 8 8 8 8 8 ...</code></pre>
+<pre class="r"><code>hist(DATA$Temperature, main=&quot;Temperature&quot;)</code></pre>
+<p><img src="/post/2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+</div>
