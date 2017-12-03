@@ -4,7 +4,7 @@ title = "My sample talk"
 abstract = "abstract-A workshop on visualizing your data with ggplot and matplotlib"
 abstract_short = "abstract short-A workshop on visualizing your data"
 event = "event-Hands-on Data Jamboree"
-event_url = "/html/blogdown-workshop-pdxrmeetup.html"
+event_url = "/html/jamboree_heart_ggplot.html"
 location = "Hyd-Oregon Health & Science University, Portland, Oregon"
 
 selected = true
@@ -16,7 +16,7 @@ url_slides = ""
 url_video = ""
 [[url_custom]]
     name = "html"
-    url = "html/blogdown-workshop-pdxrmeetup.html"
+    url = "html/jamboree_heart_ggplot.html"
 [[url_custom]]
     name = "Rmd"
     url = "https://github.com/apreshill/data-vis-jamboree-ggplot/blob/master/jamboree_heart_ggplot.Rmd"
