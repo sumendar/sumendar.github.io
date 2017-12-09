@@ -14,8 +14,10 @@ weight = 60
 
 +++
 
-I teach the following courses in OHSU's <a href = "https://www.ohsu.edu/xd/education/schools/school-of-medicine/departments/basic-science-departments/csee/" target="_blank">Computer Science and Electrical Engineering (CSEE)</a> graduate education program:
+I teach the "Data Science Using R" onlie course at </br> <a href = "http://www.neocursor.com/" target="_blank">NEO CURSOR Society Computer Training Institute</a> </br> <a href = "http://xoomtrainings.com/" target="_blank">Xoom Trainings - Delivering Excellence in Training</a>   
 
-- MATH530/630: Probability and Statistics for Scientists & Engineers
-- CS627: <a href = "http://cslu.ohsu.edu/~kain/CS627/" target="_blank">Data Science Programming</a> (with Professors Alexander Kain & Steven Bedrick)
-- CS631: <a href = "http://cslu.ohsu.edu/~bedricks/courses/cs631/" target="_blank">Principles and Practices of Data Visualization </a> (with Professors Steven Bedrick & Jackie Wirz)
+- B.Com Computer Science: Statistics and Computer Science for Under Graduate Students  
+    - *LN Gupta Degree College*  
+    - *G M Sanghi College of Commerce & Science*
+
+

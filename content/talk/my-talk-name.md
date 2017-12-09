@@ -1,5 +1,5 @@
 +++
-date = "2017-12-03T00:00:00"
+date = "2017-11-03T00:00:00"
 title = "My sample talk"
 abstract = "abstract-A workshop on visualizing your data with ggplot and matplotlib"
 abstract_short = "abstract short-A workshop on visualizing your data"
