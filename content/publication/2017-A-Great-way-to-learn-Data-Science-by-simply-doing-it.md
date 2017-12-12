@@ -2,7 +2,6 @@
 title = "A Great way to learn Data Science by simply doing it"
 date = 2017-11-26T23:12:17+05:30
 draft = false
-
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Sumendar Karupakala"]
 

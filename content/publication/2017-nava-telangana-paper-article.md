@@ -43,6 +43,8 @@ url_project = ""
 url_slides = ""
 url_video = ""
 
+url_custom = [{name = "Source", url = "http://www.navatelangana.com/article/techplus/182450"}]
+
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = ""
