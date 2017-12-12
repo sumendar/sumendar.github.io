@@ -47,7 +47,7 @@ url_custom = [{name = "Source", url = "http://www.navatelangana.com/article/tech
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = ""
+image = "headers/navatelangana-masterhead_400.jpg"
 caption = ""
 
 +++
