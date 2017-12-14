@@ -1,17 +1,144 @@
----
-title: Importing Techniques Used in Spatial Data Analysis
-author: sumendar
-date: '2017-12-03'
-slug: importing-techniques-used-in-spatial-data-analysis
-categories: []
-tags: []
-output: 
-  html_document: 
-    self_contained: no
-    toc: yes
----
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="sumendar" />
+
+<meta name="date" content="2017-12-03" />
+
+<title>Importing Techniques Used in Spatial Data Analysis</title>
+
+<script src="2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/navigation-1.1/tabsets.js"></script>
+<link href="2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Importing Techniques Used in Spatial Data Analysis</h1>
+<h4 class="author"><em>sumendar</em></h4>
+<h4 class="date"><em>2017-12-03</em></h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#importing-data-from-tables-read.table">Importing Data from Tables (read.table)</a></li>
+<li><a href="#downloading-open-data-from-ftp-sites">Downloading Open Data from FTP Sites</a></li>
+<li><a href="#importing-with-read.lines-the-last-resort">Importing with read.lines (The Last Resort)</a></li>
+<li><a href="#functions-for-test">Functions for test</a></li>
+<li><a href="#functions-for-test-2">Functions for test 2</a></li>
+<li><a href="#functions-for-test-2-1">Functions for test 2</a><ul>
+<li><a href="#lapply-function-usage">lapply function usage</a></li>
+</ul></li>
+<li><a href="#create-a-data.frame-we-can-use-for-data-analysis">Create a data.frame we can use for data analysis</a></li>
+<li><a href="#final-note-code">Final note code</a></li>
+</ul>
+</div>
 
 <p><strong>In this post we are going to take a look at various data importing techniques used for spatial data analysis</strong></p>
 <div id="importing-data-from-tables-read.table" class="section level2">
@@ -39,29 +166,29 @@ Data &lt;- read.table(file=URL,
 help(read.table)</code></pre>
 <pre class="r"><code>#Examining the data
 str(Data)</code></pre>
-<pre><code>## &#39;data.frame&#39;:    170 obs. of  22 variables:
-##  $ time           : Factor w/ 170 levels &quot;2017-12-11T06:03:21.170Z&quot;,..: 170 169 168 167 166 165 164 163 162 161 ...
-##  $ latitude       : num  36.3 33.1 64.3 59.6 37.6 ...
-##  $ longitude      : num  -121 -116 -152 -153 -119 ...
-##  $ depth          : num  7.14 10.95 1.4 86.5 5.97 ...
-##  $ mag            : num  1.67 0.88 1.6 2.3 1.62 1.25 2.5 0.46 0.9 2.67 ...
-##  $ magType        : Factor w/ 5 levels &quot;mb&quot;,&quot;mb_lg&quot;,&quot;md&quot;,..: 3 4 4 4 3 4 4 4 3 3 ...
-##  $ nst            : int  9 30 NA NA 26 12 NA 20 13 10 ...
-##  $ gap            : num  164 64 NA NA 127 159 NA 57 195 94 ...
-##  $ dmin           : num  0.0942 0.1248 NA NA 0.0306 ...
-##  $ rms            : num  0.05 0.23 0.26 0.44 0.04 0.12 0.59 0.26 0.03 0.16 ...
-##  $ net            : Factor w/ 10 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 5 2 1 1 5 2 1 2 5 7 ...
-##  $ id             : Factor w/ 170 levels &quot;ak17579412&quot;,&quot;ak17582323&quot;,..: 119 75 20 19 118 74 18 73 117 148 ...
-##  $ updated        : Factor w/ 170 levels &quot;2017-12-11T06:48:02.016Z&quot;,..: 170 167 166 164 165 162 161 159 169 163 ...
-##  $ place          : Factor w/ 144 levels &quot;105km NW of Unalakleet, Alaska&quot;,..: 55 34 137 102 29 78 120 139 144 124 ...
+<pre><code>## &#39;data.frame&#39;:    167 obs. of  22 variables:
+##  $ time           : Factor w/ 167 levels &quot;2017-12-11T07:45:14.980Z&quot;,..: 167 166 165 164 163 162 161 160 159 158 ...
+##  $ latitude       : num  34.5 64.8 59.8 60.1 32.9 ...
+##  $ longitude      : num  -119 -148 -147 -152 -116 ...
+##  $ depth          : num  30.2 4.5 11.4 66.6 12 ...
+##  $ mag            : num  1.37 0.9 2.4 1.8 0.87 1.77 0.66 0.24 1.38 0.53 ...
+##  $ magType        : Factor w/ 5 levels &quot;mb&quot;,&quot;mb_lg&quot;,&quot;md&quot;,..: 4 4 4 4 4 4 4 4 3 4 ...
+##  $ nst            : int  12 NA NA NA 20 70 8 16 23 25 ...
+##  $ gap            : num  160 NA NA NA 92 35 138 117 82 76 ...
+##  $ dmin           : num  0.283 NA NA NA 0.134 ...
+##  $ rms            : num  0.27 0.43 0.75 0.54 0.17 0.22 0.18 0.13 0.04 0.15 ...
+##  $ net            : Factor w/ 10 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 2 1 1 1 2 2 2 2 5 2 ...
+##  $ id             : Factor w/ 167 levels &quot;ak17582323&quot;,&quot;ak17582327&quot;,..: 80 22 21 20 79 78 77 76 121 75 ...
+##  $ updated        : Factor w/ 167 levels &quot;2017-12-11T08:45:50.205Z&quot;,..: 167 165 164 162 161 163 158 156 157 154 ...
+##  $ place          : Factor w/ 139 levels &quot;105km NW of Unalakleet, Alaska&quot;,..: 21 77 101 75 55 126 4 134 98 12 ...
 ##  $ type           : Factor w/ 3 levels &quot;earthquake&quot;,&quot;explosion&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...
-##  $ horizontalError: num  0.76 0.38 NA NA 0.32 0.35 NA 0.39 0.38 0.44 ...
-##  $ depthError     : num  1.04 0.55 0.6 0.4 0.65 ...
-##  $ magError       : num  0.44 0.106 NA NA 0.15 0.248 NA 0.337 0.04 0.48 ...
-##  $ magNst         : int  5 20 NA NA 21 13 NA 14 5 8 ...
-##  $ status         : Factor w/ 2 levels &quot;automatic&quot;,&quot;reviewed&quot;: 1 1 1 1 1 1 1 1 1 2 ...
-##  $ locationSource : Factor w/ 10 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 5 2 1 1 5 2 1 2 5 7 ...
-##  $ magSource      : Factor w/ 10 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 5 2 1 1 5 2 1 2 5 7 ...</code></pre>
+##  $ horizontalError: num  1.93 NA NA NA 0.32 0.19 0.79 0.3 0.23 0.28 ...
+##  $ depthError     : num  1.01 0.8 0.2 1.7 0.97 ...
+##  $ magError       : num  0.319 NA NA NA 0.163 0.229 0.251 0.139 0.07 0.11 ...
+##  $ magNst         : int  27 NA NA NA 11 25 7 7 6 18 ...
+##  $ status         : Factor w/ 2 levels &quot;automatic&quot;,&quot;reviewed&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ locationSource : Factor w/ 10 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 2 1 1 1 2 2 2 2 5 2 ...
+##  $ magSource      : Factor w/ 10 levels &quot;ak&quot;,&quot;ci&quot;,&quot;hv&quot;,..: 2 1 1 1 2 2 2 2 5 2 ...</code></pre>
 </div>
 <div id="downloading-open-data-from-ftp-sites" class="section level2">
 <h2>Downloading Open Data from FTP Sites</h2>
@@ -169,5 +296,36 @@ str(DATA)</code></pre>
 ##  $ Longitude  : num  7.8 7.8 7.8 7.8 7.8 7.8 7.8 7.8 7.8 7.8 ...
 ##  $ Temperature: num  8 8 8 8 8 8 8 8 8 8 ...</code></pre>
 <pre class="r"><code>hist(DATA$Temperature, main=&quot;Temperature&quot;)</code></pre>
-<p><img src="/post/2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p><img src="2017-12-03-importing-techniques-used-in-spatial-data-analysis_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
 </div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
