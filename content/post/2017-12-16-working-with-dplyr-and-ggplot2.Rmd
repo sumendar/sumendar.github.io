@@ -1,0 +1,118 @@
+---
+title: Working with dplyr and ggplot2
+author: ''
+date: '2015-12-10'
+slug: working-with-dplyr-and-ggplot2
+categories:
+  - data manipulations
+  - data visualizations
+tags:
+  - dplyr
+  - ggplot2
+output: 
+  html_document: 
+    highlight: textmate
+    theme: simplex
+    toc: yes
+---
+## dplyr - Data Mainpulation Package
+
+### Intorduction
+Most of the data scientists spend 70 to 80% of their daily time on the activities like data preparation which involves data wrangling or cleaning `dplyr` is one of the most popular package which can help them to solve the issues such as **selecting required columns, adding a new column, filtering  usefull observations, even things like sorting or aggregating**    
+
+`dplyr` has couple of functions like  
+
+`select()`  
+`filter()`  
+`mutate()`  
+`arrange()`   
+`summarize()`  
+
+and 
+**%>% operator**
+
+### load required packages
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+
+### loading and examine the dataset
+```{r cache=TRUE, collapse=TRUE}
+#for illustration purpose take the diamonds dataset from ggplot2 package and attached to this session
+data(diamonds)
+#examin first 6 observations
+head(diamonds)
+#take help from r documentation
+#?diamonds
+#examine the data
+dim(diamonds)
+str(diamonds)
+summary(diamonds)
+```
+### select()
+Select perticular interested columns from the dataset
+```{r}
+# select only the variables carat, color and price
+select(diamonds, carat, color, price)
+```
+
+### filter()
+filter acts like subsetting the data based on certain conditions
+```{r}
+# examine the factors in cut variable
+table(diamonds$cut)
+# subsetting or filtering the diamonds dataset where cut==”Premium”
+filter(diamonds, cut=="Premium")
+```
+### mutate()
+Mutate function is generally used to add variables to our dataset
+```{r}
+diamondsNew<- mutate(diamonds, pricePerCarat = price/carat)
+#examine the new dataset whether new variable is added or not
+head(diamondsNew)
+names(diamondsNew)
+```
+
+### arrange()
+this function is used to sort or ordering the data
+```{r}
+# first we will see the first 6 diamonds price in our dataset
+head(diamonds$depth)
+# then we can use arrange function on top of this vector of first six observationds of depth variable
+head(arrange(diamonds,depth))
+# the above output is basically shows in ascending order
+# you can use desc() function inside arrange to make descending the data
+head(arrange(diamonds,desc(depth)))
+```
+
+### summarize()
+This function is used to get the summary statistics of the data
+**its very powerfull when we use this function with the combination of `groupby`**
+```{r}
+#to get the average of price variable
+summarize(diamonds, avgPrice = mean(price, na.rm = TRUE) )
+#combination of summarize/summarise with group_by
+summarise(group_by(diamonds, cut), mean=mean(price, na.rm = TRUE))
+summarize(group_by(diamonds, cut), mean=mean(price, na.rm = TRUE))
+```
+
+### %>% operator
+The actual power of dplyr package lies in the usage of pipe operator (%>%), its very usefull when ever we required a chain of operations(series of activities) to work on one after another or using one command's result as input for another command   
+```{r}
+#Now we will use those above functions filter select and mutate and combine them into one and get the result by using %>% operator  
+# filter(diamonds, cut=="Premium")
+#select(diamonds, carat, color, price)
+# diamondsNew<- mutate(diamonds, pricePerCarat = price/carat)
+
+
+diamondsPipe <- diamonds %>% filter(cut=="Premium") %>% select(carat, color, price) %>% mutate(pricePerCarat = price/carat)
+head(diamondsPipe)
+```
+
+
+
+
+## ggplot2 - Data Visualization Package
+
