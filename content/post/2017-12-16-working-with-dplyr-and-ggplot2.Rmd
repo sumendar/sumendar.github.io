@@ -18,7 +18,7 @@ output:
 ## dplyr - Data Mainpulation Package
 
 ### Intorduction
-Most of the data scientists spend 70 to 80% of their daily time on the activities like data preparation which involves data wrangling or cleaning `dplyr` is one of the most popular package which can help them to solve the issues such as **selecting required columns, adding a new column, filtering  usefull observations, even things like sorting or aggregating**    
+Most of the data scientists spend 70 to 80% of their time on data preparation for a given project also known as wrangling or cleaning or simply we can say data manipulations, so `dplyr` is one of the most popular package which can help R users to solve on preparing or manipulating the dataset before going for actual analysis or modeling. some of those operations such as **selecting required columns, adding a new column, filtering  required observations, or even some of the tasks like sorting or aggregating**    
 
 `dplyr` has couple of functions like  
 
@@ -32,7 +32,7 @@ and
 **%>% operator**
 
 ### load required packages
-```{r}
+```{r warning=FALSE,message=FALSE}
 library(dplyr)
 library(ggplot2)
 ```
@@ -112,7 +112,14 @@ head(diamondsPipe)
 ```
 
 
-
-
 ## ggplot2 - Data Visualization Package
+R is one of the most powerfull language for visualizations with minimal lines of code `ggplot2` is one of the package which can help the analysts to visualising the data by simple plotting to advanced visualisations
+
+```{r}
+diamonds %>% 
+  filter(cut == "Ideal") %>% 
+  ggplot(aes(x=color,y=price)) + 
+geom_boxplot()     
+     
+```
 
