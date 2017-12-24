@@ -14,7 +14,7 @@ weight = 60
 
 +++
 
-I teach the "Data Science Using R" onlie course at </br> <a href = "http://www.neocursor.com/" target="_blank">NEO CURSOR Society Computer Training Institute</a> </br> <a href = "http://xoomtrainings.com/" target="_blank">Xoom Trainings - Delivering Excellence in Training</a>   
+I Teach "<a href = "https://workflowy.com/s/Fyv2.t0FPOxqXI2" target="_blank">Data Science Using R</a>" Online Course at </br> <a href = "http://www.lucidittraining.com/" target="_blank">LUCID IT Training</a> </br> <a href = "http://www.neocursor.com/" target="_blank">NEO CURSOR Society Computer Training Institute</a> </br> <a href = "http://xoomtrainings.com/" target="_blank">Xoom Trainings - Delivering Excellence in Training</a>   
 
 - B.Com Computer Science: Statistics and Computer Science for Under Graduate Students  
     - *LN Gupta Degree College*  
