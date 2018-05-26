@@ -15,7 +15,7 @@ weight = 1
     "Statistics",
 	"Data Science",
     "Machine learning",
-    "Artificial Intelligence Enthusiast"    
+    "Artificial Intelligence"    
   ]
 
 # List your qualifications (such as academic degrees).
