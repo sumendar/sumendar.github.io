@@ -50,7 +50,7 @@ ipak(packages)
 library(dplyr)
 library(ggplot2)
 ```
-
+![](/post/2017-12-16-working-with-dplyr-and-ggplot2_files/dplyr.png)
 
 ### loading and examine the dataset
 ```{r cache=TRUE, collapse=TRUE}
