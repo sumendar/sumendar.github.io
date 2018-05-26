@@ -31,7 +31,21 @@ Most of the data scientists spend 70 to 80% of their time on data preparation fo
 and 
 **%>% operator**
 
-### load required packages
+## Install required packages
+```{r include=FALSE}
+ipak <- function(pkg){
+    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+    if (length(new.pkg)) 
+        install.packages(new.pkg, repos = "http://cran.us.r-project.org", dependencies = TRUE)
+    sapply(pkg, require, character.only = TRUE)
+}
+
+# usage
+packages <- c("ggplot2", "dplyr")
+ipak(packages)
+```
+
+### load the packages
 ```{r warning=FALSE,message=FALSE}
 library(dplyr)
 library(ggplot2)

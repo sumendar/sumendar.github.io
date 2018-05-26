@@ -10,6 +10,18 @@ tags:
 ---
 
 ##Performing Univariate Analysis
+```{r include=FALSE}
+ipak <- function(pkg){
+    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+    if (length(new.pkg)) 
+        install.packages(new.pkg, repos = "http://cran.us.r-project.org", dependencies = TRUE)
+    sapply(pkg, require, character.only = TRUE)
+}
+
+# usage
+packages <- c("car", "pastecs", "Hmisc")
+ipak(packages)
+```
 
 ```{r}
 # install.packages("car")
@@ -40,7 +52,7 @@ summary(Prestige)
 ```
 
 ```{r, eval=FALSE, include=TRUE}
-install.packages("pastecs")
+#install.packages("pastecs")
 ```
 
 ```{r,eval=FALSE, include=TRUE}

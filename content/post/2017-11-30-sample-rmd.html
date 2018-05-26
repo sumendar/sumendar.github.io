@@ -15,9 +15,10 @@ tags:
 <h2>Performing Univariate Analysis</h2>
 <pre class="r"><code># install.packages(&quot;car&quot;)
 library(car)</code></pre>
-<pre class="r"><code>data(Prestige, package = &quot;car&quot;)
-ls()</code></pre>
-<pre><code>## [1] &quot;Prestige&quot;</code></pre>
+<pre class="r"><code>data(Prestige, package = &quot;car&quot;)</code></pre>
+<pre><code>## Warning in data(Prestige, package = &quot;car&quot;): data set &#39;Prestige&#39; not found</code></pre>
+<pre class="r"><code>ls()</code></pre>
+<pre><code>## [1] &quot;ipak&quot;     &quot;packages&quot;</code></pre>
 <pre class="r"><code>head(Prestige)</code></pre>
 <pre><code>##                     education income women prestige census type
 ## gov.administrators      13.11  12351 11.16     68.8   1113 prof
@@ -62,7 +63,7 @@ ls()</code></pre>
 ##  Mean   :5402   NA&#39;s: 4  
 ##  3rd Qu.:8312            
 ##  Max.   :9517</code></pre>
-<pre class="r"><code>install.packages(&quot;pastecs&quot;)</code></pre>
+<pre class="r"><code>#install.packages(&quot;pastecs&quot;)</code></pre>
 <pre class="r"><code>??pastecs</code></pre>
 <pre class="r"><code>pastecs::stat.desc(Prestige)</code></pre>
 <pre><code>##                 education       income       women     prestige
@@ -97,17 +98,8 @@ ls()</code></pre>
 ## coef.var     4.896527e-01   NA</code></pre>
 <pre class="r"><code>dim(Prestige)</code></pre>
 <pre><code>## [1] 102   6</code></pre>
-<pre class="r"><code>library(Hmisc)</code></pre>
-<pre><code>## Loading required package: lattice</code></pre>
-<pre><code>## Loading required package: survival</code></pre>
-<pre><code>## Loading required package: Formula</code></pre>
-<pre><code>## Loading required package: ggplot2</code></pre>
-<pre><code>## 
-## Attaching package: &#39;Hmisc&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     format.pval, round.POSIXt, trunc.POSIXt, units</code></pre>
-<pre class="r"><code>describe(Prestige)</code></pre>
+<pre class="r"><code>library(Hmisc)
+describe(Prestige)</code></pre>
 <pre><code>## Prestige 
 ## 
 ##  6  Variables      102  Observations
