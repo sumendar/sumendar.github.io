@@ -38,7 +38,7 @@ weight = 1
   
 # About me
 
-I have 4 years of professional experience in software programming, 2 years in VBA macros, automation scripting & processing analysis and 3 years in statistical analysis, data science and machine learning technologies  
+I have 4 years of professional experience in software programming, 2 years in VBA macros, automation script & process analysis and 3 years in statistical analysis, data science and machine learning technologies  
 
 My specialties include but are not limited to: regression analysis, multivariate analysis, time series analysis, spatial temporal data mining, data cleaning, modeling and visualisation.  
 
