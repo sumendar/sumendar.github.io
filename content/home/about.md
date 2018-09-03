@@ -38,9 +38,9 @@ weight = 1
   
 # About me
 
-I have 4 years of professional experience in software programming, 2 years in VBA macros, automation script & process analysis and 3 years in statistical analysis, data science and machine learning technologies  
+I have in-depth experience on quantitative research analysis on generating testable hypotheses, formatting and managing large data sets, conducting descriptive, inferential statistics and evaluating machine learning models using open source tools like R, Python, database query language like SQL and other visualization tools like Tableau.  
 
-My specialties include but are not limited to: regression analysis, multivariate analysis, time series analysis, spatial temporal data mining, data cleaning, modeling and visualisation.  
+My specialties include but are not limited to: regression analysis, multivariate analysis, time series analysis, data cleaning, modeling and visualisation.  
 
 Please connect with me about any of your data science and analytic needs so we can discuss how i can help you and your team.
 
