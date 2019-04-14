@@ -14,8 +14,8 @@ weight = 1
   interests = [
     "Data Science",
 	"Machine learning",
-	"Deep learning",
 	"Big Data Analytics",
+	"Deep learning",
     "Artificial Intelligence"    
   ]
 
