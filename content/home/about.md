@@ -39,7 +39,7 @@ weight = 1
   
 # About me
 
-I have in-depth experience on quantitative research analysis on generating testable hypotheses, formatting and managing large data sets, conducting descriptive, inferential statistics and evaluating machine learning models using open source tools like R, Python, database query language like SQL and other visualization tools like Tableau.  
+I have in-depth experience on quantitative research analysis on generating testable hypotheses, formatting and managing large data sets, conducting descriptive, inferential statistics and evaluating machine learning models using open source tools like R, Python, database query language like MySQL and other visualization tools such as Tableau etc.  
 
 My specialties include but are not limited to: regression analysis, multivariate analysis, time series analysis, data cleaning, modeling and visualisation.  
 
