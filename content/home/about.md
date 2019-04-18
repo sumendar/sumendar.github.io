@@ -39,7 +39,7 @@ weight = 1
   
 # About me
 
-I have in-depth experience on quantitative research analysis on generating testable hypotheses, formatting and managing large data sets, conducting descriptive, inferential statistics and evaluating machine learning models using open source tools like R, Python, database query language like MySQL and other visualization tools such as Tableau etc.  
+I have in-depth experience on quantitative research analysis on generating testable hypotheses, formatting and managing large data sets, building, training and evaluating machine learning models using open source tools like R, Python, database query language like MySQL and other visualization tools such as Tableau etc.  
 
 I have Bachelor’s and master’s degrees with quantitative discipline such as: Mathematics, Statistics, Computer science and computer application  
 
