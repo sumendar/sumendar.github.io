@@ -16,7 +16,8 @@ weight = 1
 	"Machine learning",
 	"Big Data Analytics",
 	"Deep learning",
-    "Artificial Intelligence"    
+    "Artificial Intelligence",
+    "Computer Vision"
   ]
 
 # List your qualifications (such as academic degrees).
