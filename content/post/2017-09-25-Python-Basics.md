@@ -1,21 +1,21 @@
 ---
 title: Python-Basics
 author: sumendar
-date: '2019-11-25'
+date: '2017-09-25'
 slug: Python-Basics
 categories: ['python', 'blogdown']
 tags: ['basics']
 subtitle: 'subtitle'
 ---
 
-In this blog post we will be discussing about python basics
-
+In this blog post we will be going to discuss about python basics
+  
 Python is multi-purpose programming language developed by Guido van Rossum.
-
-The language has  easy-to-use syntax, making it the perfect language for someone trying to learn any programming for the first time.
-
-This is a comprehensive guide on Basics, fundamentals concepts which which we are keep in mind.
-
+  
+The language has  easy-to-use syntax, it's a perfect language for someone trying to learn any programming for the first time.
+  
+This is a comprehensive guide on Basic fundamentals concepts which we are keep in mind before writing code.
+  
 <h1>Table of Contents<span class="tocSkip"></span></h1>
 <div class="toc"><ul class="toc-item"><li><span><a href="#Basics" data-toc-modified-id="Basics-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Basics</a></span><ul class="toc-item"><li><span><a href="#print()-function:" data-toc-modified-id="print()-function:-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span><code>print()</code> function:</a></span></li><li><span><a href="#comment-with-#-symbol:" data-toc-modified-id="comment-with-#-symbol:-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>comment with <code>#</code> symbol:</a></span></li></ul></li><li><span><a href="#Operators" data-toc-modified-id="Operators-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Operators</a></span></li><li><span><a href="#Primitive-Data-Types" data-toc-modified-id="Primitive-Data-Types-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Primitive Data Types</a></span><ul class="toc-item"><li><span><a href="#Booleans" data-toc-modified-id="Booleans-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Booleans</a></span></li><li><span><a href="#Numbers" data-toc-modified-id="Numbers-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Numbers</a></span><ul class="toc-item"><li><span><a href="#integer" data-toc-modified-id="integer-3.2.1"><span class="toc-item-num">3.2.1&nbsp;&nbsp;</span>integer</a></span></li><li><span><a href="#float" data-toc-modified-id="float-3.2.2"><span class="toc-item-num">3.2.2&nbsp;&nbsp;</span>float</a></span></li><li><span><a href="#complex" data-toc-modified-id="complex-3.2.3"><span class="toc-item-num">3.2.3&nbsp;&nbsp;</span>complex</a></span></li></ul></li><li><span><a href="#Strings" data-toc-modified-id="Strings-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>Strings</a></span></li><li><span><a href="#Date-and-Time" data-toc-modified-id="Date-and-Time-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>Date and Time</a></span></li></ul></li><li><span><a href="#Data-Structures" data-toc-modified-id="Data-Structures-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Data Structures</a></span><ul class="toc-item"><li><span><a href="#Composite-Data-Types" data-toc-modified-id="Composite-Data-Types-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>Composite Data Types</a></span><ul class="toc-item"><li><span><a href="#Lists" data-toc-modified-id="Lists-4.1.1"><span class="toc-item-num">4.1.1&nbsp;&nbsp;</span>Lists</a></span></li><li><span><a href="#Tuples" data-toc-modified-id="Tuples-4.1.2"><span class="toc-item-num">4.1.2&nbsp;&nbsp;</span>Tuples</a></span></li></ul></li><li><span><a href="#Collection-data-types" data-toc-modified-id="Collection-data-types-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>Collection data types</a></span><ul class="toc-item"><li><span><a href="#Dictionaries" data-toc-modified-id="Dictionaries-4.2.1"><span class="toc-item-num">4.2.1&nbsp;&nbsp;</span>Dictionaries</a></span></li><li><span><a href="#Sets" data-toc-modified-id="Sets-4.2.2"><span class="toc-item-num">4.2.2&nbsp;&nbsp;</span>Sets</a></span></li></ul></li></ul></li><li><span><a href="#Data-types-Tree" data-toc-modified-id="Data-types-Tree-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Data types Tree</a></span></li><li><span><a href="#Queues(FIFO)-and-Stacks(LIFO)" data-toc-modified-id="Queues(FIFO)-and-Stacks(LIFO)-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Queues(FIFO) and Stacks(LIFO)</a></span></li><li><span><a href="#Type-conversion" data-toc-modified-id="Type-conversion-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Type conversion</a></span><ul class="toc-item"><li><span><a href="#Implicit-type-conversion" data-toc-modified-id="Implicit-type-conversion-7.1"><span class="toc-item-num">7.1&nbsp;&nbsp;</span>Implicit type conversion</a></span></li><li><span><a href="#Explicit-type-conversion" data-toc-modified-id="Explicit-type-conversion-7.2"><span class="toc-item-num">7.2&nbsp;&nbsp;</span>Explicit type conversion</a></span></li></ul></li></ul></div>
 
