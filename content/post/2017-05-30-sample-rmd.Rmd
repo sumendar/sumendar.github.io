@@ -1,7 +1,7 @@
 ---
 title: sample rmd
 author: ''
-date: '2017-11-30'
+date: '2017-05-30'
 slug: sample-rmd
 categories:
   - R
