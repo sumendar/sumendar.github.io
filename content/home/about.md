@@ -40,11 +40,11 @@ weight = 1
   
 # About me
 
-I have in-depth experience on quantitative analysis by formatting and managing data sets, building, training and evaluating machine learning models using various tools like R, Python, database query language like MySQL and other visualization tools such as Tableau etc.  
+I have in-depth experience on the quantitative field by formatting and managing data sets, building, training and evaluating machine learning models using various tools like R, Python, database query language like MySQL and other visualization tools such as Tableau etc.  
 
 I have Bachelor’s and master’s degrees with quantitative discipline in: Mathematics, Statistics, Computer science and computer application  
 
-My specialties include but are not limited to: regression analysis, multivariate analysis, time series analysis, data cleaning, modeling and visualisation.  
+My specialties include but are not limited to: data cleaning, modeling and data visualisation.  
 
 Please connect with me about any of your data science and analytic needs so we can discuss how i can help you and your team.
 
