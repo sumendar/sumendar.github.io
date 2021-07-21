@@ -46,6 +46,6 @@ I have Bachelor’s and master’s degrees with quantitative discipline in: Math
 
 My specialties include but are not limited to: data cleaning, modeling and data visualisation.  
 
-Please connect with me about any of your data science and analytic needs so we can discuss how i can help you and your team.
+Please connect with me any of your data science and analytic needs so we can discuss how i can help you and your team.
 
 
