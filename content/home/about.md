@@ -40,7 +40,7 @@ weight = 1
   
 # About me
 
-I have in-depth experience on the quantitative field by formatting and managing data sets, building, training and evaluating machine learning models using various tools like R, Python, database query language like MySQL and other visualization tools such as Tableau etc.  
+I have in-depth experience on the quantitative field by formatting, managing and analysing the data sets, building, training and evaluating machine learning models using various tools like R, Python, database query language like MySQL and other visualization tools such as Tableau etc.  
 
 I have Bachelor’s and master’s degrees with quantitative discipline in: Mathematics, Statistics, Computer science and computer application  
 
