@@ -11,13 +11,15 @@ weight = 1
 
 # List your academic interests.
 [interests]
-  interests = [
-    "Data Science",
+interests = [
+	"Data Science",
 	"Machine Learning",
+	"Business intelligence",
 	"Big Data Analytics",
+	"NLP",
 	"Deep Learning",
-    "Artificial Intelligence",
-    "Computer Vision"
+	"Computer Vision",
+	"Artificial Intelligence"
   ]
 
 # List your qualifications (such as academic degrees).
