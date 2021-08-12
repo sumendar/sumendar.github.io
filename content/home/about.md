@@ -15,9 +15,9 @@ interests = [
 	"Data Science",
 	"Machine Learning",
 	"Business intelligence",
-	"Big Data Analytics",
-	"NLP",
-	"Deep Learning, Computer Vision, Artificial Intelligence"
+	"Big Data Analytics, NLP",
+	"Deep Learning, Computer Vision",
+	"Artificial Intelligence"
   ]
 
 # List your qualifications (such as academic degrees).
