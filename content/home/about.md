@@ -44,7 +44,7 @@ I have in-depth experience on the quantitative field by formatting, managing and
 
 I have Bachelor’s and master’s degrees with quantitative discipline in: Mathematics, Statistics, Computer science and computer application  
 
-My specialties include but are not limited to: data cleaning, data analytics, data visualisation and machine learning. 
+My specialties include but are not limited to: data cleansing, data manipulations, data analytics, data visualisation and machine learning. 
 
 Please connect with me any of your data science and analytic needs so we can discuss how i can help you and your team.
 
