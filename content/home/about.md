@@ -14,10 +14,10 @@ weight = 1
 interests = [
 	"Data Science",
 	"Machine Learning",
-	"Big Data Analytics, NLP",
 	"Business Intelligence/Analytics",
-	"Deep Learning, Computer Vision",
-	"Artificial Intelligence"
+	"Big Data Analytics",	
+	"Deep Learning, NLP",
+	"Computer Vision, Artificial Intelligence"
   ]
 
 # List your qualifications (such as academic degrees).
