@@ -14,7 +14,7 @@ weight = 60
 
 +++
 
-Iam currently teaching "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithR-apr18" target="_blank">Data Science Using R</a>" and "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithPython-june18" target="_blank">Data Science Using Python</a>" Online Course at </br> <a href = "http://www.lucidittraining.com/" target="_blank">LUCID IT Training</a> </br> <a href = "http://www.neocursor.com/" target="_blank">NEO CURSOR Society Computer Training Institute</a> </br> <a href = "http://xoomtrainings.com/" target="_blank">Xoom Trainings - Delivering Excellence in Training</a>   
+Iam teaching now "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithR-apr18" target="_blank">Data Science Using R</a>" and "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithPython-june18" target="_blank">Data Science Using Python</a>" Online Course at </br> <a href = "http://www.lucidittraining.com/" target="_blank">LUCID IT Training</a> </br> <a href = "http://www.neocursor.com/" target="_blank">NEO CURSOR Society Computer Training Institute</a> </br> <a href = "http://xoomtrainings.com/" target="_blank">Xoom Trainings - Delivering Excellence in Training</a>   
 Formerly associated as a part time faculty for B.Com (mathematics, statistics and computer science) under graduate students of:  
   - *LN Gupta Degree College*  
   - *G M Sanghi College of Commerce & Science*
