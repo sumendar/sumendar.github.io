@@ -23,7 +23,7 @@ interests = [
 # List your qualifications (such as academic degrees).
 [[education.courses]]
   course = "Master of Computer Application(MCA)"
-  institution = "RG Kedia College(Osmania University)"
+  institution = "RG Kedia College(Osmania University, Hyderabad)"
 #  year = 2008
 
 [[education.courses]]
