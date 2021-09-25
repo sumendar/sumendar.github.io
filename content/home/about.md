@@ -28,7 +28,7 @@ interests = [
 
 [[education.courses]]
   course = "BSc (Mathematics, Statistics & Computer Science)"
-  institution = "Aurora Degree College (Kakatiya University, Hanamkonda)"
+  institution = "Aurora Degree College (Kakatiya University, Warangal)"
 #  year = 2005
 
 #[[education.courses]]
