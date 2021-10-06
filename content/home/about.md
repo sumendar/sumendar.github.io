@@ -17,7 +17,7 @@ interests = [
 	"Big Data Analytics & Engineering",
 	"Natural Language Processing,
 	"Deep Learning & Computer Vision",
-	"Artificial Intelligence]
+	"Artificial Intelligence"]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
