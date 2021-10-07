@@ -23,7 +23,7 @@ interests = [
 # List your qualifications (such as academic degrees).
 [[education.courses]]
   course = "Currently Pursuing Post Graduation in Data Science"
-  institution = "IIIT (Bangalore)"
+  institution = "International Institute of Information Technology (IIIT Bangalore)"
 #  year = 2021
 
 [[education.courses]]
