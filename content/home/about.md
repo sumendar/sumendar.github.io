@@ -22,6 +22,11 @@ interests = [
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
+  course = Currently Pursuing Post Graduation in Data Science "
+  institution = "IIIT (Bangalore)"
+#  year = 2021
+
+[[education.courses]]
   course = "Master of Computer Application(MCA)"
   institution = "RG Kedia College (Osmania University, Hyderabad)"
 #  year = 2008
