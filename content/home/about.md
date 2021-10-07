@@ -42,7 +42,7 @@ interests = [
 
 I have in-depth experience on the quantitative field by formatting, managing and analysing the data sets. Building, training and evaluating machine learning models using various scripting tools like Python, R, database query language SQL and other data visualization tool such as Tableau etc.  
 
-I have Bachelor’s and master’s degrees with quantitative discipline in: Mathematics, Statistics, Computer science and computer application  
+I had bachelor’s and master’s degrees with in the STEM discipline associated to: Mathematics, Statistics, Computer science and computer application's curriculum 
 
 My specialties include but are not limited to: data cleansing, data manipulations, data analytics, data visualisation and machine learning. 
 
