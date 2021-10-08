@@ -22,7 +22,7 @@ interests = [
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Currently Pursuing Post Graduation in Data Science"
+  course = "Pursuing Post Graduation in Data Science"
   institution = "International Institute of Information Technology (IIIT Bangalore)"
 #  year = 2021
 
@@ -49,7 +49,7 @@ I have in-depth experience on the quantitative field by formatting, managing, ex
 
 I am currently pursuing PG program in Data Science and i had bachelor’s and master’s degrees with STEM related discipline associated with Mathematics, Statistics, Computer science and computer application based curriculum 
 
-My specialties include but are not limited to: data cleansing, data manipulation, data analytics, data visualisations and machine learning. 
+My specialties include but are not limited to: data cleansing, data manipulation, data analytsis, data visualisations and machine learning. 
 
 Please connect with me any of your data science and analytic needs so we can discuss how i can help you and your team.
 
