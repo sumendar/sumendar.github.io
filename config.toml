@@ -170,6 +170,11 @@ defaultContentLanguageInSubdir = false
     #link = "https://www.linkedin.com/in/sumendar/"
     link = "//in.linkedin.com/in/sumendar"
 
+  [[params.social]]
+    icon = "telegram"
+    icon_pack = "fa"
+    link = "//telegram.me/sumendar"
+
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
 #     desired widget in your `content/home/` folder.
