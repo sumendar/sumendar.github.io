@@ -143,7 +143,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "telegram"
     icon_pack = "fa"
-    link = "//t.me/Sumendar"
+    link = "//telegram.me/Sumendar"
 
   [[params.social]]
     icon = "twitter"
