@@ -61,11 +61,23 @@ summary(Prestige)
 
 ```{r}
 pastecs::stat.desc(Prestige)
+```
+
+
+```{r}
 dim(Prestige)
 ```
 
 ```{r}
 library(Hmisc)
+```
+
+
+```{r}
 describe(Prestige)
+```
+
+```{r}
+print(barplot(table(Prestige$type)))
 ```
 
