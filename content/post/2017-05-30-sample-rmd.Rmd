@@ -82,3 +82,8 @@ print(barplot(table(Prestige$type)))
 print("from local")
 ```
 
+
+```{r}
+print("from local")
+```
+
