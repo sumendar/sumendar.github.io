@@ -1,12 +1,10 @@
 ---
-title: sample rmd
+title: "sample rmd"
 author: ''
 date: '2017-05-30'
 slug: sample-rmd
-categories:
-  - R
-tags:
-  - blogdown
+categories: R
+tags: blogdown
 ---
 
 ##Performing Univariate Analysis
