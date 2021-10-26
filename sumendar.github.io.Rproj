@@ -13,4 +13,4 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Website
-WebsitePath: D:/Projects/sumendar.github.io
+WebsitePath: C:\Users\Administrator\Documents\GitHub\sumendar.github.io

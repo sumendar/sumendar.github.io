@@ -14,5 +14,5 @@
   HUGO_VERSION = "0.88.1"
 
 [context.next.environment]
-  HUGO_BASEURL = "http://www.sumendar.com/"
+  HUGO_BASEURL = "https://www.sumendar.com/"
   HUGO_ENABLEGITINFO = "true"
