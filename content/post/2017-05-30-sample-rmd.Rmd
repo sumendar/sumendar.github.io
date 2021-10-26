@@ -78,4 +78,7 @@ describe(Prestige)
 ```{r}
 print(barplot(table(Prestige$type)))
 ```
+```{r}
+print("from local")
+```
 
