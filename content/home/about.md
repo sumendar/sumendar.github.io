@@ -45,7 +45,7 @@ interests = [
   
 # About me
 
-I have in-depth experience on the quantitative field by interpreting, managing, exploring and analysing the data. Build, train and evaluate machine learning models using programming languages such as Python, R, Excel, SQL and data visualization tools like Tableau, Power BI etc. 
+I have in-depth experience on the quantitative field by interpreting, managing, exploring and analysing the data. Build, train and evaluate machine learning models using programming languages such as Python, R, Excel, SQL & data visualization tools like Tableau, Power BI etc. 
 
 I am currently pursuing PG program in Data Science, i had bachelor’s and master’s degrees relevant to STEM disciplines closely associated with mathematics, statistics, computer application and computer science. 
 
