@@ -1,6 +1,6 @@
 +++
 title = "Big Data: Recent History, Its Evolution And Challenges"
-date= 2017-11-18T23:12:17+05:30
+date= 2015-11-18T23:12:17+05:30
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Sumendar Karupakala"]
 

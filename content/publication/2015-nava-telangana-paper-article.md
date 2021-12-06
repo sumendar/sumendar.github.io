@@ -1,6 +1,6 @@
 +++
 title = "Data Science Article Published by Nava Telangana"
-date= 2017-11-20T23:12:17+05:30
+date= 2015-11-20T23:12:17+05:30
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Sumendar Karupakala"]
 
