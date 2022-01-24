@@ -49,7 +49,7 @@ I have in-depth experience on the quantitative field by gathering, organizing, a
 
 I am currently pursuing post graduation in data science, i had bachelor’s and master’s degrees associated with STEM discipline mainly aligned with mathematics, statistics, computer application and computer science. 
 
-My specialties includes but are not limited to: Data pre-processing, data cleansing, data manipulation, data exploration, data analysis, visualisations and machine learning. 
+My specialties includes but are not limited to: data pre-processing, data cleansing, data manipulation, data exploration, data analysis, visualisations and machine learning. 
 
 Please connect with me any of your data science and analytic needs so we can discuss how i can help you and your team.
 
