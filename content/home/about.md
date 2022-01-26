@@ -20,6 +20,17 @@ interests = [
 	"Artificial Intelligence"
   ]
 
+# List your academic interests.
+[interests]
+interests = [
+	"Data Science, Machine Learning",
+	"Business Intelligence & Analytics",
+	"Natural Language Processing",
+	"Big Data & Data Engineering",
+	"Deep Learning, Computer Vision",
+	"Artificial Intelligence"
+  ]
+
 # List your qualifications (such as academic degrees).
 [[education.courses]]
   course = "Pursuing Post Graduation in Data Science"
