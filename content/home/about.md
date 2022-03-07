@@ -47,7 +47,7 @@ interests = [
 
 I have in-depth experience on the quantitative field by gathering, organizing, aggregating, transformaing, analysing and exploring the data. Build, train and evaluate machine learning models using programming languages such as Python, R, Excel, SQL and data visualization tools like Tableau, Power BI in addition with basic fundamental skills on cloud and big data analytics applications...etc  
 
-I am currently pursuing post graduation in data science, i had bachelor’s and master’s degrees associated with STEM discipline mainly aligned with mathematics, statistics, computer application and computer science. 
+I am currently pursuing post graduation in data science, i had bachelor’s and master’s degrees associated with STEM related discipline and mainly aligned with mathematics, statistics, computer application and computer science. 
 
 My specialties includes but are not limited to: data pre-processing, data cleansing, data manipulation, data exploration, data analysis, visualisations and machine learning. 
 
