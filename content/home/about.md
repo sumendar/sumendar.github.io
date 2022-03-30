@@ -13,7 +13,7 @@ weight = 1
 [interests]
 interests = [
 	"Data Science, Machine Learning",
-	"Business Intelligence and Analytics",
+	"Business Intelligence, Data Analytics",
 	"Natural Language Processing (NLP)",
 	"Big Data & Data Engineering",
 	"Deep Learning, Computer Vision",
