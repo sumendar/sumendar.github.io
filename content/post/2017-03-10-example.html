@@ -1,0 +1,146 @@
+---
+title: An Example R Markdown Document
+subtitle:  (A Subtitle Would Go Here if This Were a Class)
+author: Steven V. Miller
+date: '2017-03-10'
+fontsize: 10pt
+output:
+  beamer_presentation:
+#    keep_tex: true
+#    toc: true
+    slide_level: 3
+    includes:
+      in_header: ~/Dropbox/teaching/clemson-beamer-header-simple.tex
+      after_body: ~/Dropbox/teaching/table-of-contents.tex
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="pop-songs-and-political-science" class="section level1">
+<h1>Pop Songs and Political Science</h1>
+<div id="morning-train" class="section level2">
+<h2>Morning Train</h2>
+<div id="sheena-easton-and-game-theory" class="section level3">
+<h3>Sheena Easton and Game Theory</h3>
+<p>Sheena Easton describes the following scenario for her baby:</p>
+<ol style="list-style-type: decimal">
+<li>Takes the morning train</li>
+<li>Works from nine ’til five</li>
+<li>Takes another train home again</li>
+<li>Finds Sheena Easton waiting for him</li>
+</ol>
+<p>Sheena Easton and her baby are playing a .</p>
+<ul>
+<li>Akin to Holmes-Moriarty game (see: von Neumann and Morgenstern)</li>
+<li>Solution: </li>
+</ul>
+</div>
+</div>
+<div id="never-gonna-give-you-up" class="section level2">
+<h2>Never Gonna Give You Up</h2>
+<div id="rick-astleys-re-election-platform" class="section level3">
+<h3>Rick Astley’s Re-election Platform</h3>
+<p>Rick Astley’s campaign promises:</p>
+<ul>
+<li>Never gonna give you up</li>
+<li>Never gonna let you down</li>
+<li>Never gonna run around and desert you</li>
+<li>Never gonna make you cry</li>
+<li>Never gonna say goodbye</li>
+<li>Never gonna tell a lie and hurt you.</li>
+</ul>
+<p>Whereas these pledges conform to the preferences of the , we expect Congressman Astley to secure re-election.</p>
+</div>
+</div>
+<div id="caribbean-queen" class="section level2">
+<h2>Caribbean Queen</h2>
+<div id="caribbean-queen-and-operation-urgent-fury" class="section level3">
+<h3>Caribbean Queen and Operation Urgent Fury</h3>
+<p>In 1984, Billy Ocean released ``Caribbean Queen’’.</p>
+<ul>
+<li>Emphasized sharing the same dream</li>
+<li>Hearts beating as one</li>
+</ul>
+<p>``Caribbean Queen’’ is about the poor execution of Operation Urgent Fury.</p>
+<ul>
+<li>Echoed JCS chairman David Jones’ frustrations with military establishment.</li>
+</ul>
+<p>Billy Ocean is advancing calls for what became the Goldwater-Nichols Act.</p>
+<ul>
+<li>Wanted to take advantage of , resolve in U.S. military.</li>
+</ul>
+</div>
+</div>
+<div id="good-day" class="section level2">
+<h2>Good Day</h2>
+<div id="the-good-day-hypothesis" class="section level3">
+<h3>The Good Day Hypothesis</h3>
+<p>We know the following about Ice Cube’s day.</p>
+<ol style="list-style-type: decimal">
+<li>The Lakers beat the Supersonics.</li>
+<li>No helicopter looked for a murder.</li>
+<li>Consumed Fatburger at 2 a.m.</li>
+<li>Goodyear blimp: “Ice Cube’s a pimp.”</li>
+</ol>
+<p>This leads to two different hypotheses:</p>
+<ul>
+<li><span class="math inline">\(H_0\)</span>: Ice Cube’s day is statistically indistinguishable from a typical day.</li>
+<li><span class="math inline">\(H_1\)</span>: Ice Cube is having a good (i.e. greater than average) day.</li>
+</ul>
+<p>These hypotheses are tested using archival data of Ice Cube’s life.</p>
+</div>
+</div>
+</div>
+<div id="rendering-this-document" class="section level1">
+<h1>Rendering This Document</h1>
+<div id="the-problem-of-rendering-in-markdown" class="section level3">
+<h3>The Problem of Rendering in Markdown</h3>
+<p>One big disadvantage to Markdown: compiling.</p>
+<p>Here’s what it would look like from Terminal </p>
+<div class="figure">
+<img src="markdown-call.png" alt="" />
+<p class="caption">Markdown Call</p>
+</div>
+<p>Nobody got time for that.</p>
+</div>
+<div id="one-alternative-rstudio" class="section level3">
+<h3>One Alternative: Rstudio</h3>
+
+</div>
+<div id="another-alternative-rscript" class="section level3">
+<h3>Another Alternative: Rscript</h3>
+<p>Another option: noninteractive </p>
+<ul>
+<li>I prefer this option since I tend to not like GUIs.</li>
+<li>Assumes you’re on a Linux/Mac system.</li>
+</ul>
+<p>Save this to a .R script (call it whatever you like)</p>
+<ul>
+<li>Note that the “s” in “utils” package is cut off in verbatim environment below.</li>
+</ul>
+<pre><code>#! /usr/bin/Rscript --vanilla --default-packages=base,stats,utils
+library(knitr)
+library(rmarkdown)
+file &lt;- list.files(pattern=&#39;.Rmd&#39;)
+rmarkdown::render(file)</code></pre>
+<p>Make it executable. Double click or run in Terminal.</p>
+<ul>
+<li>Keep a copy in each directory, but keep only one .Rmd per directory.</li>
+</ul>
+</div>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<div id="conclusion-1" class="section level3">
+<h3>Conclusion</h3>
+<p>Beamer markup is messy. Markdown is much more elegant.</p>
+<ul>
+<li>Incorporating R with Markdown makes Markdown that much better.</li>
+<li>Rendering Markdown <span class="math inline">\(\rightarrow\)</span> Beamer requires minimal Rscript example.
+<ul>
+<li>I provide such a script to accompany this presentation.</li>
+</ul></li>
+</ul>
+</div>
+</div>

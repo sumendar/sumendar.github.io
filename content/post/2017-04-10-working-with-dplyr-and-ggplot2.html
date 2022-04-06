@@ -1,7 +1,7 @@
 ---
 title: Working with dplyr and ggplot2
 author: ''
-date: '2015-12-10'
+date: '2017-04-10'
 slug: working-with-dplyr-and-ggplot2
 categories:
   - data manipulations
@@ -16,20 +16,22 @@ output:
     toc: yes
 ---
 
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <div id="dplyr---data-mainpulation-package" class="section level2">
 <h2>dplyr - Data Mainpulation Package</h2>
 <div id="intorduction" class="section level3">
 <h3>Intorduction</h3>
-<p>Most of the data scientists spend 80% of their time on data preparation for a given project also known as wrangling or cleaning or simply we can say data manipulations, so <code>dplyr</code> is one of the most popular package which can help R users to solve on preparing or manipulating the dataset before going for actual analysis or modeling. some of those operations such as <strong>selecting required columns, adding a new column, filtering required observations, or even some of the tasks like sorting or aggregating</strong></p>
+<p>Most of the data scientists spend 70 to 80% of their time on data preparation for a given project also known as wrangling or cleaning or simply we can say data manipulations, so <code>dplyr</code> is one of the most popular package which can help R users to solve on preparing or manipulating the dataset before going for actual analysis or modeling. some of those operations such as <strong>selecting required columns, adding a new column, filtering required observations, or even some of the tasks like sorting or aggregating</strong></p>
 <p><code>dplyr</code> has couple of functions like</p>
 <p><code>select()</code><br />
 <code>filter()</code><br />
 <code>mutate()</code><br />
 <code>arrange()</code><br />
 <code>summarize()</code></p>
-<p>and <strong>%&gt;% operator</strong></p>
+<p>and
+<strong>%&gt;% operator</strong></p>
 </div>
 </div>
 <div id="install-required-packages" class="section level2">
@@ -38,6 +40,7 @@ output:
 <h3>load the packages</h3>
 <pre class="r"><code>library(dplyr)
 library(ggplot2)</code></pre>
+<p><img src="/post/2017-12-16-working-with-dplyr-and-ggplot2_files/dplyr.png" /></p>
 </div>
 <div id="loading-and-examine-the-dataset" class="section level3">
 <h3>loading and examine the dataset</h3>
@@ -48,53 +51,53 @@ head(diamonds)
 ## # A tibble: 6 x 10
 ##   carat cut       color clarity depth table price     x     y     z
 ##   &lt;dbl&gt; &lt;ord&gt;     &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1 0.23  Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
-## 2 0.21  Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
-## 3 0.23  Good      E     VS1      56.9    65   327  4.05  4.07  2.31
-## 4 0.290 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
-## 5 0.31  Good      J     SI2      63.3    58   335  4.34  4.35  2.75
-## 6 0.24  Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+## 1  0.23 Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+## 2  0.21 Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+## 3  0.23 Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+## 4  0.29 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+## 5  0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+## 6  0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
 #take help from r documentation
 #?diamonds
 #examine the data
 dim(diamonds)
 ## [1] 53940    10
 str(diamonds)
-## Classes &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;:    53940 obs. of  10 variables:
-##  $ carat  : num  0.23 0.21 0.23 0.29 0.31 0.24 0.24 0.26 0.22 0.23 ...
+## tibble [53,940 x 10] (S3: tbl_df/tbl/data.frame)
+##  $ carat  : num [1:53940] 0.23 0.21 0.23 0.29 0.31 0.24 0.24 0.26 0.22 0.23 ...
 ##  $ cut    : Ord.factor w/ 5 levels &quot;Fair&quot;&lt;&quot;Good&quot;&lt;..: 5 4 2 4 2 3 3 3 1 3 ...
 ##  $ color  : Ord.factor w/ 7 levels &quot;D&quot;&lt;&quot;E&quot;&lt;&quot;F&quot;&lt;&quot;G&quot;&lt;..: 2 2 2 6 7 7 6 5 2 5 ...
 ##  $ clarity: Ord.factor w/ 8 levels &quot;I1&quot;&lt;&quot;SI2&quot;&lt;&quot;SI1&quot;&lt;..: 2 3 5 4 2 6 7 3 4 5 ...
-##  $ depth  : num  61.5 59.8 56.9 62.4 63.3 62.8 62.3 61.9 65.1 59.4 ...
-##  $ table  : num  55 61 65 58 58 57 57 55 61 61 ...
-##  $ price  : int  326 326 327 334 335 336 336 337 337 338 ...
-##  $ x      : num  3.95 3.89 4.05 4.2 4.34 3.94 3.95 4.07 3.87 4 ...
-##  $ y      : num  3.98 3.84 4.07 4.23 4.35 3.96 3.98 4.11 3.78 4.05 ...
-##  $ z      : num  2.43 2.31 2.31 2.63 2.75 2.48 2.47 2.53 2.49 2.39 ...
+##  $ depth  : num [1:53940] 61.5 59.8 56.9 62.4 63.3 62.8 62.3 61.9 65.1 59.4 ...
+##  $ table  : num [1:53940] 55 61 65 58 58 57 57 55 61 61 ...
+##  $ price  : int [1:53940] 326 326 327 334 335 336 336 337 337 338 ...
+##  $ x      : num [1:53940] 3.95 3.89 4.05 4.2 4.34 3.94 3.95 4.07 3.87 4 ...
+##  $ y      : num [1:53940] 3.98 3.84 4.07 4.23 4.35 3.96 3.98 4.11 3.78 4.05 ...
+##  $ z      : num [1:53940] 2.43 2.31 2.31 2.63 2.75 2.48 2.47 2.53 2.49 2.39 ...
 summary(diamonds)
-##      carat               cut        color        clarity     
-##  Min.   :0.2000   Fair     : 1610   D: 6775   SI1    :13065  
-##  1st Qu.:0.4000   Good     : 4906   E: 9797   VS2    :12258  
-##  Median :0.7000   Very Good:12082   F: 9542   SI2    : 9194  
-##  Mean   :0.7979   Premium  :13791   G:11292   VS1    : 8171  
-##  3rd Qu.:1.0400   Ideal    :21551   H: 8304   VVS2   : 5066  
-##  Max.   :5.0100                     I: 5422   VVS1   : 3655  
-##                                     J: 2808   (Other): 2531  
-##      depth           table           price             x         
-##  Min.   :43.00   Min.   :43.00   Min.   :  326   Min.   : 0.000  
-##  1st Qu.:61.00   1st Qu.:56.00   1st Qu.:  950   1st Qu.: 4.710  
-##  Median :61.80   Median :57.00   Median : 2401   Median : 5.700  
-##  Mean   :61.75   Mean   :57.46   Mean   : 3933   Mean   : 5.731  
-##  3rd Qu.:62.50   3rd Qu.:59.00   3rd Qu.: 5324   3rd Qu.: 6.540  
-##  Max.   :79.00   Max.   :95.00   Max.   :18823   Max.   :10.740  
-##                                                                  
-##        y                z         
-##  Min.   : 0.000   Min.   : 0.000  
-##  1st Qu.: 4.720   1st Qu.: 2.910  
-##  Median : 5.710   Median : 3.530  
-##  Mean   : 5.735   Mean   : 3.539  
-##  3rd Qu.: 6.540   3rd Qu.: 4.040  
-##  Max.   :58.900   Max.   :31.800  
+##      carat               cut        color        clarity          depth      
+##  Min.   :0.2000   Fair     : 1610   D: 6775   SI1    :13065   Min.   :43.00  
+##  1st Qu.:0.4000   Good     : 4906   E: 9797   VS2    :12258   1st Qu.:61.00  
+##  Median :0.7000   Very Good:12082   F: 9542   SI2    : 9194   Median :61.80  
+##  Mean   :0.7979   Premium  :13791   G:11292   VS1    : 8171   Mean   :61.75  
+##  3rd Qu.:1.0400   Ideal    :21551   H: 8304   VVS2   : 5066   3rd Qu.:62.50  
+##  Max.   :5.0100                     I: 5422   VVS1   : 3655   Max.   :79.00  
+##                                     J: 2808   (Other): 2531                  
+##      table           price             x                y         
+##  Min.   :43.00   Min.   :  326   Min.   : 0.000   Min.   : 0.000  
+##  1st Qu.:56.00   1st Qu.:  950   1st Qu.: 4.710   1st Qu.: 4.720  
+##  Median :57.00   Median : 2401   Median : 5.700   Median : 5.710  
+##  Mean   :57.46   Mean   : 3933   Mean   : 5.731   Mean   : 5.735  
+##  3rd Qu.:59.00   3rd Qu.: 5324   3rd Qu.: 6.540   3rd Qu.: 6.540  
+##  Max.   :95.00   Max.   :18823   Max.   :10.740   Max.   :58.900  
+##                                                                   
+##        z         
+##  Min.   : 0.000  
+##  1st Qu.: 2.910  
+##  Median : 3.530  
+##  Mean   : 3.539  
+##  3rd Qu.: 4.040  
+##  Max.   :31.800  
 ## </code></pre>
 </div>
 <div id="select" class="section level3">
@@ -105,16 +108,16 @@ select(diamonds, carat, color, price)</code></pre>
 <pre><code>## # A tibble: 53,940 x 3
 ##    carat color price
 ##    &lt;dbl&gt; &lt;ord&gt; &lt;int&gt;
-##  1 0.23  E       326
-##  2 0.21  E       326
-##  3 0.23  E       327
-##  4 0.290 I       334
-##  5 0.31  J       335
-##  6 0.24  J       336
-##  7 0.24  I       336
-##  8 0.26  H       337
-##  9 0.22  E       337
-## 10 0.23  H       338
+##  1  0.23 E       326
+##  2  0.21 E       326
+##  3  0.23 E       327
+##  4  0.29 I       334
+##  5  0.31 J       335
+##  6  0.24 J       336
+##  7  0.24 I       336
+##  8  0.26 H       337
+##  9  0.22 E       337
+## 10  0.23 H       338
 ## # ... with 53,930 more rows</code></pre>
 </div>
 <div id="filter" class="section level3">
@@ -130,16 +133,16 @@ filter(diamonds, cut==&quot;Premium&quot;)</code></pre>
 <pre><code>## # A tibble: 13,791 x 10
 ##    carat cut     color clarity depth table price     x     y     z
 ##    &lt;dbl&gt; &lt;ord&gt;   &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-##  1 0.21  Premium E     SI1      59.8    61   326  3.89  3.84  2.31
-##  2 0.290 Premium I     VS2      62.4    58   334  4.2   4.23  2.63
-##  3 0.22  Premium F     SI1      60.4    61   342  3.88  3.84  2.33
-##  4 0.2   Premium E     SI2      60.2    62   345  3.79  3.75  2.27
-##  5 0.32  Premium E     I1       60.9    58   345  4.38  4.42  2.68
-##  6 0.24  Premium I     VS1      62.5    57   355  3.97  3.94  2.47
-##  7 0.290 Premium F     SI1      62.4    58   403  4.24  4.26  2.65
-##  8 0.22  Premium E     VS2      61.6    58   404  3.93  3.89  2.41
-##  9 0.22  Premium D     VS2      59.3    62   404  3.91  3.88  2.31
-## 10 0.3   Premium J     SI2      59.3    61   405  4.43  4.38  2.61
+##  1  0.21 Premium E     SI1      59.8    61   326  3.89  3.84  2.31
+##  2  0.29 Premium I     VS2      62.4    58   334  4.2   4.23  2.63
+##  3  0.22 Premium F     SI1      60.4    61   342  3.88  3.84  2.33
+##  4  0.2  Premium E     SI2      60.2    62   345  3.79  3.75  2.27
+##  5  0.32 Premium E     I1       60.9    58   345  4.38  4.42  2.68
+##  6  0.24 Premium I     VS1      62.5    57   355  3.97  3.94  2.47
+##  7  0.29 Premium F     SI1      62.4    58   403  4.24  4.26  2.65
+##  8  0.22 Premium E     VS2      61.6    58   404  3.93  3.89  2.41
+##  9  0.22 Premium D     VS2      59.3    62   404  3.91  3.88  2.31
+## 10  0.3  Premium J     SI2      59.3    61   405  4.43  4.38  2.61
 ## # ... with 13,781 more rows</code></pre>
 </div>
 <div id="mutate" class="section level3">
@@ -149,15 +152,14 @@ filter(diamonds, cut==&quot;Premium&quot;)</code></pre>
 #examine the new dataset whether new variable is added or not
 head(diamondsNew)</code></pre>
 <pre><code>## # A tibble: 6 x 11
-##   carat cut       color clarity depth table price     x     y     z
-##   &lt;dbl&gt; &lt;ord&gt;     &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1 0.23  Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
-## 2 0.21  Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
-## 3 0.23  Good      E     VS1      56.9    65   327  4.05  4.07  2.31
-## 4 0.290 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
-## 5 0.31  Good      J     SI2      63.3    58   335  4.34  4.35  2.75
-## 6 0.24  Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
-## # ... with 1 more variable: pricePerCarat &lt;dbl&gt;</code></pre>
+##   carat cut      color clarity depth table price     x     y     z pricePerCarat
+##   &lt;dbl&gt; &lt;ord&gt;    &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;         &lt;dbl&gt;
+## 1  0.23 Ideal    E     SI2      61.5    55   326  3.95  3.98  2.43         1417.
+## 2  0.21 Premium  E     SI1      59.8    61   326  3.89  3.84  2.31         1552.
+## 3  0.23 Good     E     VS1      56.9    65   327  4.05  4.07  2.31         1422.
+## 4  0.29 Premium  I     VS2      62.4    58   334  4.2   4.23  2.63         1152.
+## 5  0.31 Good     J     SI2      63.3    58   335  4.34  4.35  2.75         1081.
+## 6  0.24 Very Go~ J     VVS2     62.8    57   336  3.94  3.96  2.48         1400</code></pre>
 <pre class="r"><code>names(diamondsNew)</code></pre>
 <pre><code>##  [1] &quot;carat&quot;         &quot;cut&quot;           &quot;color&quot;         &quot;clarity&quot;      
 ##  [5] &quot;depth&quot;         &quot;table&quot;         &quot;price&quot;         &quot;x&quot;            
@@ -195,7 +197,8 @@ head(arrange(diamonds,desc(depth)))</code></pre>
 </div>
 <div id="summarize" class="section level3">
 <h3>summarize()</h3>
-<p>This function is used to get the summary statistics of the data <strong>its very powerfull when we use this function with the combination of <code>groupby</code></strong></p>
+<p>This function is used to get the summary statistics of the data
+<strong>its very powerfull when we use this function with the combination of <code>groupby</code></strong></p>
 <pre class="r"><code>#to get the average of price variable
 summarize(diamonds, avgPrice = mean(price, na.rm = TRUE) )</code></pre>
 <pre><code>## # A tibble: 1 x 1
@@ -236,12 +239,12 @@ head(diamondsPipe)</code></pre>
 <pre><code>## # A tibble: 6 x 4
 ##   carat color price pricePerCarat
 ##   &lt;dbl&gt; &lt;ord&gt; &lt;int&gt;         &lt;dbl&gt;
-## 1 0.21  E       326         1552.
-## 2 0.290 I       334         1152.
-## 3 0.22  F       342         1555.
-## 4 0.2   E       345         1725 
-## 5 0.32  E       345         1078.
-## 6 0.24  I       355         1479.</code></pre>
+## 1  0.21 E       326         1552.
+## 2  0.29 I       334         1152.
+## 3  0.22 F       342         1555.
+## 4  0.2  E       345         1725 
+## 5  0.32 E       345         1078.
+## 6  0.24 I       355         1479.</code></pre>
 </div>
 </div>
 <div id="ggplot2---data-visualization-package" class="section level2">
@@ -251,5 +254,5 @@ head(diamondsPipe)</code></pre>
   filter(cut == &quot;Ideal&quot;) %&gt;% 
   ggplot(aes(x=color,y=price)) + 
 geom_boxplot()     </code></pre>
-<p><img src="/post/2017-12-16-working-with-dplyr-and-ggplot2_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="/post/2017-04-10-working-with-dplyr-and-ggplot2_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 </div>

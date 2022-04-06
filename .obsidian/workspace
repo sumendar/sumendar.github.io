@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "701eb8ca5e00f336",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5cac9d418270f87",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5f07cfae20cecc93",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7dae791f2f895b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "507d0d3d836a44e1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "6be75f7d9aab0403",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "index",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 281
+  },
+  "right": {
+    "id": "47e5df2dd3715492",
+    "type": "split",
+    "children": [
+      {
+        "id": "324d58b2d2a94606",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8d131c06a70bdb7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "c5cac9d418270f87",
+  "lastOpenFiles": [
+    "themes/hugo-academic/exampleSite/content/talk/_index.md",
+    "content/home/teaching.md",
+    "content/home/talks.md",
+    "content/home/publications_selected.md",
+    "content/home/publications.md",
+    "content/home/projects.md",
+    "content/home/posts.md",
+    "content/home/contact.md",
+    "content/home/about.md"
+  ]
+}
