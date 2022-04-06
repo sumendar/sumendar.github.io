@@ -66,6 +66,7 @@ head(diamonds)
 dim(diamonds)
 str(diamonds)
 summary(diamonds)
+head(iris)
 ```
 ### select()
 Select perticular interested columns from the dataset
@@ -136,10 +137,5 @@ diamonds %>%
   filter(cut == "Ideal") %>% 
   ggplot(aes(x=color,y=price)) + 
 geom_boxplot()     
-     
-```
-
-```{r}
-head(iris3)     
      
 ```

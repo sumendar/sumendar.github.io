@@ -100,7 +100,15 @@ summary(diamonds)
 ##  Mean   : 3.539  
 ##  3rd Qu.: 4.040  
 ##  Max.   :31.800  
-## </code></pre>
+## 
+head(iris)
+##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
 </div>
 <div id="select" class="section level3">
 <h3>select()</h3>
@@ -257,34 +265,4 @@ head(diamondsPipe)</code></pre>
   ggplot(aes(x=color,y=price)) + 
 geom_boxplot()     </code></pre>
 <p><img src="/post/2017-04-10-working-with-dplyr-and-ggplot2_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-<pre class="r"><code>head(iris3)     </code></pre>
-<pre><code>## , , Setosa
-## 
-##      Sepal L. Sepal W. Petal L. Petal W.
-## [1,]      5.1      3.5      1.4      0.2
-## [2,]      4.9      3.0      1.4      0.2
-## [3,]      4.7      3.2      1.3      0.2
-## [4,]      4.6      3.1      1.5      0.2
-## [5,]      5.0      3.6      1.4      0.2
-## [6,]      5.4      3.9      1.7      0.4
-## 
-## , , Versicolor
-## 
-##      Sepal L. Sepal W. Petal L. Petal W.
-## [1,]      7.0      3.2      4.7      1.4
-## [2,]      6.4      3.2      4.5      1.5
-## [3,]      6.9      3.1      4.9      1.5
-## [4,]      5.5      2.3      4.0      1.3
-## [5,]      6.5      2.8      4.6      1.5
-## [6,]      5.7      2.8      4.5      1.3
-## 
-## , , Virginica
-## 
-##      Sepal L. Sepal W. Petal L. Petal W.
-## [1,]      6.3      3.3      6.0      2.5
-## [2,]      5.8      2.7      5.1      1.9
-## [3,]      7.1      3.0      5.9      2.1
-## [4,]      6.3      2.9      5.6      1.8
-## [5,]      6.5      3.0      5.8      2.2
-## [6,]      7.6      3.0      6.6      2.1</code></pre>
 </div>
