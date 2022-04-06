@@ -1,19 +1,21 @@
 ---
-title: Working with dplyr and ggplot2
+title: "Working with dplyr and ggplot2"
 author: ''
 date: '2017-04-10'
-slug: working-with-dplyr-and-ggplot2
-categories:
-  - data manipulations
-  - data visualizations
-tags:
-  - dplyr
-  - ggplot2
-output: 
-  html_document: 
+output:
+  pdf_document:
+    toc: yes
+  html_document:
     highlight: textmate
     theme: simplex
     toc: yes
+categories:
+- data manipulations
+- data visualizations
+tags:
+- dplyr
+- ggplot2
+slug: working-with-dplyr-and-ggplot2
 ---
 
 <script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
@@ -23,7 +25,7 @@ output:
 <h2>dplyr - Data Mainpulation Package</h2>
 <div id="intorduction" class="section level3">
 <h3>Intorduction</h3>
-<p>Most of the data scientists spend 70 to 80% of their time on data preparation for a given project also known as wrangling or cleaning or simply we can say data manipulations, so <code>dplyr</code> is one of the most popular package which can help R users to solve on preparing or manipulating the dataset before going for actual analysis or modeling. some of those operations such as <strong>selecting required columns, adding a new column, filtering required observations, or even some of the tasks like sorting or aggregating</strong></p>
+<p>Most of the data scientists spend 80% of their time on data preparation for a given project also known as wrangling or cleaning or simply we can say data manipulations, so <code>dplyr</code> is one of the most popular package which can help R users to solve on preparing or manipulating the dataset before going for actual analysis or modeling. some of those operations such as <strong>selecting required columns, adding a new column, filtering required observations, or even some of the tasks like sorting or aggregating</strong></p>
 <p><code>dplyr</code> has couple of functions like</p>
 <p><code>select()</code><br />
 <code>filter()</code><br />
@@ -255,4 +257,12 @@ head(diamondsPipe)</code></pre>
   ggplot(aes(x=color,y=price)) + 
 geom_boxplot()     </code></pre>
 <p><img src="/post/2017-04-10-working-with-dplyr-and-ggplot2_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<pre class="r"><code>head(iris)     </code></pre>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
 </div>

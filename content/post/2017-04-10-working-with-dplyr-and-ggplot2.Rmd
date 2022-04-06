@@ -1,24 +1,26 @@
 ---
-title: Working with dplyr and ggplot2
+title: "Working with dplyr and ggplot2"
 author: ''
 date: '2017-04-10'
-slug: working-with-dplyr-and-ggplot2
-categories:
-  - data manipulations
-  - data visualizations
-tags:
-  - dplyr
-  - ggplot2
-output: 
-  html_document: 
+output:
+  pdf_document:
+    toc: yes
+  html_document:
     highlight: textmate
     theme: simplex
     toc: yes
+categories:
+- data manipulations
+- data visualizations
+tags:
+- dplyr
+- ggplot2
+slug: working-with-dplyr-and-ggplot2
 ---
 ## dplyr - Data Mainpulation Package
 
 ### Intorduction
-Most of the data scientists spend 70 to 80% of their time on data preparation for a given project also known as wrangling or cleaning or simply we can say data manipulations, so `dplyr` is one of the most popular package which can help R users to solve on preparing or manipulating the dataset before going for actual analysis or modeling. some of those operations such as **selecting required columns, adding a new column, filtering  required observations, or even some of the tasks like sorting or aggregating**    
+Most of the data scientists spend 80% of their time on data preparation for a given project also known as wrangling or cleaning or simply we can say data manipulations, so `dplyr` is one of the most popular package which can help R users to solve on preparing or manipulating the dataset before going for actual analysis or modeling. some of those operations such as **selecting required columns, adding a new column, filtering  required observations, or even some of the tasks like sorting or aggregating**    
 
 `dplyr` has couple of functions like  
 
@@ -137,3 +139,7 @@ geom_boxplot()
      
 ```
 
+```{r}
+head(iris)     
+     
+```
