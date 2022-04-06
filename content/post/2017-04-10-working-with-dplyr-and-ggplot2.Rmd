@@ -140,6 +140,6 @@ geom_boxplot()
 ```
 
 ```{r}
-head(iris)     
+head(iris3)     
      
 ```
