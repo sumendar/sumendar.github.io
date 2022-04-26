@@ -989,9 +989,8 @@ print(vect - 5)
 * All the mathematical operators, like +, -, *, and the logical operators, like & (AND), | (OR), and the comparison operators, like < and > are hungry to operate element-wise on every element of a vector.
 
 
-```R
+
 For example, to add pairs of numbers contained in two vectors
-```
 
 
 ```R
