@@ -1,20 +1,4 @@
 ---
-jupyter:
-  jupytext:
-    formats: ipynb,md,Rmd
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.13.7
-  kernelspec:
-    display_name: R
-    language: R
-    name: ir
----
-
-```R
----
 title: "Very Basic Coding"
 author: ''
 date: '2019-04-25'
@@ -32,8 +16,19 @@ tags:
 - conditions
 - control structures
 slug: Very Basic Coding
+jupyter:
+  jupytext:
+    formats: ipynb,md,Rmd
+    text_representation:
+      extension: .md
+      format_name: markdown
+      format_version: '1.3'
+      jupytext_version: 1.13.7
+  kernelspec:
+    display_name: R
+    language: R
+    name: ir
 ---
-```
 
 <!-- #region toc=true -->
 <h1>Table of Contents<span class="tocSkip"></span></h1>
