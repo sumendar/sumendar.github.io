@@ -48,7 +48,7 @@ ipak(packages)
 ```
 
 ### load the packages
-```{r warning=FALSE,message=FALSE}
+```{r warning=FALSE, message=FALSE}
 library(dplyr)
 library(ggplot2)
 ```
