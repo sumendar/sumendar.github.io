@@ -47,7 +47,7 @@ interests = [
 
 I am an experienced data analyst in the quantitative field by collecting, organizing, aggregating transforming, analyzing, exploring, visualizing the data, building, training, and evaluating predictive models using programming languages and tools such as Python, R, Excel, Operefine, Trifacta, Talend, SQL, including business intelligence skills like Tableau, Power BI in addition with cloud and big data analytical platforms…etc	
 
-I am currently pursuing post-graduation in data science, I had bachelor’s and master’s degrees in STEM discipline with specialization in mathematics, statistics, and computer science.
+I am currently pursuing post-graduation in data science, I had bachelor’s and master’s degrees in STEM discipline with specializations in mathematics, statistics, and computer science.
 
 My specialties include but are not limited to: data pre-processing, data cleansing, data manipulation, data exploration, data analysis, data visualizations, and machine learning.
 
