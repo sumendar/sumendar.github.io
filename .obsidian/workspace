@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "c5cac9d418270f87",
+        "id": "567f2a3e50f18b58",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -45,8 +45,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -83,8 +82,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c5cac9d418270f87",
+  "active": "567f2a3e50f18b58",
   "lastOpenFiles": [
+    "content/project/language-outcomes.md",
+    "content/project/spatio-data-analysis.md",
     "themes/hugo-academic/exampleSite/content/talk/_index.md",
     "content/home/teaching.md",
     "content/home/talks.md",
@@ -92,7 +93,6 @@
     "content/home/publications.md",
     "content/home/projects.md",
     "content/home/posts.md",
-    "content/home/contact.md",
-    "content/home/about.md"
+    "content/home/contact.md"
   ]
 }
