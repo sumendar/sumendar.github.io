@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "567f2a3e50f18b58",
+        "id": "1f21ff2590f42743",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -82,7 +82,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "567f2a3e50f18b58",
+  "active": "1f21ff2590f42743",
   "lastOpenFiles": [
     "content/project/language-outcomes.md",
     "content/project/spatio-data-analysis.md",
