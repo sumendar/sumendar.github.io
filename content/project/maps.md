@@ -1,9 +1,3 @@
----
-output:
-  word_document: default
-  html_document: default
-  pdf_document: default
----
 +++
 # Date this page was created.
 date = "2017-04-11"
