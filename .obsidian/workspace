@@ -7,8 +7,12 @@
         "id": "1f21ff2590f42743",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "content/post/2017-09-25-Python-Basics.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/post/2017-09-25-Python-Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,6 +89,7 @@
   },
   "active": "1f21ff2590f42743",
   "lastOpenFiles": [
+    "content/home/about.md",
     "content/project/language-outcomes.md",
     "content/project/spatio-data-analysis.md",
     "themes/hugo-academic/exampleSite/content/talk/_index.md",
@@ -92,7 +98,6 @@
     "content/home/publications_selected.md",
     "content/home/publications.md",
     "content/home/projects.md",
-    "content/home/posts.md",
-    "content/home/contact.md"
+    "content/home/posts.md"
   ]
 }
