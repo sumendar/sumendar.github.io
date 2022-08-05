@@ -16,7 +16,7 @@ interests = [
   "Data Analytics",
 	"Business Intelligence",
 	"Natural Language Processing (NLP)",
-	"Big Data and Data Engineering",
+	"Big Data Analytics, Data Engineering",
 	"Deep Learning, Computer Vision",
 	"Artificial Intelligence"
   ]
