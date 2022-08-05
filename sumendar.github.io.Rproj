@@ -14,3 +14,7 @@ LaTeX: pdfLaTeX
 
 BuildType: Website
 WebsitePath: C:\Users\Administrator\Documents\GitHub\sumendar.github.io
+
+PythonType: system
+PythonVersion: 3.9.13
+PythonPath: C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps/python3.9.exe
