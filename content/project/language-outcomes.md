@@ -9,7 +9,7 @@ title = "Basics of R Programming(A sample Notebook for Preview to Write Upcoming
 summary = "R Basics — Everything We Need to Know to Get Started with R from the basics like Data Types, Data Structures, Operators, Loops, functions, Packages, and more!."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = ""
+image_preview = "R_Logo.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
