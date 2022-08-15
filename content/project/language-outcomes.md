@@ -16,7 +16,7 @@ image_preview = ""
 tags = ["natural-language-processing", "autism", "outcomes"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = ""
+external_link = "https://www.endtoendprojects.com/r/2022/02/20/Notebook.html"
 
 # Does the project detail page use math formatting?
 math = false
