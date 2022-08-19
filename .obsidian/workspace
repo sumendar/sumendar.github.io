@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1f21ff2590f42743",
+        "id": "74057f49f0873687",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "content/post/2017-09-25-Python-Basics.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2017-09-25-Python-Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,8 +82,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1f21ff2590f42743",
+  "active": "74057f49f0873687",
   "lastOpenFiles": [
+    "content/post/2017-09-25-Python-Basics.md",
     "content/home/about.md",
     "content/project/language-outcomes.md",
     "content/project/spatio-data-analysis.md",
@@ -97,7 +93,6 @@
     "content/home/talks.md",
     "content/home/publications_selected.md",
     "content/home/publications.md",
-    "content/home/projects.md",
-    "content/home/posts.md"
+    "content/home/projects.md"
   ]
 }
