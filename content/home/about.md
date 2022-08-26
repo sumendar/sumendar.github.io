@@ -46,7 +46,7 @@ interests = [
   
 # About me
 
-I am a data analyst having experience in gathering, organizing, aggregating, transforming, analyzing, and visualizing data. I can able to build, train, and evaluate predictive models using Python, R, SQL, Trifacta, Talend, OpenRefine, Tableau, and Power BI tools in addition with basic familiarity on cloud platforms and big data analytical frameworks to eradicate or mitigate business issues by obtaining actionable insights.
+I am a data analyst having experience in gathering, organizing, aggregating, transforming, analyzing, and visualizing data. I can able to build, train, and evaluate predictive models using Python, R, SQL, Tableau, Power BI, Talend, Trifacta, and OpenRefine in addition to basic familiarity with cloud platforms and big data analytical frameworks to eradicate or mitigate issues by obtaining actionable insights.
 
 I am currently pursuing post-graduation in data science, I had bachelor’s and master’s degree in STEM discipline specialization within mathematics, statistics, and computer science.
 
