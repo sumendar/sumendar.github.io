@@ -1,5 +1,5 @@
 +++
-title = "Data Science Article Published by Nava Telangana"
+title = "Data Science Article Written for Nava Telangana News Paper"
 date= 2015-11-20T23:12:17+05:30
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Sumendar Karupakala"]
