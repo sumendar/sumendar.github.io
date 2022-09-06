@@ -7,8 +7,12 @@
         "id": "74057f49f0873687",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "content/project/sex-diffs-language.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/project/sex-diffs-language.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "74057f49f0873687",
+  "active": "507d0d3d836a44e1",
   "lastOpenFiles": [
+    "content/project/maps.md",
+    "content/project/language-outcomes.md",
     "content/post/2017-09-25-Python-Basics.md",
     "content/home/about.md",
-    "content/project/language-outcomes.md",
     "content/project/spatio-data-analysis.md",
     "themes/hugo-academic/exampleSite/content/talk/_index.md",
     "content/home/teaching.md",
     "content/home/talks.md",
     "content/home/publications_selected.md",
-    "content/home/publications.md",
-    "content/home/projects.md"
+    "content/home/publications.md"
   ]
 }
