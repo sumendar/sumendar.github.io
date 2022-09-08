@@ -52,6 +52,6 @@ I am currently pursuing post-graduation in data science, I have bachelor’s, an
 
 My specialties include but are not limited to: data pre-processing, data cleansing, data manipulation, exploratory data analysis (EDA), data visualizations, and machine learning.
 
-Please connect with me about any of your data science and analytic needs so we can discuss how I can help you and your team.
+Please connect with me about any of your data science and analytical needs so we can discuss how I can help you and your team.
 
 
