@@ -1,11 +1,11 @@
 +++
-date = "2017-11-13T00:00:00"
-title = "My sample talk"
-abstract = "abstract-A workshop on visualizing your data with ggplot and matplotlib"
-abstract_short = "abstract short-A workshop on visualizing your data"
-event = "event-Hands-on Data Jamboree"
+date = "2013-09-26T00:00:00"
+title = "Big Data Seminar at Broadridge, Hyderabad"
+abstract = "Presentation of Big Data Technology for the squad of ICS at Broadridge, Hyderabad on September 2013"
+abstract_short = "Big Data Seminar at Broadridge, Hyderabad"
+event = "All hands meet Seminar"
 event_url = "/html/File.html"
-location = "Hyd-Oregon Health & Science University, Portland, Oregon"
+location = "Madhapur, Survey No. 64, Hitech City Rd, Adjacent to cyber tower, HITEC City, Hyderabad, Telangana 500081"
 
 selected = true
 math = true
@@ -21,8 +21,8 @@ url_video = ""
     name = "slideshare"
     url = "https://www.slideshare.net/sumendar/big-data-seminar-at-broadridge"
 [[url_custom]]
-    name = "GitHub"
-    url = "https://github.com/apreshill/data-vis-jamboree-ggplot"
+    name = "Broadridge"
+    url = "https://www.broadridge.com/intl/"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
