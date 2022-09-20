@@ -1,7 +1,7 @@
 +++
 date = "2013-09-26T00:00:00"
 title = "Big Data Seminar at Broadridge, Hyderabad"
-abstract = "Presentation on Big Data Technology for the squad of ICS at Broadridge, Hyderabad on September 2013"
+abstract = "Presentation on Big Data Technology for the squad of ICS at Broadridge, Hyderabad"
 abstract_short = "Big Data Seminar at Broadridge, Hyderabad"
 event = "All hands meet Seminar"
 event_url = "/html/File.html"
