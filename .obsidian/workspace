@@ -7,8 +7,12 @@
         "id": "33cb95e090f79d35",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "content/home/about.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"Machine Learning and Visualization in Python\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -45,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -66,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/home/about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -83,7 +87,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6be75f7d9aab0403",
+  "active": "33cb95e090f79d35",
   "lastOpenFiles": [
     "content/project/sex-diffs-language.md",
     "content/project/maps.md",
