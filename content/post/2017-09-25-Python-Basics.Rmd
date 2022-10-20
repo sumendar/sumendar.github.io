@@ -24,11 +24,11 @@ This is a comprehensive guide on Basic fundamentals concepts which we are keep i
 ### `print()` function:
 
 
-```python
+```{python}
 print('hello world')
 ```
 
-```python
+```{python}
 lst = list(a=c(3,5,1,-8,8,90),b=matrix(1:12,4,3))
 print(lst) # print list
 ```
@@ -37,7 +37,7 @@ print(lst) # print list
     
 
 
-```python
+```{python}
 print("hello", 'world')
 ```
 
@@ -45,7 +45,7 @@ print("hello", 'world')
     
 
 
-```python
+```{python}
 print("hello world" + "!")
 ```
 
@@ -53,14 +53,14 @@ print("hello world" + "!")
     
 
 
-```python
+```{python}
 print("welcome", "to", "python", sep="_", end=";")
 ```
 
     welcome_to_python;
 
 
-```python
+```{python}
 print("welcome", "to", "python", sep="_", end=";")
 print("data science")
 ```
@@ -69,7 +69,7 @@ print("data science")
     
 
 
-```python
+```{python}
 print("welcome", "to", "python", sep="_", end="\n") # end with new line(by default)
 print("data science")
 ```
@@ -81,7 +81,7 @@ print("data science")
 ### comment with `#` symbol: 
 
 
-```python
+```{python}
 # this statement will print the statement inside in it
 print("welcome to data science")
 ```
@@ -118,12 +118,12 @@ Python has many native datatypes. Here are the important ones:
 ### Booleans
 
 
-```python
+```{python}
 t = True
 ```
 
 
-```python
+```{python}
 type(t)
 ```
 
@@ -135,7 +135,7 @@ type(t)
 
 
 
-```python
+```{python}
 False
 ```
 
@@ -151,7 +151,7 @@ False
 #### integer
 
 
-```python
+```{python}
 i = 4 
 type(i)
 ```
@@ -166,7 +166,7 @@ type(i)
 #### float
 
 
-```python
+```{python}
 f = 3.45 
 type(f)
 ```
@@ -181,7 +181,7 @@ type(f)
 #### complex
 
 
-```python
+```{python}
 cmp = 3+4j
 type(cmp)
 ```
@@ -194,7 +194,7 @@ type(cmp)
 
 
 
-```python
+```{python}
 cmp.real
 ```
 
@@ -206,7 +206,7 @@ cmp.real
 
 
 
-```python
+```{python}
 cmp.imag
 ```
 
@@ -218,7 +218,7 @@ cmp.imag
 
 
 
-```python
+```{python}
 1 + 1
 ```
 
@@ -230,7 +230,7 @@ cmp.imag
 
 
 
-```python
+```{python}
 1 * 3
 ```
 
@@ -242,7 +242,7 @@ cmp.imag
 
 
 
-```python
+```{python}
 1 / 2
 ```
 
@@ -254,7 +254,7 @@ cmp.imag
 
 
 
-```python
+```{python}
 print(7+8)
 print(4*6)
 2 ** 4
@@ -272,7 +272,7 @@ print(4*6)
 
 
 
-```python
+```{python}
 4 % 2
 ```
 
@@ -284,7 +284,7 @@ print(4*6)
 
 
 
-```python
+```{python}
 5 % 2
 ```
 
@@ -296,7 +296,7 @@ print(4*6)
 
 
 
-```python
+```{python}
 (2 + 3) * (5 + 5)
 ```
 
@@ -313,7 +313,7 @@ print(4*6)
 * PEMDAS(parenthesis, exponents, multiplication, division, addition, subtraction)
 
 
-```python
+```{python}
 3+3/3
 ```
 
@@ -325,7 +325,7 @@ print(4*6)
 
 
 
-```python
+```{python}
 (3+3)/3
 ```
 
@@ -337,7 +337,7 @@ print(4*6)
 
 
 
-```python
+```{python}
 ((((13+5)*2)-4)/2)-13
 # How did that happen? Let’s work it out.
 # 13+5 gives us 18
@@ -366,12 +366,12 @@ https://data-flair.training/blogs/python-operator-precedence/
 * Strings are immutable(we cannot change inplace but we can create another string from it)
 
 
-```python
+```{python}
 st = 'data science and machine learning with python'
 ```
 
 
-```python
+```{python}
 type(st)
 ```
 
@@ -385,7 +385,7 @@ type(st)
 **Indexing:**
 
 
-```python
+```{python}
 # positive indexing
 print(st[0])
 print(st[1])
@@ -398,7 +398,7 @@ print(st[2])
     
 
 
-```python
+```{python}
 # negative indexing
 print(st[-1])
 print(st[-2])
@@ -413,7 +413,7 @@ print(st[-3])
 **Slicing:**
 
 
-```python
+```{python}
 print(st[0:4])
 print(st[:4])
 print(st[4:])
@@ -439,17 +439,17 @@ print(st[::-2])  # reverse the string with step 1
 **String Methods:**
 
 
-```python
+```{python}
 s= "hello world" # using double quotes
 ```
 
 
-```python
+```{python}
 s= 'hello world' # using single quotes
 ```
 
 
-```python
+```{python}
 # Multi-line Strings
 to_you = """Stranger, if you passing meet me and desire to speak to me, why
   should you not speak to me?
@@ -464,7 +464,7 @@ print(to_you)
     
 
 
-```python
+```{python}
 s.index('d')
 ```
 
@@ -476,7 +476,7 @@ s.index('d')
 
 
 
-```python
+```{python}
 s.capitalize()
 ```
 
@@ -488,7 +488,7 @@ s.capitalize()
 
 
 
-```python
+```{python}
 s.count('o')
 ```
 
@@ -500,7 +500,7 @@ s.count('o')
 
 
 
-```python
+```{python}
 value = "cat ppicture is cat picture"
 
 # Find first index of this string.
@@ -524,7 +524,7 @@ print(b)
 The `index()` method is similar to `find()` method for strings. The only difference is that `find()` method returns -1 if the substring is not found, whereas `index()` throws an exception.
 
 
-```python
+```{python}
 s.title()
 ```
 
@@ -536,7 +536,7 @@ s.title()
 
 
 
-```python
+```{python}
 s.upper()
 ```
 
@@ -548,7 +548,7 @@ s.upper()
 
 
 
-```python
+```{python}
 s.islower()
 ```
 
@@ -560,12 +560,12 @@ s.islower()
 
 
 
-```python
+```{python}
 s= "HELLO WORLD"
 ```
 
 
-```python
+```{python}
 s.islower()
 ```
 
@@ -577,7 +577,7 @@ s.islower()
 
 
 
-```python
+```{python}
 s.capitalize()
 ```
 
@@ -589,7 +589,7 @@ s.capitalize()
 
 
 
-```python
+```{python}
 s.lower()
 ```
 
@@ -601,12 +601,12 @@ s.lower()
 
 
 
-```python
+```{python}
 s = "HeLlO WoRlD"
 ```
 
 
-```python
+```{python}
 s.swapcase()
 ```
 
@@ -618,17 +618,17 @@ s.swapcase()
 
 
 
-```python
+```{python}
 s = " Hello world how are you "
 ```
 
 
-```python
+```{python}
 s = "hello world how are you"
 ```
 
 
-```python
+```{python}
 s.capitalize()
 ```
 
@@ -640,7 +640,7 @@ s.capitalize()
 
 
 
-```python
+```{python}
 s.title()
 ```
 
@@ -652,7 +652,7 @@ s.title()
 
 
 
-```python
+```{python}
 s.upper()
 ```
 
@@ -664,7 +664,7 @@ s.upper()
 
 
 
-```python
+```{python}
 "H" in s
 ```
 
@@ -676,7 +676,7 @@ s.upper()
 
 
 
-```python
+```{python}
 "h" in s
 ```
 
@@ -688,7 +688,7 @@ s.upper()
 
 
 
-```python
+```{python}
 len(s)
 ```
 
@@ -700,12 +700,12 @@ len(s)
 
 
 
-```python
+```{python}
 s = ' hello world how are you'
 ```
 
 
-```python
+```{python}
 s.strip()
 ```
 
@@ -717,7 +717,7 @@ s.strip()
 
 
 
-```python
+```{python}
 min(s.strip())
 ```
 
@@ -729,7 +729,7 @@ min(s.strip())
 
 
 
-```python
+```{python}
 max(s)
 ```
 
@@ -741,7 +741,7 @@ max(s)
 
 
 
-```python
+```{python}
 s
 ```
 
@@ -753,7 +753,7 @@ s
 
 
 
-```python
+```{python}
 s.isspace()
 ```
 
@@ -765,7 +765,7 @@ s.isspace()
 
 
 
-```python
+```{python}
 s.strip()
 ```
 
@@ -778,7 +778,7 @@ s.strip()
 
 **strings immutable nature **
 
-
+<!-- #region -->
 `my_string = "abc"`  
 `my_string[0] = "d"`  
 ```{py}
@@ -793,8 +793,9 @@ TypeError: 'str' object does not support item assignment
 
 *strings are immutable, which means you can't change an existing string (inplace). The best you can do is create a new string that is a variation on the original:*
 
+<!-- #endregion -->
 
-```python
+```{python}
 greeting = 'Hello, world!'
 new_greeting = 'J' + greeting[1:]
 print(new_greeting)
@@ -808,7 +809,7 @@ print(greeting)
 **String.format()**  
 
 
-```python
+```{python}
 name = "sumendar"
 greeting = "My name is {}".format(name)
 greeting
@@ -824,7 +825,7 @@ greeting
 **String concatenation**
 
 
-```python
+```{python}
 print("happy" + " " + "birthday")
 print("my name is " + "john")
 ```
@@ -839,7 +840,7 @@ print("my name is " + "john")
 * This is referred to as an escape sequence, because `the backslash causes the subsequent character sequence to “escape”` its usual meaning.
 
 
-```python
+```{python}
 print('This string contains a single quote (') character.')
 # gives a syntaxError
 ```
@@ -853,7 +854,7 @@ print('This string contains a single quote (') character.')
 
 
 
-```python
+```{python}
 print('This string contains a single quote (\') character.')
 print("This string contains a double quote (\") character.")
 ```
@@ -863,7 +864,7 @@ print("This string contains a double quote (\") character.")
     
 
 
-```python
+```{python}
 print('a,
       b,
       c)    # if we press Enter will gives SyntaxError after each letter
@@ -878,7 +879,7 @@ print('a,
 
 
 
-```python
+```{python}
 print('a\
 b\
 c')
@@ -893,7 +894,7 @@ c')
     
 
 
-```python
+```{python}
 print('foo\\bar') # o include a literal backslash in a string, escape it with a backslash
 ```
 
@@ -901,7 +902,7 @@ print('foo\\bar') # o include a literal backslash in a string, escape it with a 
     
 
 
-```python
+```{python}
 print(r'foo\bar') # o include a literal backslash in a string, escape it with a letter r 
 ```
 
@@ -911,7 +912,7 @@ print(r'foo\bar') # o include a literal backslash in a string, escape it with a 
 **Applying Special Meaning to Characters**
 
 
-```python
+```{python}
 print('foo\tbar')
 print("a\tb")
 print("a\141\x61")
@@ -933,7 +934,7 @@ print('\u2192 \N{rightwards arrow}')
 * Escape sequences in the associated string are not translated. The backslash character is left in the string:
 
 
-```python
+```{python}
 print('foo\nbar')
 ```
 
@@ -942,7 +943,7 @@ print('foo\nbar')
     
 
 
-```python
+```{python}
 print(r'foo\nbar')
 ```
 
@@ -950,7 +951,7 @@ print(r'foo\nbar')
     
 
 
-```python
+```{python}
 print('foo\\bar')
 ```
 
@@ -958,7 +959,7 @@ print('foo\\bar')
     
 
 
-```python
+```{python}
 print(r'foo\\bar')
 ```
 
@@ -971,7 +972,7 @@ print(r'foo\\bar')
 * This provides a convenient way to create a string with both single and double quotes in it:
 
 
-```python
+```{python}
 print('''This string has a single (') and a double (") quote.''')
 ```
 
@@ -979,7 +980,7 @@ print('''This string has a single (') and a double (") quote.''')
     
 
 
-```python
+```{python}
 print("""This is a
 string that spans
 across several lines""")
@@ -1001,7 +1002,7 @@ https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-syntax/ref
 A date in Python is not a data type of its own, but we can import a module named datetime to work with dates as date objects.
 
 
-```python
+```{python}
 import datetime
 
 x = datetime.datetime.now()
@@ -1012,7 +1013,7 @@ print(x)
     
 
 
-```python
+```{python}
 print(x.year)
 ```
 
@@ -1020,7 +1021,7 @@ print(x.year)
     
 
 
-```python
+```{python}
 # strftime is a method for formatting date objects into readable strings.
 print(x.strftime("%A"))
 # it takes one parameter called format
@@ -1031,7 +1032,7 @@ print(x.strftime("%A"))
     
 
 
-```python
+```{python}
 # Create a date object
 x = datetime.datetime(2020, 5, 17)
 print(x)
@@ -1069,7 +1070,7 @@ A = [ ] # This is a blank list variable
 B = [1, 23, 45, 67] # this list creates an initial list of 4 numbers.
 C = [2, 4, 'john'] # lists can contain different variable types.
 
-```python
+```{python}
 [1,2,3]
 ```
 
@@ -1081,7 +1082,7 @@ C = [2, 4, 'john'] # lists can contain different variable types.
 
 
 
-```python
+```{python}
 ['hi',1,[1,2]]
 ```
 
@@ -1093,17 +1094,17 @@ C = [2, 4, 'john'] # lists can contain different variable types.
 
 
 
-```python
+```{python}
 my_list = ['a','b','c']
 ```
 
 
-```python
+```{python}
 my_list.append('d')
 ```
 
 
-```python
+```{python}
 my_list
 ```
 
@@ -1115,7 +1116,7 @@ my_list
 
 
 
-```python
+```{python}
 my_list[0]
 ```
 
@@ -1127,7 +1128,7 @@ my_list[0]
 
 
 
-```python
+```{python}
 my_list[1]
 ```
 
@@ -1139,7 +1140,7 @@ my_list[1]
 
 
 
-```python
+```{python}
 my_list[1:]
 ```
 
@@ -1151,7 +1152,7 @@ my_list[1:]
 
 
 
-```python
+```{python}
 my_list[:1]
 ```
 
@@ -1163,12 +1164,12 @@ my_list[:1]
 
 
 
-```python
+```{python}
 my_list[0] = 'NEW'
 ```
 
 
-```python
+```{python}
 my_list
 ```
 
@@ -1180,7 +1181,7 @@ my_list
 
 
 
-```python
+```{python}
 mylist = ['Rhino', 'Grasshopper', 'Flamingo', 'Bongo']
 B = len(mylist) # This will return the length of the list which is 3. The index is 0, 1, 2, 3.
 print (mylist[1]) # This will return the value at index 1, which is 'Grasshopper'
@@ -1192,12 +1193,12 @@ print (mylist[0:2]) # This will return the first 2 elements in the list.
     
 
 
-```python
+```{python}
 nest = [1,2,3,[4,5,['target']]]
 ```
 
 
-```python
+```{python}
 nest[3]
 ```
 
@@ -1209,7 +1210,7 @@ nest[3]
 
 
 
-```python
+```{python}
 nest[3][2]
 ```
 
@@ -1221,7 +1222,7 @@ nest[3][2]
 
 
 
-```python
+```{python}
 nest[3][2][0]
 ```
 
@@ -1235,7 +1236,7 @@ nest[3][2][0]
 nest[3][2][0].upper()
 
 
-```python
+```{python}
 # assign data to a specific element of the list using an index into the list.
 mylist = [0, 1, 2, 3]
 mylist[0] = 'Rhino'
@@ -1251,7 +1252,7 @@ print (mylist[1])
 The + operator concatenates lists:
 
 
-```python
+```{python}
 a = [1, 2, 3]
 b = [4, 5, 6]
 c = a + b  # 
@@ -1264,7 +1265,7 @@ print(c)
 Similarly, the * operator repeats a list a given number of times:
 
 
-```python
+```{python}
  
 [0] * 4
 ```
@@ -1277,7 +1278,7 @@ Similarly, the * operator repeats a list a given number of times:
 
 
 
-```python
+```{python}
 [1, 2, 3] * 3  # The first example repeats [0] four times. The second example repeats the list [1, 2, 3] three times.
 ```
 
@@ -1291,7 +1292,7 @@ Similarly, the * operator repeats a list a given number of times:
 **The Difference Between “is” and “==” in Python**
 
 
-```python
+```{python}
 a = 'banana'
 b = 'banana'
 a is b
@@ -1305,7 +1306,7 @@ a is b
 
 
 
-```python
+```{python}
 a = [1, 2, 3]
 b = [1, 2, 3]
 a is b
@@ -1321,7 +1322,7 @@ a is b
 **What does [::-1} do?**
 
 
-```python
+```{python}
 l = [1,2,3,4,5]
 l[::-1] # reverse the order of list
 ```
@@ -1352,7 +1353,7 @@ https://medium.com/@tyastropheus/tricky-python-i-memory-management-for-mutable-i
 | sum()       | Return the sum of all elements in the list.                                                       |
 
 
-```python
+```{python}
 x = [True, True, False]
 if any(x):
     print("At least one True")
@@ -1385,7 +1386,7 @@ if any(x) and not all(x):
 **`copy()` method vs direct assignment**
 
 
-```python
+```{python}
 l1 = [1,2,3,4]
 l2 = l1
 print(id(l1))
@@ -1397,7 +1398,7 @@ print(id(l2))
     
 
 
-```python
+```{python}
 l1.append(999)
 print(l2)
 ```
@@ -1406,7 +1407,7 @@ print(l2)
     
 
 
-```python
+```{python}
 l1 = [1,2,3,4]
 l2 = l1.copy()
 print(id(l1))
@@ -1418,7 +1419,7 @@ print(id(l2))
     
 
 
-```python
+```{python}
 l1.append(999)
 print(l2)
 ```
@@ -1449,10 +1450,11 @@ https://www.tutorialspoint.com/python/python_lists.htm
 * List of top 10 sales regions in a quarter
 
 
-```python
+```{python}
 t = (1,2,3)
 ```
 
+<!-- #region -->
 t[0]
 
 `t[0] = 'NEW' # not mutable for tuples`
@@ -1465,8 +1467,9 @@ TypeError                                 Traceback (most recent call last)
 TypeError: 'tuple' object does not support item assignment
 ```
 
+<!-- #endregion -->
 
-```python
+```{python}
 # real world example
 # works better in spyder tool
 """ Where's My Mouse? """
@@ -1506,13 +1509,13 @@ http://thepythonguru.com/python-tuples/
 * Order status of online food
 
 
-```python
+```{python}
 room_num = {'john': 425, 'tom': 212}
 room_num['john'] = 645  # set the value associated with the 'john' key to 645
 ```
 
 
-```python
+```{python}
 print(room_num)
 ```
 
@@ -1520,12 +1523,12 @@ print(room_num)
     
 
 
-```python
+```{python}
 room_num['james'] = 925
 ```
 
 
-```python
+```{python}
 print(room_num)
 ```
 
@@ -1533,7 +1536,7 @@ print(room_num)
     
 
 
-```python
+```{python}
 room_num.keys()
 ```
 
@@ -1545,7 +1548,7 @@ room_num.keys()
 
 
 
-```python
+```{python}
 room_num.values()
 
 ```
@@ -1558,7 +1561,7 @@ room_num.values()
 
 
 
-```python
+```{python}
 room_num.items()
 ```
 
@@ -1570,7 +1573,7 @@ room_num.items()
 
 
 
-```python
+```{python}
 room_num.pop('james') # takes key as parameter and return corresponding value 
 ```
 
@@ -1582,7 +1585,7 @@ room_num.pop('james') # takes key as parameter and return corresponding value
 
 
 
-```python
+```{python}
 room_num
 ```
 
@@ -1594,7 +1597,7 @@ room_num
 
 
 
-```python
+```{python}
 room_num.popitem() # doesn't take any parameter and gives some arbitrary element as (key, value) tuple 
 ```
 
@@ -1606,7 +1609,7 @@ room_num.popitem() # doesn't take any parameter and gives some arbitrary element
 
 
 
-```python
+```{python}
 room_num
 ```
 
@@ -1618,7 +1621,7 @@ room_num
 
 
 
-```python
+```{python}
 room_num['isaac'] = 345 # Add a new key 'isaac' with the associated value
 print (room_num.keys()) # print out a list of keys in the dictionary
 print ('isaac' in room_num) # test to asee if 'issac' is in the dictionary.  This returns true.
@@ -1629,12 +1632,12 @@ print ('isaac' in room_num) # test to asee if 'issac' is in the dictionary.  Thi
     
 
 
-```python
+```{python}
 d = {'key1':'value1','key2':'value2'}
 ```
 
 
-```python
+```{python}
 d
 ```
 
@@ -1646,7 +1649,7 @@ d
 
 
 
-```python
+```{python}
 d['key1']
 ```
 
@@ -1674,7 +1677,7 @@ https://realpython.com/python-dicts/
 * Better to use this object a collection of sets which needs to membership or mapping really matters
 
 
-```python
+```{python}
 {1,2,3}
 ```
 
@@ -1690,7 +1693,7 @@ https://realpython.com/python-dicts/
 * we can use the `add()` method to add a single element if we need to add more than one element to a set, we can use the `update()` method
 
 
-```python
+```{python}
 # creating a set
 a = {1, 3, 5, 7, 11, 13}
 b = set([1, 3, 5, 7, 11, 13])
@@ -1704,7 +1707,7 @@ b = set([1, 3, 5, 7, 11, 13])
 * Symmetric Difference
 
 
-```python
+```{python}
 # Union
 A = {1, 2, 3, 4}
 B = {3, 4, 5, 6}
@@ -1715,7 +1718,7 @@ print ( A | B)
     
 
 
-```python
+```{python}
 # Intersection
 A = {1, 2, 3, 4}
 B = {3, 4, 5, 6}
@@ -1726,7 +1729,7 @@ print ( A & B )
     
 
 
-```python
+```{python}
 # Difference
 A = {1, 2, 3, 4, 5}
 B = {4, 5, 6, 7, 8}
@@ -1737,7 +1740,7 @@ print(A - B)
     
 
 
-```python
+```{python}
 # Symmetric Difference
 A = {1, 2, 3, 4, 5}
 B = {4, 5, 6, 7, 8}
@@ -1750,7 +1753,7 @@ print(A ^ B)
 **Adding element/s to a set**
 
 
-```python
+```{python}
 a.add(8)
 print(a)
 b.update([5,2,14,7])
@@ -1762,7 +1765,7 @@ print(b)
     
 
 
-```python
+```{python}
 # initialize my_set
 my_set = {1,3}
 print(my_set)
@@ -1790,17 +1793,17 @@ This method takes the item to delete as an argument.
 * deleting an item that doesn’t exist in the set, discard() ignores it
 
 
-```python
+```{python}
 num = {13,12,21,43,16,25}
 ```
 
 
-```python
+```{python}
 num.discard(3)
 ```
 
 
-```python
+```{python}
 num
 ```
 
@@ -1817,12 +1820,12 @@ Like the discard() method, remove() deletes an item from the set.
 * deleting an item that doesn’t exist in the set, remove() gives an error
 
 
-```python
+```{python}
 num.remove(5)
 ```
 
 
-```python
+```{python}
 num
 ```
 
@@ -1839,12 +1842,12 @@ num
 * we will not be able to determine which element of the set will be removed using the `pop()` method. In case of list, the last element of the list gets popped when the pop() method is used. 
 
 
-```python
+```{python}
 num = {13,12,21,43,16,25}
 ```
 
 
-```python
+```{python}
 num.pop()
 ```
 
@@ -1866,17 +1869,17 @@ We can also remove all items from a set using `clear()`.
 * It empties the set in Python.
 
 
-```python
+```{python}
 num = {13,12,21,43,16,25}
 ```
 
 
-```python
+```{python}
 num.clear()
 ```
 
 
-```python
+```{python}
 num
 ```
 
@@ -1891,7 +1894,7 @@ num
 (creating immutable sets)  
 
 
-```python
+```{python}
 S = frozenset([1,2,3])
 print(S)
 ```
@@ -1910,7 +1913,7 @@ https://stackabuse.com/sets-in-python/
 ## Queues(FIFO) and Stacks(LIFO)
 
 
-```python
+```{python}
 """ A Queue of Groceries to Put Away """
 # queue is a not built-in datatype
 # create a new queue object
@@ -1947,7 +1950,7 @@ q.put_nowait('bag3') # causes an error
 ```
 
 
-```python
+```{python}
 """ A Stack of Bills to Pay """
 # python doesn't has built-n stack module, we can use list instead
 # create a list to use as the stack
@@ -1977,7 +1980,7 @@ stack.pop() # causes Indexerror exception
 ### Implicit type conversion
 
 
-```python
+```{python}
 int1 = 4
 float1 = int1 + 2.1 # 4 converted to float
 # str1 = "My int:" + int1 # Error: no implicit type conversion from int to string
@@ -1987,7 +1990,7 @@ int2 = 4 + True # 5: bool is implicitly converted to int
 ### Explicit type conversion
 
 
-```python
+```{python}
 str1 = "My int:" + str(int1)
 v1 = int(2.7) # 2
 v2 = int(-3.9) # -3

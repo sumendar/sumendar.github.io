@@ -30,7 +30,7 @@ print('hello world')
 
 ```python
 lst = list(a=c(3,5,1,-8,8,90),b=matrix(1:12,4,3))
-print(lst)
+print(lst) # print list
 ```
 
     hello world
