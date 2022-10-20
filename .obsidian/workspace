@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/home/about.md",
+            "file": "content/post/2017-09-25-Python-Basics.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/home/about.md",
+                "file": "content/post/2017-09-25-Python-Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "33cb95e090f79d35",
   "lastOpenFiles": [
+    "content/post/2017-09-30-Conditions-Control-Structures.md",
+    "content/post/2017-09-25-Python-Basics.md",
+    "content/home/about.md",
     "content/project/sex-diffs-language.md",
     "content/project/maps.md",
     "content/project/language-outcomes.md",
-    "content/post/2017-09-25-Python-Basics.md",
-    "content/home/about.md",
     "content/project/spatio-data-analysis.md",
     "themes/hugo-academic/exampleSite/content/talk/_index.md",
     "content/home/teaching.md",
-    "content/home/talks.md",
-    "content/home/publications_selected.md"
+    "content/home/talks.md"
   ]
 }
