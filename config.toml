@@ -153,7 +153,7 @@ defaultContentLanguageInSubdir = false
     [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//medium.com/@sumendar
+    link = "//medium.com/@sumendar"
 
   [[params.social]]
     icon = "github"
