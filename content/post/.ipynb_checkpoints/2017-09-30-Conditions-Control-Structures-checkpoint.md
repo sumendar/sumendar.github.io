@@ -1,38 +1,58 @@
 ---
 title: Conditions-Control-Structures
+updated: 2022-10-22 02:51:44Z
+created: 2017-09-29 18:30:00Z
 author: sumendar
-date: '2017-09-30'
-slug: Conditions-Control-Structures
-categories: ['python', 'blogdown']
-tags: ['basics']
-subtitle: 'subtitle'
+tags:
+  - basics
 ---
 
-<h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#if--Statements" data-toc-modified-id="if--Statements-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>if  Statements</a></span></li><li><span><a href="#if...else-Statement" data-toc-modified-id="if...else-Statement-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>if...else Statement</a></span></li><li><span><a href="#if...elif...else-Statement" data-toc-modified-id="if...elif...else-Statement-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>if...elif...else Statement</a></span></li><li><span><a href="#Nested-if-statements" data-toc-modified-id="Nested-if-statements-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Nested if statements</a></span></li><li><span><a href="#Practice" data-toc-modified-id="Practice-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Practice</a></span></li><li><span><a href="#Iterables-and-Iterators" data-toc-modified-id="Iterables-and-Iterators-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Iterables and Iterators</a></span></li><li><span><a href="#while-Loops" data-toc-modified-id="while-Loops-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>while Loops</a></span></li><li><span><a href="#for-Loops" data-toc-modified-id="for-Loops-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>for Loops</a></span></li><li><span><a href="#range()" data-toc-modified-id="range()-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>range()</a></span></li><li><span><a href="#enumerate¶" data-toc-modified-id="enumerate¶-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>enumerate¶</a></span></li><li><span><a href="#The-break-statement" data-toc-modified-id="The-break-statement-11"><span class="toc-item-num">11&nbsp;&nbsp;</span>The break statement</a></span></li><li><span><a href="#The-continue-statement" data-toc-modified-id="The-continue-statement-12"><span class="toc-item-num">12&nbsp;&nbsp;</span>The continue statement</a></span></li><li><span><a href="#Python-pass-statement" data-toc-modified-id="Python-pass-statement-13"><span class="toc-item-num">13&nbsp;&nbsp;</span>Python pass statement</a></span></li><li><span><a href="#Comprehensions" data-toc-modified-id="Comprehensions-14"><span class="toc-item-num">14&nbsp;&nbsp;</span>Comprehensions</a></span><ul class="toc-item"><li><span><a href="#comprehension-for-lists" data-toc-modified-id="comprehension-for-lists-14.1"><span class="toc-item-num">14.1&nbsp;&nbsp;</span>comprehension for lists</a></span></li><li><span><a href="#comprehension-for-dictionaries" data-toc-modified-id="comprehension-for-dictionaries-14.2"><span class="toc-item-num">14.2&nbsp;&nbsp;</span>comprehension for dictionaries</a></span></li><li><span><a href="#comprehension-for-sets" data-toc-modified-id="comprehension-for-sets-14.3"><span class="toc-item-num">14.3&nbsp;&nbsp;</span>comprehension for sets</a></span></li></ul></li><li><span><a href="#Errors-Handling:-try-except-and-finally" data-toc-modified-id="Errors-Handling:-try-except-and-finally-15"><span class="toc-item-num">15&nbsp;&nbsp;</span>Errors Handling: try except and finally</a></span></li><li><span><a href="#Memory-Management-in-Python" data-toc-modified-id="Memory-Management-in-Python-16"><span class="toc-item-num">16&nbsp;&nbsp;</span>Memory Management in Python</a></span></li></ul></div>
+# Table of Contents
+
+<div class="toc">
+
+- <span>[<span class="toc-item-num">1  </span>if Statements](#if--Statements)</span>
+- <span>[<span class="toc-item-num">2  </span>if...else Statement](#if...else-Statement)</span>
+- <span>[<span class="toc-item-num">3  </span>if...elif...else Statement](#if...elif...else-Statement)</span>
+- <span>[<span class="toc-item-num">4  </span>Nested if statements](#Nested-if-statements)</span>
+- <span>[<span class="toc-item-num">5  </span>Practice](#Practice)</span>
+- <span>[<span class="toc-item-num">6  </span>Iterables and Iterators](#Iterables-and-Iterators)</span>
+- <span>[<span class="toc-item-num">7  </span>while Loops](#while-Loops)</span>
+- <span>[<span class="toc-item-num">8  </span>for Loops](#for-Loops)</span>
+- <span>[<span class="toc-item-num">9  </span>range()](#range%28%29)</span>
+- <span>[<span class="toc-item-num">10  </span>enumerate¶](#enumerate¶)</span>
+- <span>[<span class="toc-item-num">11  </span>The break statement](#The-break-statement)</span>
+- <span>[<span class="toc-item-num">12  </span>The continue statement](#The-continue-statement)</span>
+- <span>[<span class="toc-item-num">13  </span>Python pass statement](#Python-pass-statement)</span>
+- <span>[<span class="toc-item-num">14  </span>Comprehensions](#Comprehensions)</span>
+    - <span>[<span class="toc-item-num">14.1  </span>comprehension for lists](#comprehension-for-lists)</span>
+    - <span>[<span class="toc-item-num">14.2  </span>comprehension for dictionaries](#comprehension-for-dictionaries)</span>
+    - <span>[<span class="toc-item-num">14.3  </span>comprehension for sets](#comprehension-for-sets)</span>
+- <span>[<span class="toc-item-num">15  </span>Errors Handling: try except and finally](#Errors-Handling:-try-except-and-finally)</span>
+- <span>[<span class="toc-item-num">16  </span>Memory Management in Python](#Memory-Management-in-Python)</span>
+
+</div>
 
 # Iterations
 
-* if,elif, else Statements
-* for Loops
-* while Loops
-* range() functions
-* break and continue statements
-* pass statement  
-* enumerate
-* comprehesions
+- if,elif, else Statements
+- for Loops
+- while Loops
+- range() functions
+- break and continue statements
+- pass statement
+- enumerate
+- comprehesions
 
-## if  Statements
+## if Statements
 
-* The colon (:)  separates the header of the compound statement from the body.  
-* The line after the colon must be indented. It is standard in Python to use four spaces for indenting.    
-* All lines indented the same amount after the colon will be executed whenever the BOOLEAN_EXPRESSION is true.   
+- The colon (:) separates the header of the compound statement from the body.
+- The line after the colon must be indented. It is standard in Python to use four spaces for indenting.
+- All lines indented the same amount after the colon will be executed whenever the BOOLEAN_EXPRESSION is true.
 
-#Python if Statement Syntax  
+#Python if Statement Syntax
 
-`if test expression:
-    statement(s)`
-
+`if test expression: statement(s)`
 
 ```python
 if 1 < 2:
@@ -55,15 +75,11 @@ print("This is also always printed.")
 
 ## if...else Statement
 
-* It is frequently the case that you want one thing to happen when a condition it true, and something else to happen when it is false
+- It is frequently the case that you want one thing to happen when a condition it true, and something else to happen when it is false
 
 # Syntax of if...else
 
-`if test expression:
-    Body of if
-else:
-    Body of else`
-
+`if test expression: Body of if else: Body of else`
 
 ```python
 if 1 < 2:
@@ -71,7 +87,6 @@ if 1 < 2:
 else:
     print('last')
 ```
-
 
 ```python
 # Program checks if the number is positive or negative
@@ -93,15 +108,9 @@ else:
 
 #Syntax of if...elif...else
 
-`if test expression:
-    Body of if
-elif test expression:
-    Body of elif
-else: 
-    Body of else`
+`if test expression: Body of if elif test expression: Body of elif else: Body of else`
 
 **Example of if...elif...else**
-
 
 ```python
 if 1 == 2:
@@ -111,7 +120,6 @@ elif 3 == 3:
 else:
     print('Last')
 ```
-
 
 ```python
 # In this program, 
@@ -139,7 +147,6 @@ else:
 
 **Source Code: Using Nested `if`**
 
-
 ```python
 # In this program, we input a number
 # check if the number is positive or
@@ -157,12 +164,11 @@ else:
     print("Negative number")
 ```
 
-## Practice 
+## Practice
 
 **Python Program to Check if a Number is Positive, Negative or 0**
 
 **Source Code: Using `if...elif...else`**
-
 
 ```python
 num = float(input("Enter a number: "))
@@ -176,7 +182,6 @@ else:
 ```
 
 **Python Program to Check if a Number is Odd or Even**
-
 
 ```python
 # Python program to check if the input number is odd or even.
@@ -193,7 +198,6 @@ else:
 **Python Program to Check Leap Year**
 
 A leap year is exactly divisible by 4 except for century years (years ending with 00). The century year is a leap year only if it is perfectly divisible by 400. For example,
-
 
 ```python
 # Python program to check if the input year is a leap year or not
@@ -217,30 +221,26 @@ else:
 
 ## Iterables and Iterators
 
-| Function      	| Description                                                             	|
-|---------------	|-------------------------------------------------------------------------	|
-| `range()`     	| Generates a range of integer values                                     	|
-| `enumerate()` 	| Returns a list of tuples containing indices and values from an iterable 	|
-| `iter()`      	| Returns an iterator object                                              	|
-| `next()`      	| Retrieves the next item from an iterator                                	|
+| Function | Description |
+| --- | --- |
+| `range()` | Generates a range of integer values |
+| `enumerate()` | Returns a list of tuples containing indices and values from an iterable |
+| `iter()` | Returns an iterator object |
+| `next()` | Retrieves the next item from an iterator |
 
-
-
-<sub>source: <a href="https://realpython.com/python-data-types/#strings" target="_blank">https://realpython.com/python-data-types/#strings</a></sub>  
+<sub>source: https://realpython.com/python-data-types/#strings</sub>
 
 ## while Loops
 
-* iterate over a block of code as long as the test expression (condition) is true.  
-* The while loop can be terminated with a `break` statement.
+- iterate over a block of code as long as the test expression (condition) is true.
+- The while loop can be terminated with a `break` statement.
 
 **Syntax of while Loop in Python**
 
-`while test_expression:
-    Body of while`
+`while test_expression: Body of while`
 
-* In while loop, test expression is checked first. The body of the loop is entered only if the `test_expression` evaluates to `True`. After one iteration, the test expression is checked again. This process continues until the `test_expression` evaluates to `False`.
-* Counter is must in while block to iterate the statements
-
+- In while loop, test expression is checked first. The body of the loop is entered only if the `test_expression` evaluates to `True`. After one iteration, the test expression is checked again. This process continues until the `test_expression` evaluates to `False`.
+- Counter is must in while block to iterate the statements
 
 ```python
 i = 1
@@ -248,7 +248,6 @@ while i < 5:
     print('i is: {}'.format(i))
     i = i+1
 ```
-
 
 ```python
 # Program to add natural
@@ -274,7 +273,6 @@ while i < 5:
 
 **Ex: While loop using list and get sum**
 
-
 ```python
 l = [3,4,7,9,1]
 i = 0
@@ -288,7 +286,6 @@ print("The sum is", sum)
 ```
 
 **while loop with else**
-
 
 ```python
 # Example to illustrate
@@ -306,7 +303,6 @@ else:
 
 **Difference between `while` and `IF` **
 
-
 ```python
 i = 1
 if i < 5: # one time check
@@ -314,9 +310,9 @@ if i < 5: # one time check
     # i = i+1 # manual increment
 ```
 
-    i is: 1
-    
-
+```
+i is: 1 
+```
 
 ```python
 # you will get continuoius infinite values (don't run)
@@ -330,38 +326,31 @@ while i < 5: # infinite iteration
 
 The for loop in Python is used to iterate over a sequence (`list, tuple, string`) or other iterable objects. Iterating over a sequence is called traversal.
 
-#syntax:   
-`for iterating_var in iterable:
-    statement/statements`
-
+#syntax:
+`for iterating_var in iterable: statement/statements`
 
 ```python
 seq = [1,2,3,4,5]
 ```
 
-
 ```python
 type(seq)
 ```
-
 
 ```python
 for item in seq:
     print(item)
 ```
 
-
 ```python
 for item in seq:
     print('Yep')
 ```
 
-
 ```python
 for jelly in seq:
     print(jelly+jelly)
 ```
-
 
 ```python
 # Program to find the sum of all numbers stored in a list
@@ -374,12 +363,11 @@ sum = 0
 
 # iterate over the list
 for val in numbers:
-	sum = sum+val
+    sum = sum+val
 
 # Output: The sum is 48
 print("The sum is", sum)
 ```
-
 
 ```python
 """ Loading the Dishwasher """
@@ -395,11 +383,11 @@ for dish in sink:
 print(sink)
 ```
 
-    Putting bowl in the dishwasher
-    Putting cup in the dishwasher
-    ['plate']
-    
-
+```
+Putting bowl in the dishwasher
+Putting cup in the dishwasher
+['plate'] 
+```
 
 ```python
 """ Loading the Dishwasher """
@@ -415,14 +403,14 @@ for dish in list(sink):
 print(sink)
 ```
 
-    Putting bowl in the dishwasher
-    Putting plate in the dishwasher
-    Putting cup in the dishwasher
-    []
-
+```
+Putting bowl in the dishwasher
+Putting plate in the dishwasher
+Putting cup in the dishwasher
+[] 
+```
 
 **for loop with else**
-
 
 ```python
 digits = [0, 1, 5]
@@ -433,12 +421,11 @@ else:
     print("No items left.")
 ```
 
-**How for loop actually works?**  
-https://www.programiz.com/python-programming/iterator#for-loop  
+**How for loop actually works?**
+https://www.programiz.com/python-programming/iterator#for-loop
 
-**Difference between iterable and iterator**  
+**Difference between iterable and iterator**
 https://www.geeksforgeeks.org/python-difference-iterable-iterator/
-
 
 ```python
 # Function to check object 
@@ -458,69 +445,59 @@ for element in [34, [4, 5], (4, 5),
     print(element, " is iterable : ", iterable(element)) 
 ```
 
-    34  is iterable :  False
-    [4, 5]  is iterable :  True
-    (4, 5)  is iterable :  True
-    {'a': 4}  is iterable :  True
-    dfsdf  is iterable :  True
-    4.5  is iterable :  False
-
+```
+34  is iterable :  False
+[4, 5]  is iterable :  True
+(4, 5)  is iterable :  True
+{'a': 4}  is iterable :  True
+dfsdf  is iterable :  True
+4.5  is iterable :  False 
+```
 
 ## range()
 
-* generate a sequence of numbers using `range()` function. `range(10)` will generate numbers from 0 to 9 (10 numbers).  
-* Syntax: `range(start,stop,step size)`
+- generate a sequence of numbers using `range()` function. `range(10)` will generate numbers from 0 to 9 (10 numbers).
+- Syntax: `range(start,stop,step size)`
+
 ```{py}
 range(stop) takes one argument.
 range(start, stop) takes two arguments.
 range(start, stop, step) takes three arguments.
 ```
 
-
 ```python
 range(5)
 ```
-
 
 ```python
 r = range(5)
 r
 ```
 
+```
+range(0, 5) 
+```
 
-
-
-    range(0, 5)
-
-
-
-* To force this function to output all the items, we can use the function `list()`.   
-
+- To force this function to output all the items, we can use the function `list()`.
 
 ```python
 list(range(5))
 ```
 
-
 ```python
 list(r)
 ```
 
+```
+[0, 1, 2, 3, 4] 
+```
 
-
-
-    [0, 1, 2, 3, 4]
-
-
-
-**We can use the range() function in for loops to iterate through a sequence of numbers. **
-
+\*\*We can use the range() function in for loops to iterate through a sequence of numbers. \*\*
 
 ```python
 for i in range(5):
     print(i)
 ```
-
 
 ```python
 # Output: range(0, 10)
@@ -538,35 +515,34 @@ print(list(range(2, 20, 3)))
 
 **Decrementing With `range()`**
 
-
 ```python
 for i in range(10, 4, -2):
     print(i)
 ```
 
-    10
-    8
-    6
-    
-
+```
+10
+8
+6 
+```
 
 ```python
 for i in range(10, -6, -2):
     print(i)
 ```
 
-    10
-    8
-    6
-    4
-    2
-    0
-    -2
-    -4
+```
+10
+8
+6
+4
+2
+0
+-2
+-4 
+```
 
-
- **It can be combined with the `len()` function to iterate though a sequence using indexing. Here is an example.**
-
+**It can be combined with the `len()` function to iterate though a sequence using indexing. Here is an example.**
 
 ```python
 # Program to iterate through a list using indexing
@@ -575,60 +551,48 @@ genre = ['pop', 'rock', 'jazz']
 
 # iterate over the list using index
 for i in range(len(genre)):
-	print("I like", genre[i])
+    print("I like", genre[i])
 ```
 
-## enumerate¶ 
+## enumerate¶
 
 for foo in x loops over the elements of a list and for i in range(len(x)) loops over the indices of a list. What if you want to do both?
-   
-Enter the enumerate function, one of Python's hidden gems:. 
-* `enumerate()` function adds a counter to an iterable  
-* a tuple is produced with (`counter`, `element`)  
-* `enumerate(iterable, start=0)` start (optional) — enumerate() starts counting from this number. If start is omitted, 0 is taken as the start.  
+ 
+Enter the enumerate function, one of Python's hidden gems:.
+
+- `enumerate()` function adds a counter to an iterable
+- a tuple is produced with (`counter`, `element`)
+- `enumerate(iterable, start=0)` start (optional) — enumerate() starts counting from this number. If start is omitted, 0 is taken as the start.
 
 Given a list, enumerate returns an object which iterates over the indices and the values of the list.
-   
-(Like the range() function, it returns an iterable object. To see its contents as a list, we can call list() on it.). 
-
+ 
+(Like the range() function, it returns an iterable object. To see its contents as a list, we can call list() on it.).
 
 ```python
 list(enumerate(['a', 'b']))
 ```
 
-
-
-
-    [(0, 'a'), (1, 'b')]
-
-
-
+```
+[(0, 'a'), (1, 'b')] 
+```
 
 ```python
 iterable = [8,-2,13,4]
 list(enumerate(iterable, start=2))
 ```
 
-
-
-
-    [(2, 8), (3, -2), (4, 13), (5, 4)]
-
-
-
+```
+[(2, 8), (3, -2), (4, 13), (5, 4)] 
+```
 
 ```python
 iterable = [8,-2,13,4]
 list(enumerate(iterable, start=-2))
 ```
 
-
-
-
-    [(-2, 8), (-1, -2), (0, 13), (1, 4)]
-
-
-
+```
+[(-2, 8), (-1, -2), (0, 13), (1, 4)] 
+```
 
 ```python
 l1 = [10,20,32,45,60]
@@ -638,38 +602,38 @@ for i, j in enumerate(l1):
 
 ```
 
-    [(0, 10), (1, 20), (2, 32), (3, 45), (4, 60)]
-    0 10
-    1 20
-    2 32
-    3 45
-    4 60
-    
-
+```
+[(0, 10), (1, 20), (2, 32), (3, 45), (4, 60)]
+0 10
+1 20
+2 32
+3 45
+4 60 
+```
 
 ```python
 for item in enumerate('abcd'):
     print(item)
 ```
 
-    (0, 'a')
-    (1, 'b')
-    (2, 'c')
-    (3, 'd')
-    
-
+```
+(0, 'a')
+(1, 'b')
+(2, 'c')
+(3, 'd') 
+```
 
 ```python
 for i,j in enumerate('abcd'):
     print(i,j)
 ```
 
-    0 a
-    1 b
-    2 c
-    3 d
-    
-
+```
+0 a
+1 b
+2 c
+3 d 
+```
 
 ```python
 # multiply 2 for only odd numbers from a given list 
@@ -683,15 +647,11 @@ double_odds(x)
 x
 ```
 
-
-
-
-    [0, 2, 2, 6, 4, 10, 6, 14, 8, 18]
-
-
+```
+[0, 2, 2, 6, 4, 10, 6, 14, 8, 18] 
+```
 
 We can use this unpacking syntax any time we iterate over a collection of tuples.
-
 
 ```python
 nums = [
@@ -705,11 +665,13 @@ for word, integer, roman_numeral in nums:
     print(integer, word, roman_numeral, sep=' = ', end='; ')
 ```
 
-    1 = one = I; 2 = two = II; 3 = three = III; 4 = four = IV; 
+```
+1 = one = I; 2 = two = II; 3 = three = III; 4 = four = IV; 
+```
 
 ## The break statement
-* The break statement is used to immediately leave the body of its loop. The next statement to be executed is the first one after the loops body ends 
 
+- The break statement is used to immediately leave the body of its loop. The next statement to be executed is the first one after the loops body ends
 
 ```python
 # Use of break statement inside loop
@@ -722,7 +684,6 @@ for val in "string":
 print("The end")
 ```
 
-
 ```python
 for i in [12, 16, 17, 24, 29]:
     if i % 2 == 1:  # if the number is odd
@@ -732,15 +693,16 @@ print('lucid')
 print("done")
 ```
 
-    12
-    16
-    lucid
-    done
-
+```
+12
+16
+lucid
+done 
+```
 
 ## The continue statement
-* This is a control flow statement that causes the program to immediately skip the processing of the rest of the body of the loop, for the current iteration. But the loop still carries on running for its remaining iterations(**continue = skip this and go next**):
 
+- This is a control flow statement that causes the program to immediately skip the processing of the rest of the body of the loop, for the current iteration. But the loop still carries on running for its remaining iterations(**continue = skip this and go next**):
 
 ```python
 # Program to show the use of continue statement inside loops
@@ -753,7 +715,6 @@ for val in "string":
 print("The end")
 ```
 
-
 ```python
 for i in [12, 16, 17, 24, 29, 30]:
     if i % 2 == 1:      # if the number is odd
@@ -762,20 +723,19 @@ for i in [12, 16, 17, 24, 29, 30]:
 print("done")
 ```
 
-    12
-    16
-    24
-    30
-    done
-
+```
+12
+16
+24
+30
+done 
+```
 
 ## Python pass statement
 
-* In Python programming, pass is a null statement, it results into no operation (NOP).
+- In Python programming, pass is a null statement, it results into no operation (NOP).
 
 **Example: pass Statement**
-
-
 
 ```python
 # pass is just a placeholder for
@@ -787,9 +747,9 @@ for val in sequence:
 
 ## Comprehensions
 
-* for faster execution
-* shorter and effective codes (single line)
-* involves 3 things – iteration, conditional filtering and processing. 
+- for faster execution
+- shorter and effective codes (single line)
+- involves 3 things – iteration, conditional filtering and processing.
 
 #Syntax of List Comprehension
 
@@ -799,68 +759,63 @@ for val in sequence:
 
 ![Imgur](https://i.imgur.com/IeRiWWl.png)
 
-
 ```python
 h_letters = [letter for letter in 'human' ]
 print( h_letters)
 ```
 
-    ['h', 'u', 'm', 'a', 'n']
-    
-
+```
+['h', 'u', 'm', 'a', 'n'] 
+```
 
 ```python
 lst = [i for i in range(11)]
 print(lst)
 ```
 
-    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    
-
+```
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+```
 
 ```python
 squares = [x * x for x in range(10)]
 print(squares)
 ```
 
-    [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-    
-
+```
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81] 
+```
 
 ```python
 cube_list = [i**3 for i in range(50, 101)]
 print(cube_list)
 ```
 
-    [125000, 132651, 140608, 148877, 157464, 166375, 175616, 185193, 195112, 205379, 216000, 226981, 238328, 250047, 262144, 274625, 287496, 300763, 314432, 328509, 343000, 357911, 373248, 389017, 405224, 421875, 438976, 456533, 474552, 493039, 512000, 531441, 551368, 571787, 592704, 614125, 636056, 658503, 681472, 704969, 729000, 753571, 778688, 804357, 830584, 857375, 884736, 912673, 941192, 970299, 1000000]
-
+```
+[125000, 132651, 140608, 148877, 157464, 166375, 175616, 185193, 195112, 205379, 216000, 226981, 238328, 250047, 262144, 274625, 287496, 300763, 314432, 328509, 343000, 357911, 373248, 389017, 405224, 421875, 438976, 456533, 474552, 493039, 512000, 531441, 551368, 571787, 592704, 614125, 636056, 658503, 681472, 704969, 729000, 753571, 778688, 804357, 830584, 857375, 884736, 912673, 941192, 970299, 1000000] 
+```
 
 **IF condition With List Comprehension**
 
-#Syntax of List Comprehension  
-`[ expression for item in iterable if condition ] `
-
+#Syntax of List Comprehension
+`[ expression for item in iterable if condition ]`
 
 ```python
 even_squres = [x * x for x in range(10) if x % 2 == 0]
 print(even_squres)
 ```
 
-    [0, 4, 16, 36, 64]
-    
-
+```
+[0, 4, 16, 36, 64] 
+```
 
 ```python
 [x for x in 'MATHEMATICS' if x in ['A','E','I','O','U']]
 ```
 
-
-
-
-    ['A', 'E', 'A', 'I']
-
-
-
+```
+['A', 'E', 'A', 'I'] 
+```
 
 ```python
 cart_1 = [1, 8, 29, 34, 58, 74, 88, 99]
@@ -870,50 +825,45 @@ cashier_5 = [item for item in cart_1 if item in cart_2]
 cashier_5
 ```
 
-
-
-
-    [8, 58, 88]
-
-
+```
+[8, 58, 88] 
+```
 
 **Nested IF with List Comprehension**
-
 
 ```python
 num_list = [y for y in range(100) if y % 2 == 0 if y % 5 == 0]
 print(num_list)
 ```
 
-    [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
-
+```
+[0, 10, 20, 30, 40, 50, 60, 70, 80, 90] 
+```
 
 **nested for loop**
-
 
 ```python
 print ([x+y for x in 'get' for y in 'set' if x != 't' and y != 'e' ])
 ```
 
-    ['gs', 'gt', 'es', 'et']
-
+```
+['gs', 'gt', 'es', 'et'] 
+```
 
 **if...else With List Comprehension**
-
 
 ```python
 obj = ["Even" if i%2==0 else "Odd" for i in range(10)]
 print(obj)
 ```
 
-    ['Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd']
-
+```
+['Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even', 'Odd'] 
+```
 
 **Nested List Comprehensions**
 
-
 ```python
-
 list_of_list = [[1,2,3],[4,5,6],[7,8]]
 
 # Flatten `list_of_list`
@@ -921,37 +871,29 @@ list_of_list = [[1,2,3],[4,5,6],[7,8]]
 
 ```
 
-
-
-
-    [1, 2, 3, 4, 5, 6, 7, 8]
-
-
+```
+[1, 2, 3, 4, 5, 6, 7, 8] 
+```
 
 ### comprehension for dictionaries
-
 
 ```python
 squares3_dict = {i: i**2 for i in range(30) if i % 3 == 0}
 squares3_dict
 ```
 
-
-
-
-    {0: 0,
-     3: 9,
-     6: 36,
-     9: 81,
-     12: 144,
-     15: 225,
-     18: 324,
-     21: 441,
-     24: 576,
-     27: 729}
-
-
-
+```
+{0: 0,
+ 3: 9,
+ 6: 36,
+ 9: 81,
+ 12: 144,
+ 15: 225,
+ 18: 324,
+ 21: 441,
+ 24: 576,
+ 27: 729} 
+```
 
 ```python
 capitals = {'United States': 'Washington, DC','France': 'Paris','Italy': 'Rome'}
@@ -959,17 +901,13 @@ capitals_bycapital = {capitals[key]: key for key in capitals}
 capitals_bycapital
 ```
 
-
-
-
-    {'Paris': 'France', 'Rome': 'Italy', 'Washington, DC': 'United States'}
-
-
+```
+{'Paris': 'France', 'Rome': 'Italy', 'Washington, DC': 'United States'} 
+```
 
 ### comprehension for sets
 
-* Set comprehensions are created in much the same way as dictionary comprehensions. 
-
+- Set comprehensions are created in much the same way as dictionary comprehensions.
 
 ```python
 # You can create a normal set like this:
@@ -978,13 +916,9 @@ my_set = set(my_list)
 my_set
 ```
 
-
-
-
-    {1, 2, 3, 4, 5, 7, 8}
-
-
-
+```
+{1, 2, 3, 4, 5, 7, 8} 
+```
 
 ```python
 # Now let’s rewrite this code to use a set comprehension:
@@ -993,19 +927,17 @@ my_set = {x for x in my_list}  # uses the curly braces that the dictionary compr
 my_set  
 ```
 
-
-
-
-    {1, 2, 3, 4, 5, 7, 8}
-
-
+```
+{1, 2, 3, 4, 5, 7, 8} 
+```
 
 ## Errors Handling: try except and finally
 
 **Types of Errors**
-* Syntax Errors
-* Runtime Errors
-* Logic Errors
+
+- Syntax Errors
+- Runtime Errors
+- Logic Errors
 
 ```
 #Syntax Errors
@@ -1022,24 +954,23 @@ y = 0
 print(x/y)
 ```
 
-
 ```python
 # once we execute the below script we will encounter an error
 print(10/0)
 ```
 
+```
+---------------------------------------------------------------------------
 
-    ---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
 
-    ZeroDivisionError                         Traceback (most recent call last)
+<ipython-input-1-364d6fd1cf4d> in <module>()
+      1 # once we execute the below script we will encounter an error
+----> 2 print(10/0)
 
-    <ipython-input-1-364d6fd1cf4d> in <module>()
-          1 # once we execute the below script we will encounter an error
-    ----> 2 print(10/0)
-    
 
-    ZeroDivisionError: division by zero
-
+ZeroDivisionError: division by zero 
+```
 
 ```{python}
 #Logic Errors
@@ -1049,7 +980,6 @@ if x<y:
     print(str(x) + 'is greater than' + str(y))
 ```
 
-
 ```python
 # we didn't get desired output
 x = 206
@@ -1058,8 +988,7 @@ if x<y:
     print(str(x) + 'is greater than' + str(y))
 ```
 
-* To overcome this error we can tell python to handle this error and throw some message when ever it happens otherwise execute succesfully*
-
+- To overcome this error we can tell python to handle this error and throw some message when ever it happens otherwise execute succesfully*
 
 ```python
 try:
@@ -1069,9 +998,9 @@ except:
     
 ```
 
-    Can't divide a number by zero
-    
-
+```
+Can't divide a number by zero 
+```
 
 ```python
 try:
@@ -1080,11 +1009,11 @@ except:
     print("Can't divide a number by zero")
 ```
 
-    5.0
-
+```
+5.0 
+```
 
 **Handling Exceptions with Try/Except/Finally**
-
 
 ```python
      try:
@@ -1097,14 +1026,14 @@ except:
 ...
 ```
 
-    in the try block
-    In the except block
-    In the finally block
+```
+in the try block
+In the except block
+In the finally block 
+```
 
-
-**Raising exceptions for a predefined condition**  
+**Raising exceptions for a predefined condition**
 For example, if you want to limit the user-input to only positive integers, raise an exception.
-
 
 ```python
 try:
@@ -1117,17 +1046,17 @@ except ValueError as e:
     print(e)
 ```
 
-    Please enter a number? 15
-    user input: 15
+```
+Please enter a number? 15
+user input: 15 
+```
 
+\## Memory Management in Python
 
-<br/>
-## Memory Management in Python
+Memory management in Python involves a private heap containing all Python objects and data structures. Interpreter takes care of Python heap and that the programmer has no access to it.
 
- Memory management in Python involves a private heap containing all Python objects and data structures. Interpreter takes care of Python heap and that the programmer has no access to it.
 - The allocation of heap space for Python objects is done by Python memory manager. The core API of Python provides some tools for the programmer to code reliable and more robust program.
 - Python also has a build-in garbage collector which recycles all the unused memory. When an object is no longer referenced by the program, the heap space it occupies can be freed. The garbage collector determines objects which are no longer referenced by the sprogram frees the occupied memory and make it available to the heap space.
-
 
 ```python
 x  =10
@@ -1148,26 +1077,23 @@ else:
     print("y and z point to different same object")
 ```
 
-    <class 'int'>
-    x and y refer to same object
-    x and y refer to different object
-    y and z point to the same object
+```
+<class 'int'>
+x and y refer to same object
+x and y refer to different object
+y and z point to the same object 
+```
 
-
-**Reason:**  
-Everything is object in Python  
+**Reason:**
+Everything is object in Python
 Python optimizes memory unilization by allocating the same oject reference to a new variable if object already exiists with same value
 
-<br/>
-**Comparison with Other Languages:**
-<br/>
-![Imgur](https://i.imgur.com/Q69apaJ.jpg)
-<sub>source: <a href="https://www.youtube.com/watch?v=arxWaw-E8QQ" target="_blank">https://www.youtube.com/watch?v=arxWaw-E8QQ</a></sub>  
+\*\*Comparison with Other Languages:\*\*
+!\[Imgur\](https://i.imgur.com/Q69apaJ.jpg) <sub>source: https://www.youtube.com/watch?v=arxWaw-E8QQ</sub>
 
+<span style="color: red; font-family: Comic Sans MS;">Sources & References</span>
+https://www.programiz.com
+http://www.openbookproject.net/books/bpp4awd/ch04.html
 
-<span style="color:red; font-family:Comic Sans MS">Sources & References</span>  
-<a href="https://www.programiz.com" target="_blank">https://www.programiz.com</a>  
-<a href="http://www.openbookproject.net/books/bpp4awd/ch04.html" target="_blank">http://www.openbookproject.net/books/bpp4awd/ch04.html</a>  
-
-<span style="color:red; font-family:Comic Sans MS">Further Resources</span>  
-https://www.geeksforgeeks.org/loops-in-python/  
+<span style="color: red; font-family: Comic Sans MS;">Further Resources</span>
+https://www.geeksforgeeks.org/loops-in-python/
