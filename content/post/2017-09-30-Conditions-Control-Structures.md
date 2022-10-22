@@ -3,7 +3,7 @@ title: Conditions-Control-Structures
 author: sumendar
 date: '2017-09-30'
 slug: Conditions-Control-Structures
-categories: ['python', 'blogdown']
+categories: ['python', 'conditional statements']
 tags: ['basics']
 subtitle: 'subtitle'
 ---
