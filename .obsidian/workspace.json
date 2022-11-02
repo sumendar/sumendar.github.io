@@ -1,0 +1,114 @@
+{
+  "main": {
+    "id": "701eb8ca5e00f336",
+    "type": "split",
+    "children": [
+      {
+        "id": "944383cf49e37cdc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33cb95e090f79d35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/2017-09-25-Python-Basics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5f07cfae20cecc93",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7dae791f2f895b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "507d0d3d836a44e1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6be75f7d9aab0403",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 281
+  },
+  "right": {
+    "id": "47e5df2dd3715492",
+    "type": "split",
+    "children": [
+      {
+        "id": "324d58b2d2a94606",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8d131c06a70bdb7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/post/2017-09-25-Python-Basics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "33cb95e090f79d35",
+  "lastOpenFiles": [
+    "content/post/2017-09-30-Conditions-Control-Structures.md",
+    "content/post/2017-09-25-Python-Basics.md",
+    "content/home/about.md",
+    "content/project/sex-diffs-language.md",
+    "content/project/maps.md",
+    "content/project/language-outcomes.md",
+    "content/project/spatio-data-analysis.md",
+    "themes/hugo-academic/exampleSite/content/talk/_index.md",
+    "content/home/teaching.md",
+    "content/home/talks.md"
+  ]
+}
