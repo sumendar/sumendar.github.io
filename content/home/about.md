@@ -48,7 +48,7 @@ interests = [
 
 I am a data analyst with experience in gathering, organising, aggregating, transforming, analysing, and visualising data to uncover hidden patterns and trends. I am also competent in building, training, and evaluating predictive models for unseen data using Python, R, SQL, Tableau, Power BI, QlikView, Talend, Trifacta, OpenRefine in addition to basic knowledge of cloud solutions and big data frameworks for recognising critical business issues to make strategic data-driven decisions with actionable and meaningful insights.
 
-I am currently pursuing a post-graduate degree in data science, and I had bachelor’s and master’s degrees in STEM discipline with specialisations in the quantitative fields of mathematics, statistics, and computer science.
+I am currently pursuing a post-graduate degree in data science; previously, I earned bachelor's and master's degrees in STEM disciplines with specializations in quantitative fields such as mathematics, statistics, and computer science.
 
 My specialties include but are not limited to data acquisition, preprocessing, data cleansing, data manipulation, exploratory data analysis (EDA), data visualizations, and machine learning.
 
