@@ -150,7 +150,7 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//twitter.com/sumendar"
 
-    [[params.social]]
+  [[params.social]]
     icon = "medium"
     icon_pack = "fa"
     link = "//medium.com/@sumendar"
@@ -159,6 +159,11 @@ defaultContentLanguageInSubdir = false
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/sumendar" 
+  
+  [[params.social]]
+    icon = "kaggle"
+    icon_pack = "fa"
+    link = "//kaggle.com/sumendar"
 
   #[[params.social]]
   #  icon = "google-scholar"
