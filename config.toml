@@ -161,7 +161,7 @@ defaultContentLanguageInSubdir = false
     link = "//github.com/sumendar" 
   
   [[params.social]]
-    icon = "static/img/kaggle.ico"
+    icon = "static/img/kaggle.png"
     icon_pack = "fa"
     link = "//kaggle.com/sumendar"
 
