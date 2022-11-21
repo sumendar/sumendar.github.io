@@ -18,9 +18,8 @@ interests = [
   "Natural Language Processing (NLP)",
 	"Big Data Analytics",
   "Deep Learning, Computer Vision",
-  "Data Engineering",
-  "Data Warehouse, ETL and ELT",
-	"Artificial Intelligence (AI)"
+  "ETL Pipeline, Data Engineering",
+  "Artificial Intelligence (AI)"
   ]
 
 # List your qualifications (such as academic degrees).
