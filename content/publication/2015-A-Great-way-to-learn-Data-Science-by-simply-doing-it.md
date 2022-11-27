@@ -36,9 +36,7 @@ selected = true
 # projects = ["example-external-project"]
 
 # Links (optional).
-# url_source = "https://www.kdnuggets.com/2015/09/learn-data-science-by-doing.html"
-url_source = <a href="https://www.kdnuggets.com/2015/09/learn-data-science-by-doing.html" target="_blank">Source</a>
-
+url_source = "https://www.kdnuggets.com/2015/09/learn-data-science-by-doing.html"
 # url_pdf = "#"
 # url_preprint = "#"
 # url_code = "#"
