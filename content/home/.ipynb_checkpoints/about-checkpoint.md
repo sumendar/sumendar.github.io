@@ -13,16 +13,18 @@ weight = 1
 [interests]
 interests = [
 	"Data Science, Machine Learning",
-	"Business Intelligence & Analytics",
-	"Natural Language Processing (NLP)",
-	"Big Data and Data Engineering",
-	"Deep Learning, Computer Vision",
-	"Artificial Intelligence"
+  "Business Intelligence",
+  "Business Analytics",
+  "Natural Language Processing (NLP)",
+	"Big Data Analytics",
+  "Deep Learning, Computer Vision",
+  "ETL Pipeline, Data Engineering",
+  "Artificial Intelligence (AI)"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Pursuing Post Graduation in Data Science"
+  course = "Post Graduation in Data Science (Currently Pursuing)"
   institution = "International Institute of Information Technology (IIIT Bangalore)"
 #  year = 2021
 
@@ -45,12 +47,14 @@ interests = [
   
 # About me
 
-I am an experienced data analyst in the quantitative field by collecting, organizing, aggregating transforming, analyzing, exploring, visualizing the data, building, training, and evaluating predictive models using programming tools such as Python, R, Excel, Operefine, Trifacta, Talend, SQL, including business intelligence skills like Tableau, Power BI in addition with cloud and big data analytical platforms…etc	
+I am a data analyst with an experienced professional in gathering, organizing, aggregating, transforming, analyzing, exploring, and visualizing data to uncover hidden patterns and trends. I would also be competent in building, training, and evaluating predictive models for unseen data using Python, R, SQL, Tableau, Power BI, Talend, Trifacta, and OpenRefine addition to basic familiarity with big data, and cloud solutions for resolving critical business issues and make informed strategic data-driven decisions with valuable and actionable insights.
 
-I am currently pursuing post-graduation in data science, I had bachelor’s and master’s degrees in STEM discipline with specializations in mathematics, statistics, and computer science.
+I am pursuing a post-graduate degree in data science; previously, I received bachelor’s and master’s degrees in STEM disciplines associated with quantitative analytical specializations in mathematics, statistics, and computer science for my career.
 
-My specialties include but are not limited to: data pre-processing, data cleansing, data manipulation, data exploration, data analysis, data visualizations, and machine learning.
+My specialties include but are not limited to data acquisition, preprocessing, data cleansing, data manipulation, exploratory data analysis (EDA), data visualizations, and machine learning.
 
-Please connect with me about any of your data science and analytic needs so we can discuss how I can help you and your team.
+Please connect with me about any of your data science and analytical needs so I can discuss how we can help you and your team.
 
+```python
 
+```
