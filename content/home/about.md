@@ -54,7 +54,3 @@ I am pursuing a post-graduate degree in data science; previously, I received bac
 My specialties include but are not limited to data acquisition, preprocessing, data cleansing, data manipulation, exploratory data analysis (EDA), data visualizations, and machine learning.
 
 Please connect with me about any of your data science and analytical needs so I can discuss how we can help you and your team.
-
-```python
-
-```
