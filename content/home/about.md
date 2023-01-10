@@ -24,9 +24,9 @@ interests = [
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Post Graduation in Data Science (Currently Pursuing)"
+  course = "Post Graduation in Data Science"
   institution = "International Institute of Information Technology (IIIT Bangalore)"
-#  year = 2021
+  year = 2023
 
 [[education.courses]]
   course = "Master of Computer Application(MCA)"
