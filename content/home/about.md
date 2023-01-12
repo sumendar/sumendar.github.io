@@ -26,7 +26,7 @@ interests = [
 [[education.courses]]
   course = "Post Graduation in Data Science"
   institution = "International Institute of Information Technology (IIIT Bangalore)"
-  year = 2022
+#  year = 2022
 
 [[education.courses]]
   course = "Master of Computer Application(MCA)"
