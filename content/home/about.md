@@ -53,4 +53,4 @@ I have a post-graduate degree in data science; previously, I earned undergraduat
 
 My specialties include but are not limited to data acquisition, preprocessing, data cleansing, data manipulation, exploratory data analysis (EDA), data visualizations, and machine learning.
 
-Please connect with me about any of your data science and analytical needs so we can discuss how I can support you and your team.
+Please connect with me about any of your data science and analytical needs so we can discuss how I can help you and your team.
