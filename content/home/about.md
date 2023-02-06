@@ -18,7 +18,7 @@ interests = [
   "Big Data Analytics",
   "Natural Language Processing (NLP)",
   "Deep Learning, Computer Vision",
-  "ETL Pipeline, Data Engineering",
+  "ETL/ELT Pipelines, Data Engineering",
   "Artificial Intelligence (AI)"
   ]
 
