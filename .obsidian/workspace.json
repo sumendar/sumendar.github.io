@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "944383cf49e37cdc",
+        "id": "c6063c3e99097228",
         "type": "tabs",
         "children": [
           {
-            "id": "33cb95e090f79d35",
+            "id": "a9249921b2869fae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/2017-09-25-Python-Basics.md",
-                "mode": "source",
+                "file": "content/publication/2015-nava-telangana-paper-article.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2017-09-25-Python-Basics.md",
+                "file": "content/publication/2015-nava-telangana-paper-article.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,15 +95,25 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "33cb95e090f79d35",
+  "left-ribbon": {
+    "hiddenItems": {
+      "open-vscode:VSCode": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "a9249921b2869fae",
   "lastOpenFiles": [
-    "content/post/2017-09-30-Conditions-Control-Structures.md",
-    "content/post/2017-09-25-Python-Basics.md",
-    "content/home/about.md",
+    "content/project/spatio-data-analysis.md",
     "content/project/sex-diffs-language.md",
     "content/project/maps.md",
     "content/project/language-outcomes.md",
-    "content/project/spatio-data-analysis.md",
+    "content/post/2017-09-30-Conditions-Control-Structures.md",
+    "content/post/2017-09-25-Python-Basics.md",
+    "content/home/about.md",
     "themes/hugo-academic/exampleSite/content/talk/_index.md",
     "content/home/teaching.md",
     "content/home/talks.md"
