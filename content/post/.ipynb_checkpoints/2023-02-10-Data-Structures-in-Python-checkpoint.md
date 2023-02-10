@@ -2,7 +2,7 @@
 title: Data-Structures-in-Python
 author: sumendar
 date: '2023-02-10'
-slug: Conditions-Control-Structures
+slug: Data-Structures-in-Python
 categories: ['python', 'data structures']
 tags: ['basics']
 subtitle: 'with real-life examples'
@@ -74,7 +74,7 @@ unique_numbers = set(numbers)
 makefile
 
 ```python
-text = "Hello, world!"
+text = "Hello, world!" #string
 ```
 
 **Use case:** Strings are commonly used to store and manipulate text data, such as sentences, names, or paragraphs.

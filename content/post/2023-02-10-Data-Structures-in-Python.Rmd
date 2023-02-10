@@ -18,7 +18,7 @@ In Python, a **data structures** is a way of organizing and storing data that en
 A list is an ordered, mutable, and heterogeneous collection of elements. Each element in a list can be of any type, including another list. Here's an example of a list that stores the names of different fruits:
 css
 
-```python
+```{python}
 
 fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
 ```
@@ -31,7 +31,7 @@ Use case: Lists are commonly used to store collections of items such as a shoppi
 **Tuple:** A tuple is similar to a list but is immutable, meaning its elements cannot be changed once it is created. Here's an example of a tuple that stores the name, age, and gender of a person:
 python
 
-```python
+```{python}
 person = ('Rakesh', 32, 'Male')
 ```
 
@@ -47,7 +47,7 @@ python
 
 # Set
 
-```python
+```{python}
 people = {'Harish': 32, 'Shankar': 28, 'Sumeeth': 45}
 ```
 
@@ -56,11 +56,11 @@ people = {'Harish': 32, 'Shankar': 28, 'Sumeeth': 45}
 **Set:** A set is an unordered collection of unique elements, meaning it does not allow duplicate elements. Here's an example of a set that stores the unique elements of a list:
 scss
 
-```python
+```{python}
 numbers = [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]
 ```
 
-```python
+```{python}
 unique_numbers = set(numbers)
 ```
 
@@ -73,7 +73,7 @@ unique_numbers = set(numbers)
 **String:** A string is a sequence of characters. Strings are immutable, meaning their elements cannot be changed once they are created. Here's an example of a string:
 makefile
 
-```python
+```{python}
 text = "Hello, world!" #string
 ```
 
