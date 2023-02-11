@@ -21,6 +21,9 @@ css
 ```python
 
 fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+colors = ["red", "blue", "green"]
+print(fruits)
+print(colors[1])
 ```
 
 # Tuple
