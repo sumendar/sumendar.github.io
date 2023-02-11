@@ -18,14 +18,14 @@ In Python, a **data structures** is a way of organizing and storing data that en
 A list is an ordered, mutable, and heterogeneous collection of elements. Each element in a list can be of any type, including another list. Here's an example of a list that stores the names of different fruits:
 css
 
-````python
-```{python}
+```python
+
 fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
 colors = ["red", "blue", "green"]
 print(fruits)
 print(colors[1])
 ```
-````
+```
 
 # Tuple
 
@@ -35,7 +35,7 @@ Use case: Lists are commonly used to store collections of items such as a shoppi
 **Tuple:** A tuple is similar to a list but is immutable, meaning its elements cannot be changed once it is created. Here's an example of a tuple that stores the name, age, and gender of a person:
 python
 
-```python
+
 person = ('Rakesh', 32, 'Male')
 ```
 
@@ -66,6 +66,7 @@ numbers = [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]
 
 ```python
 unique_numbers = set(numbers)
+print(unique_numbers)
 ```
 
 **Use case:** Sets are commonly used to store collections of unique elements and to perform operations such as union, intersection, and difference between sets.
