@@ -19,11 +19,12 @@ A list is an ordered, mutable, and heterogeneous collection of elements. Each el
 css
 
 ```{python}
-
+```{python}
 fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
 colors = ["red", "blue", "green"]
 print(fruits)
 print(colors[1])
+```
 ```
 
 # Tuple

@@ -18,10 +18,14 @@ In Python, a **data structures** is a way of organizing and storing data that en
 A list is an ordered, mutable, and heterogeneous collection of elements. Each element in a list can be of any type, including another list. Here's an example of a list that stores the names of different fruits:
 css
 
-```python
-
+````python
+```{python}
 fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+colors = ["red", "blue", "green"]
+print(fruits)
+print(colors[1])
 ```
+````
 
 # Tuple
 
