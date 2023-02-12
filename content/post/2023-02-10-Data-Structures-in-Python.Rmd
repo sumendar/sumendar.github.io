@@ -6,6 +6,18 @@ slug: Data-Structures-in-Python
 categories: ['python', 'data structures']
 tags: ['basics']
 subtitle: 'with real-life examples'
+jupyter:
+  jupytext:
+    formats: ipynb,Rmd,md
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.14.0
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
 ---
 
 In Python, a **data structures** is a way of organizing and storing data that enables efficient access and modification of the data. Here are some of the most commonly used data structures in Python along with real-life examples and their use cases:
@@ -21,23 +33,23 @@ css
 ```{python}
 
 fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
-colors = ["red", "blue", "green"]
+colors = ["Green", "Red", "black"]
 print(fruits)
 print(colors[1])
 ```
-```
+Use case: Lists are commonly used to store collections of items such as a shopping list, a list of tasks to complete, or a list of names.
+
+
 
 # Tuple
 
-
-Use case: Lists are commonly used to store collections of items such as a shopping list, a list of tasks to complete, or a list of names.
 
 **Tuple:** A tuple is similar to a list but is immutable, meaning its elements cannot be changed once it is created. Here's an example of a tuple that stores the name, age, and gender of a person:
 python
 
 
 person = ('Rakesh', 32, 'Male')
-```
+
 
 **Use case:** Tuples are commonly used to store fixed and unchanging data, such as date and time, coordinates, or to return multiple values from a function.
 
@@ -80,6 +92,8 @@ makefile
 
 ```{python}
 text = "Hello, world!" #string
+changed = text.replace("Hello", "Data")
+print(changed)
 ```
 
 **Use case:** Strings are commonly used to store and manipulate text data, such as sentences, names, or paragraphs.
