@@ -24,7 +24,7 @@ interests = [
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Post Graduation in Data Science"
+  course = "Post Graduation in Data Science"[Post Graduation in Data Science](https://www.credential.net/9adbaa17-25c0-4e7d-904c-93215c318f5f#gs.px9xwo){:target="_blank"}
   institution = "International Institute of Information Technology (IIIT Bangalore)"
 #  year = 2022
 
