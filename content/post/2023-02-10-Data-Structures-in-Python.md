@@ -34,8 +34,8 @@ css
 
 fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
 colors = ["Green", "Red", "black"]
-print(fruits)
-print(colors[1])
+print(fruits[:4])
+print(colors)
 ```
 Use case: Lists are commonly used to store collections of items such as a shopping list, a list of tasks to complete, or a list of names.
 
