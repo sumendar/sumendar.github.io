@@ -26,8 +26,8 @@ url_video = ""
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "DataQualityStarAward.jpg"
-caption = "Data Quality Star Award "
+image = "DataQualityStarAward1.jpg"
+caption = "Data Quality Star    Award "
 
 +++
   
