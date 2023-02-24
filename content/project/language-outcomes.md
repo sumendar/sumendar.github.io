@@ -13,7 +13,7 @@ image_preview = "R_Logo.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["natural-language-processing", "autism", "outcomes"]
+tags = ["natural-language-processing", "autism", "data-science"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "https://www.endtoendprojects.com/r/2022/02/20/Notebook.html"
