@@ -26,20 +26,20 @@ view = 1
   tag = "*"
   
 [[filter]]
-  name = "Natural Language Processing"
-  tag = ".natural-language-processing"
+  name = "Data Analytics"
+  tag = ".data-analytics"
 
 [[filter]]
-  name = "Autism"
-  tag = ".autism"
+  name = "Data Science"
+  tag = ".data-science"
   
 [[filter]]
-  name = "Eye-tracking"
-  tag = ".eye-tracking"
+  name = "Machine Learning"
+  tag = ".machine-learning"
   
 [[filter]]
-  name = "Outcomes"
-  tag = ".outcomes"
+  name = "Data Visualizations"
+  tag = ".data-visualizations"
 
 +++
 
