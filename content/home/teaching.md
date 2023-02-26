@@ -14,8 +14,8 @@ weight = 60
 
 +++
 
-I taught "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithR-apr18" target="_blank">Data Science Using R</a>" and "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithPython-june18" target="_blank">Data Science Using Python</a>" Online Course at </br> <a href = "http://www.lucidittraining.com/" target="_blank">LUCID IT Training</a> and currently teaching as a freelance trainer for other institutions
-Formerly associated as a part time faculty for B.Com and B.Sc(mathematics, statistics and computer science) under graduate students of:  
+I taught "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithR-apr18" target="_blank">Data Science Using R</a>" and "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithPython-june18" target="_blank">Data Science Using Python</a>" Online Course at </br> <a href = "http://www.lucidittraining.com/" target="_blank">LUCID IT Training</a> and currently teaching as a freelance trainer for other institutions  
+previously employed as a part-time professor for B.Com. and B.Sc. (mathematics, statistics, and computer science) undergrads of:    
   - *Siva Sivani Degree College*    
   - *LN Gupta Degree College*  
   - *G M Sanghi College of Commerce & Science*
