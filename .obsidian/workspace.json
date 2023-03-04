@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/publication/2015-nava-telangana-paper-article.md",
-                "mode": "preview",
+                "file": "content/home/posts.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/publication/2015-nava-telangana-paper-article.md",
+                "file": "content/home/posts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,15 @@
   },
   "active": "a9249921b2869fae",
   "lastOpenFiles": [
+    "content/home/about.md",
+    "content/publication/2015-nava-telangana-paper-article.md",
     "content/project/spatio-data-analysis.md",
     "content/project/sex-diffs-language.md",
     "content/project/maps.md",
     "content/project/language-outcomes.md",
     "content/post/2017-09-30-Conditions-Control-Structures.md",
     "content/post/2017-09-25-Python-Basics.md",
-    "content/home/about.md",
     "themes/hugo-academic/exampleSite/content/talk/_index.md",
-    "content/home/teaching.md",
-    "content/home/talks.md"
+    "content/home/teaching.md"
   ]
 }
