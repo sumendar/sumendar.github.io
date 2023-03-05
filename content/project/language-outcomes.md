@@ -17,8 +17,7 @@ tags = ["natural-language-processing", "autism", "data-science"]
 
 
 # Optional external URL for project (replaces project detail page).
-# external_link = "https://www.endtoendprojects.com/posts/post-with-code/"
-external_link = "https://public.tableau.com/views/ExecutiveSales_15886781440100/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link"
+external_link = "https://www.endtoendprojects.com/posts/post-with-code/"
 
 # Does the project detail page use math formatting?
 math = false
