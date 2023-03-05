@@ -9,7 +9,7 @@ title = "Basics of qmd Notebook python & SQL (A sample Notebook for Preview to W
 summary = "A Sample Notebook for upcoming projects to write it down as external file from other site link it here"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "Python_logo_icon.png"
+image_preview = "OIP.jfif"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
