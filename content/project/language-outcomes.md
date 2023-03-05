@@ -6,10 +6,10 @@ date = "2017-04-11"
 title = "Basics of R Programming(A sample Notebook for Preview to Write Upcoming Projects) "
 
 # Project summary to display on homepage.
-summary = "R Basics — Everything We Need to Know to Get Started with R from the basics like Data Types, Data Structures, Operators, Loops, functions, Packages, and more!."
+summary = "A Sample Notebook for upcoming projects to write it down as external file from other site link it here"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "R_Logo.png"
+image_preview = "Python_logo_icon.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
