@@ -3,7 +3,7 @@
 date = "2017-04-11"
 
 # Project title.
-title = "Basics of qmd Notebook(A sample Notebook for Preview to Write Upcoming Projects) "
+title = "Basics of qmd Notebook python & SQL (A sample Notebook for Preview to Write Upcoming Projects) "
 
 # Project summary to display on homepage.
 summary = "A Sample Notebook for upcoming projects to write it down as external file from other site link it here"
