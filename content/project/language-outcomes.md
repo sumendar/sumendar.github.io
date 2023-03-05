@@ -16,7 +16,7 @@ image_preview = "R_Logo.png"
 tags = ["natural-language-processing", "autism", "data-science"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://www.endtoendprojects.com/r/2022/02/20/Notebook.html"
+external_link = "https://www.endtoendprojects.com/posts/post-with-code/"
 
 # Does the project detail page use math formatting?
 math = false
