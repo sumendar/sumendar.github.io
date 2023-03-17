@@ -41,5 +41,11 @@ view = 1
   name = "Data Visualizations"
   tag = ".data-visualizations"
 
+[[filter]]
+  name = "Miscellaneous"
+  tag = ".miscellaneous"
+
+
+
 +++
 
