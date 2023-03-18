@@ -11,7 +11,7 @@ tags:
 subtitle: with reallife examples
 jupyter:
   jupytext:
-    formats: ipynb,Rmd,qmd,md:myst
+    formats: ipynb,Rmd,md:myst
     text_representation:
       extension: .Rmd
       format_name: rmarkdown
