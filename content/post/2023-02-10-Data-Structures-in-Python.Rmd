@@ -78,7 +78,7 @@ print(unique_numbers)
 
 # String
 
-**String:** A string is a sequence of characters. Strings are immutable(cannot able to update inplace), meaning their elements cannot be changed once they are created. Here's an example of a string:
+**String:** A string is a sequence of characters. Strings are immutable(couldnot able to update inplace), meaning their elements cannot be changed once they are created. Here's an example of a string:
 makefile
 
 ```{python}
