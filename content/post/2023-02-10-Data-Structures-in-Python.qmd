@@ -11,7 +11,7 @@ tags:
 subtitle: with reallife examples
 jupyter:
   jupytext:
-    formats: 'ipynb,Rmd,md,qmd'
+    formats: 'ipynb,Rmd,qmd,md:myst'
     text_representation:
       extension: .qmd
       format_name: quarto
@@ -79,7 +79,7 @@ print(unique_numbers)
 
 # String
 
-**String:** A string is a sequence of characters. Strings are immutable, meaning their elements cannot be changed once they are created. Here's an example of a string:
+**String:** A string is a sequence of characters. Strings are immutable(not able to update inplace), meaning their elements cannot be changed once they are created. Here's an example of a string:
 makefile
 
 ```{python}

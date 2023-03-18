@@ -1,4 +1,20 @@
 ---
+jupytext:
+  formats: ipynb,Rmd,qmd,md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.14.5
+kernelspec:
+  display_name: Python 3 (ipykernel)
+  language: python
+  name: python3
+---
+
+```{raw-cell}
+
+---
 title: Data-Structures-in-Python
 author: sumendar
 date: '2023-02-10'
@@ -6,64 +22,62 @@ slug: Data-Structures-in-Python
 categories: ['python', 'data structures']
 tags: ['basics']
 subtitle: 'with reallife examples'
-jupyter:
-  jupytext:
-    formats: ipynb,Rmd,md,qmd
-    text_representation:
-      extension: .md
-      format_name: markdown
-      format_version: '1.3'
-      jupytext_version: 1.14.5
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
 ---
+```
 
 In Python, a **data structures** is a way of organizing and storing data that enables efficient access and modification of the data. Here are some of the most commonly used data structures in Python along with real-life examples and their use cases:
 
++++
 
 # List
 
++++
 
 **List:** 
 A list is an ordered, mutable, and heterogeneous collection of elements. Each element in a list can be of any type, including another list. Here's an example of a list that stores the names of different fruits:
 css
 
-```python
+```{code-cell} ipython3
 
 fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
 colors = ["Green", "Red", "black"]
 print(fruits[:4])
 print(colors)
 ```
+
 Use case: Lists are commonly used to store collections of items such as a shopping list, a list of tasks to complete, or a list of names.
 
-
++++
 
 # Tuple
 
++++
 
 **Tuple:** A tuple is similar to a list but is immutable, meaning its elements cannot be changed once it is created. Here's an example of a tuple that stores the name, age, and gender of a person:
 python
 
++++
 
 person = ('Rakesh', 32, 'Male')
 
++++
 
 **Use case:** Tuples are commonly used to store fixed and unchanging data, such as date and time, coordinates, or to return multiple values from a function.
 
++++
 
 # Dictionary
 
++++
 
 **Dictionary:** A dictionary is an unordered collection of key-value pairs, where each key is unique and used to retrieve its corresponding value. Here's an example of a dictionary that stores the names and ages of different people:
 python
 
++++
 
 # Set
 
-```python
+```{code-cell} ipython3
 people = {'Harish': 32, 'Shankar': 28, 'Sumeeth': 45}
 ```
 
@@ -72,25 +86,27 @@ people = {'Harish': 32, 'Shankar': 28, 'Sumeeth': 45}
 **Set:** A set is an unordered collection of unique elements, meaning it does not allow duplicate elements. Here's an example of a set that stores the unique elements of a list:
 scss
 
-```python
+```{code-cell} ipython3
 numbers = [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]
 ```
 
-```python
+```{code-cell} ipython3
 unique_numbers = set(numbers)
 print(unique_numbers)
 ```
 
 **Use case:** Sets are commonly used to store collections of unique elements and to perform operations such as union, intersection, and difference between sets.
 
++++
 
 # String
 
++++
 
-**String:** A string is a sequence of characters. Strings are immutable, meaning their elements cannot be changed once they are created. Here's an example of a string:
+**String:** A string is a sequence of characters. Strings are immutable(not able to update inplace), meaning their elements cannot be changed once they are created. Here's an example of a string:
 makefile
 
-```python
+```{code-cell} ipython3
 text = "Hello, world!" #string
 changed = text.replace("Hello", "Data")
 print(changed)
@@ -98,6 +114,7 @@ print(changed)
 
 **Use case:** Strings are commonly used to store and manipulate text data, such as sentences, names, or paragraphs.
 
++++
 
 <span style="color:red; font-family:Comic Sans MS">Sources & References</span>  
-<a href="https://www.geeksforgeeks.org/python-lists/?ref=lbp" target="_blank">https://www.geeksforgeeks.org/python-lists/?ref=lbp</a>  
+<a href="https://www.geeksforgeeks.org/python-lists/?ref=lbp" target="_blank">https://www.geeksforgeeks.org/python-lists/?ref=lbp</a>
