@@ -5,15 +5,15 @@ date: '2023-02-10'
 slug: Data-Structures-in-Python
 categories: ['python', 'data structures']
 tags: ['basics']
-subtitle: 'with real-life examples'
+subtitle: 'with reallife examples'
 jupyter:
   jupytext:
-    formats: ipynb,Rmd,md
+    formats: ipynb,Rmd,md,qmd
     text_representation:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.14.0
+      jupytext_version: 1.14.5
   kernelspec:
     display_name: Python 3 (ipykernel)
     language: python
