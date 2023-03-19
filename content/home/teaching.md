@@ -20,7 +20,3 @@ Former part-time lecturer for B.Com. and B.Sc. (mathematics, statistics, and com
   - *Siva Sivani Degree College*    
   - *LN Gupta Degree College*  
   - *G M Sanghi College of Commerce & Science*
-
-```python
-
-```
