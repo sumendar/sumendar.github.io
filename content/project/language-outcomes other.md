@@ -13,7 +13,7 @@ image_preview = "OIP.jfif"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["natural-language-processing", "autism", "data-science"]
+tags = ["natural-language-processing", "data-visualizations", "data-science"]
 
 
 # Optional external URL for project (replaces project detail page).
