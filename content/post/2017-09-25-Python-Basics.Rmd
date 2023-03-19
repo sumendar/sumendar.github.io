@@ -43,7 +43,10 @@ print("hello", 'world')
 
     hello world
     
-
+```{r}
+install.packages('blogdown')
+library(blogdown)
+```
 
 ```{python}
 print("hello world" + "!")
