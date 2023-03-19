@@ -13,7 +13,7 @@ image_preview = "Telangana Map-HomePage-33districts.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["natural-language-processing", "data-visualizations", "data-science"]
+tags = ["natural-language-processing", "data-visualizations"]
 
 
 # Optional external URL for project (replaces project detail page).
