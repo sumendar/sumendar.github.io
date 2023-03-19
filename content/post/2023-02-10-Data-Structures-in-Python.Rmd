@@ -32,7 +32,7 @@ A list is an ordered, mutable, and heterogeneous collection of elements. Each el
 css
 
 ```{python}
-fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
+fruits = ['apple', 'banana', 'cherry', 'date', 'strawberry']
 colors = ["Green", "Red", "black"]
 print(fruits[:4])
 print(colors)
