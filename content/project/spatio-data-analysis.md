@@ -7,13 +7,13 @@ tags = ["data-visualizations","spatial data"]
 date = "2023-03-05"
 
 # Project title.
-title = "Title"
+title = "తెలంగాణలో…అన్ని మార్కెట్ యార్డులో గదచిన 01-Feb-2023 నుండి 28-Feb-2023 మధ్య వ్యవసాయ ఉత్పత్తుల రోజువారీ ధరలు ఎంత వరకు ఉన్నాయి"
 
 # Project summary to display on homepage.
-summary = "summary"
+summary = "title = "తెలంగాణ రాష్ట్రంలో…అన్ని మార్కెట్ కమిటిలల్లోని వివిధ మార్కెట్ యార్డులో 01-Feb-2023 నుండి 28-Feb-2023 మధ్య వ్యవసాయ ఉత్పత్తుల రోజువారీ ధరలకి సంబంధించి తక్కువ, ఎక్కువ ధరలు క్వింటాలు చొప్పున ఎంత వరకు ఉన్నాయి"
 
 # Optional image to display on homepage.
-image_preview = "Telangana Map-HomePage-33districts.png"
+image_preview = "annadata.jpg"
 
 # Optional external URL for project (replaces project detail page).
 external_link = "https://www.endtoendprojects.com/posts/post-with-code3/telangana_aggri_commodities"
