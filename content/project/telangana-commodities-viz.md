@@ -6,7 +6,7 @@ date = "2017-04-11"
 title = "తెలంగాణలోని… అన్ని జిల్లాల్లోని రెవెన్యూ డివిజన్లో, మరియు మండలాల్లో మొత్తం జనాభా"
 
 # Project summary to display on homepage.
-summary = "తెలంగాణలోని… summary"
+summary = "తెలంగాణలోని… అన్ని జిల్లాల్లోని రెవెన్యూ డివిజన్లో, మరియు మండలాల్లో మొత్తం జనాభా"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "Telangana Map-HomePage-33districts.png"
