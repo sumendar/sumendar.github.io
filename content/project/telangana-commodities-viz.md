@@ -1,23 +1,23 @@
 +++
 # Date this page was created.
-date = "2017-04-11"
+date = "2023-04-11"
 
 # Project title.
-title = "ఉన్నాయి Basics of qmd Notebook python & SQL (A sample Notebook for Preview to Write Upcoming Projects) "
+title = "తెలంగాణలోని… అన్ని జిల్లాల్లోని రెవెన్యూ డివిజన్లో, మరియు మండలాల్లో మొత్తం జనాభా"
 
 # Project summary to display on homepage.
-summary = "A Sample Notebook for upcoming projects to write it down as external file from other site link it here"
+summary = "అన్ని జిల్లాల్లోని ఉన్న జనాభా రెవెన్యూ డివిజన్లో ఉన్న జనాభా, మరియు మండలాల్లో ఉన్న మొత్తం జనాభా"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "Telangana Map-HomePage-33districts.png"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["natural-language-processing", "data-visualizations", "data-science"]
+tags = ["natural-language-processing", "data-visualizations"]
 
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://www.endtoendprojects.com/posts/post-with-code3/telangana_aggri_commodities"
+external_link = "https://www.endtoendprojects.com/posts/post-with-code2/telangana_census"
 
 # Does the project detail page use math formatting?
 math = false
