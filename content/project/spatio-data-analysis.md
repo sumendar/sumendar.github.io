@@ -26,7 +26,7 @@ highlight = true
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = ""
+image = "Telangana Map-HomePage-33districts.png"
 caption = ""
 
 +++
