@@ -8,7 +8,7 @@ tags: ['basics']
 subtitle: 'subtitle'
 ---
 
-In this blog post we will be going to discuss about python basics
+In this blog post we will be going to discuss about python basics in detail
   
 Python is multi-purpose programming language developed by Guido van Rossum.
   
@@ -42,7 +42,7 @@ print("hello", 'world')
 ```
 
     hello world
-    
+
 ```{r}
 install.packages('blogdown')
 library(blogdown)

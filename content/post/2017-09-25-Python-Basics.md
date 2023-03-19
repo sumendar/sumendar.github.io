@@ -8,7 +8,7 @@ tags: ['basics']
 subtitle: 'subtitle'
 ---
 
-In this blog post we will be going to discuss about python basics
+In this blog post we will be going to discuss about python basics in detail
   
 Python is multi-purpose programming language developed by Guido van Rossum.
   
@@ -42,8 +42,11 @@ print("hello", 'world')
 ```
 
     hello world
-    
 
+```R
+install.packages('blogdown')
+library(blogdown)
+```
 
 ```python
 print("hello world" + "!")
@@ -1988,12 +1991,15 @@ int2 = 4 + True # 5: bool is implicitly converted to int
 
 
 ```python
-str1 = "My int:" + str(int1)
+int1 = 8
+str1 = str(int1)
+str2 = "My int:" + str1
+print(str2)
 v1 = int(2.7) # 2
 v2 = int(-3.9) # -3
 v3 = int("2") # 2
 v4 = int("11", 16) # 17, base 16
-v5 = long(2) # this supports only in python 2 vesion
+# v5 = long(2) # this supports only in python 2 vesion
 v6 = float(2) # 2.0
 v7 = float("2.7") # 2.7
 v8 = float("2.7E-2") # 0.027
@@ -2015,7 +2021,7 @@ vN = list(vM)
 vO = list({1: "a", 2: "b"}) # dict -> list of keys
 vP = tuple(vN)
 vQ = list("abc") # ['a', 'b', 'c']
-print v1, v2, v3, type(v1), type(v2), type(v3)
+print (v1, v2, v3, type(v1), type(v2), type(v3))
 ```
 
 <span style="color:red; font-family:Comic Sans MS">References</span>  
