@@ -1,3 +1,6 @@
+
+```{raw-cell}
+
 ---
 title: >-
   Data Analytics End to End Project: A Guide To Beginners in Data Analytics copied| by
@@ -7,6 +10,7 @@ created: 2023-03-20 02:32:01Z
 source: >-
   https://medium.com/@prateekgaurav/data-analytics-end-to-end-project-a-guide-to-beginners-in-data-analytics-ad7a8dad9b26
 ---
+```
 
 # Data Analytics End to End Project: A Guide To Beginners in Data Analytics
 
@@ -91,7 +95,7 @@ Check out this video made by me in order to see how you can create a database on
 
 If you decide to use create a MySQL Database on AWS RDS and want to store the data there, you should check out this code:
 
-```python
+```{code-cell} ipython3
 #Import all required packages
 import requests
 import pandas as pd
@@ -153,7 +157,7 @@ As you can see in the image, this is a pretty cleaned version of the data and I 
 
 But in general Data Cleaning is a very huge topic and it can completely vary on the type of data you are dealing with. You might have to do the cleaning while collecting the data, this type of cleaning will be done in the code, like in my Python code where I was collecting the Air Pollution data, I had to do a bit of Cleaning. I wanted to use this Data in Tableau for Data Visualization, but the name of a few states was not coming in the correct format, because of this Tableau will not understand the names of the states and hence will not plot the locations correctly in India’s Map. Eg: Andhra Pradesh was coming as Andhra_Pradesh so on, so I wrote a small piece of code for this:
 
-```python
+```{code-cell} ipython3
 #Replace with proper name.
 rawData = rawData.replace(to_replace ="Andhra_Pradesh", value ="Andhra Pradesh")
 rawData = rawData.replace(to_replace ="West_Bengal", value ="West Bengal")
