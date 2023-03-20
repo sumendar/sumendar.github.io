@@ -91,7 +91,7 @@ Check out this video made by me in order to see how you can create a database on
 
 If you decide to use create a MySQL Database on AWS RDS and want to store the data there, you should check out this code:
 
-```python
+```{python}
 #Import all required packages
 import requests
 import pandas as pd
@@ -153,7 +153,7 @@ As you can see in the image, this is a pretty cleaned version of the data and I 
 
 But in general Data Cleaning is a very huge topic and it can completely vary on the type of data you are dealing with. You might have to do the cleaning while collecting the data, this type of cleaning will be done in the code, like in my Python code where I was collecting the Air Pollution data, I had to do a bit of Cleaning. I wanted to use this Data in Tableau for Data Visualization, but the name of a few states was not coming in the correct format, because of this Tableau will not understand the names of the states and hence will not plot the locations correctly in India’s Map. Eg: Andhra Pradesh was coming as Andhra_Pradesh so on, so I wrote a small piece of code for this:
 
-```python
+```{python}
 #Replace with proper name.
 rawData = rawData.replace(to_replace ="Andhra_Pradesh", value ="Andhra Pradesh")
 rawData = rawData.replace(to_replace ="West_Bengal", value ="West Bengal")
