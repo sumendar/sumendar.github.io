@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c6063c3e99097228",
+        "id": "9524c79d04cd4917",
         "type": "tabs",
         "children": [
           {
-            "id": "a9249921b2869fae",
+            "id": "fc9f681b399646e1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/home/posts.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/home/posts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,8 +100,9 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "a9249921b2869fae",
+  "active": "fc9f681b399646e1",
   "lastOpenFiles": [
+    "content/home/posts.md",
     "content/home/about.md",
     "content/publication/2015-nava-telangana-paper-article.md",
     "content/project/spatio-data-analysis.md",
