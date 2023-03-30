@@ -1,7 +1,7 @@
 +++
 # Tags: can be used for filtering projects.
 # Example: `tags = ["data-visualization", "data-science"]`
-tags = ["data-visualizations","data-science"]
+tags = ["data-visualizations"]
 
 # Date this page was created.
 date = "2023-03-29"
@@ -30,7 +30,3 @@ image = "World Total Population Yearly Count .png"
 caption = ""
 
 +++
-
-```python
-
-```
