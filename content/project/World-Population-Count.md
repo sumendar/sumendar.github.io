@@ -7,7 +7,7 @@ tags = ["data-visualizations"]
 date = "2023-03-29"
 
 # Project title.
-title = "World Population Yerly Cumulatively Added Count"
+title = "World Population year-wise Cumulatively Added Count"
 
 # Project summary to display on homepage.
 summary = "World Population Yerly Cumulatively Added Count Since 1950 to current 21st centuary"
