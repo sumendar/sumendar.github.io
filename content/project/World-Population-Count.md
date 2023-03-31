@@ -7,10 +7,10 @@ tags = ["data-visualizations"]
 date = "2023-03-29"
 
 # Project title.
-title = "World Population Count Yerly Basis"
+title = "World Population Yerly Added Count"
 
 # Project summary to display on homepage.
-summary = "World Population Count Yerly Basis 195o to this 21st centuary"
+summary = "World Population Yerly Added Count Since 1950 to current 21st centuary"
 
 # Optional image to display on homepage.
 image_preview = "pswrd_oracle2.gif"
