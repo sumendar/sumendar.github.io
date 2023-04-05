@@ -10,7 +10,7 @@ date = "2023-04-03"
 title = "తెలంగాణ రాష్ట్రంలో అన్ని జిల్లాల, మండల మరియు ఊళ్ళకి సంబంధించిన MPTC లపేర్లు గత ఎన్నికలకి చెందిన వివరాలు"
 
 # Project summary to display on homepage.
-summary = "This chart will shows us about the Telangana election results of MPTC (Mandal Parishad Territorial Constituency) winners lists in the state in 2019 elections which was condusted during that year, it indicates each winner and other opponent details including how many votes they got in that elections"
+summary = "This graph will shows us about the Telangana election results of MPTC (Mandal Parishad Territorial Constituency) winners lists in the state in 2019 elections which was condusted during that year, it indicates each winner and other opponent details including how many votes they got in that elections"
 
 # Optional image to display on homepage.
 image_preview = "Polling-for-ZPTC-and-MPTC-elections-on-8th.jpg"
@@ -30,3 +30,7 @@ image = "Polling-for-ZPTC-and-MPTC-elections-on-8th.jpg"
 caption = " MPTC elction results 2019 TS"
 
 +++
+
+```python
+
+```
