@@ -14,7 +14,7 @@ weight = 60
 
 +++
 
-I have worked as a training instructor for the courses of "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithR-apr18" target="_blank">Data Science Using R</a>" and "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithPython-june18" target="_blank">Data Science Using Python</a>" Online Course at </br> <a href = "http://www.lucidittraining.com/" target="_blank">LUCID IT Training</a> and as a freelance professor for IIM students on weekends and other institutions.   
+I have worked as a training instructor for the courses of "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithR-apr18" target="_blank">Data Science Using R</a>" and "<a href = "https://github.com/sumendar/FoundationOfStatsDSAIMLwithPython-june18" target="_blank">Data Science Using Python</a>" Online Course at </br> <a href = "http://www.lucidittraining.com/" target="_blank">LUCID IT Training</a> additionally as a freelance professor for IIM students on weekends and other institutions.   
 
 Former part-time lecturer for B.Com. and B.Sc. (mathematics, statistics, and computer science) undergraduates at:    
   - *Siva Sivani Degree College*    
