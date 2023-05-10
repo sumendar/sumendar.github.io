@@ -14,19 +14,8 @@
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "26e475d8666635cb",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.2.7"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +108,7 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "26e475d8666635cb",
+  "active": "86275b328a9e3d3b",
   "lastOpenFiles": [
     "qmd-as-md-obsidian.md",
     "content/home/posts.md",
