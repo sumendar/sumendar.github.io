@@ -3,7 +3,7 @@ date = "2017-12-01T00:00:00"
 title = "Workshop at Medha Institute Of Science & Technology, Khammam"
 abstract = "2 days workshop conducted by Neo Cursor"
 abstract_short = "Data Science workshop"
-event = ""
+event = "Data Science workshop"
 event_url = ""
 location = "Medha Institute Of Science and Technology For Women - Engineering college in Khammam, Saiprabhath Nagar, Khammam, Telangana 507001, India"
 
