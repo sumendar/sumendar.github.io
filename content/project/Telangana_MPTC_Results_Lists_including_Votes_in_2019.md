@@ -1,6 +1,6 @@
 +++
 # Tags: can be used for filtering projects.
-# Example: `tags = ["visualizations", "data-analytics"]`
+# Example: `tags = ["visualizations"]`
 tags = ["data-visualizations", "data-analytics"]
 
 # Date this page was created.
