@@ -7,7 +7,7 @@ tags = ["machine-learning"]
 date = "2023-08-02"
 
 # Project title.
-title = "Credit Card Fraud Detection with SVM and RF _ అజ్ఞాత క్రెడిట్ కార్డ్ లావాదేవీలు మోసపూరితమైనవ లేదా నిజమైనవ ముందుగానే నిర్ణయించడం"
+title = "Credit Card Fraud Detection with SVM and RF: అజ్ఞాత క్రెడిట్ కార్డ్ లావాదేవీలు మోసపూరితమైనవ లేదా నిజమైనవ ముందుగానే నిర్ణయించడం"
 
 # Project summary to display on homepage.
 summary = "The challenge is to recognize fraudulent credit card transactions so that the customers of credit card companies are not charged for items that they did not purchase, in this notebook will go throuh main challenges involved in credit card fraud detection using machine learning"
