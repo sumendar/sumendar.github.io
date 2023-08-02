@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e2a35acc6baa0b11",
+        "id": "5eed453a7585a494",
         "type": "tabs",
         "children": [
           {
-            "id": "86275b328a9e3d3b",
+            "id": "036b775834560467",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/project/Telangana_MPTC_Results_Lists_including_Votes_in_2019.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/project/Telangana_MPTC_Results_Lists_including_Votes_in_2019.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,8 +113,15 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "86275b328a9e3d3b",
+  "active": "036b775834560467",
   "lastOpenFiles": [
+    "static/img/Image_Credit_Card.jpg",
+    "static/img/Image_Credit_Card.jpg.crdownload",
+    "content/project/Credit_Card_Fraud_Detection_ML.md",
+    "content/project/Telangana_MPTC_Results_Lists_including_Votes_in_2019 - Copy.md",
+    "content/project/World-Population-Count.md",
+    "content/home/projects.md",
+    "Untitled.canvas",
     "qmd-as-md-obsidian.md",
     "content/home/posts.md",
     "content/home/about.md",
