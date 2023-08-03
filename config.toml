@@ -167,7 +167,7 @@ defaultContentLanguageInSubdir = false
 	
   [[params.social]]
     icon = "etsy"	
-    icon_pack = "fa"
+    icon_pack = "fa-sm"></i>"
     link = "https://www.endtoendprojects.com"
 
   #[[params.social]]
