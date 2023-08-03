@@ -164,6 +164,11 @@ defaultContentLanguageInSubdir = false
     icon = "kaggle"
     icon_pack = "fa"
     link = "https://www.kaggle.com/sumendar"
+	
+  [[params.social]]
+    icon = "blog"
+    icon_pack = "fa"
+    link = "https://www.endtoendprojects.com"
 
   #[[params.social]]
   #  icon = "google-scholar"
