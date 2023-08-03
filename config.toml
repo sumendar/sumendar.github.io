@@ -167,7 +167,7 @@ defaultContentLanguageInSubdir = false
 	
   [[params.social]]
     icon = "blogger"
-    icon_pack = "fa"
+    icon_pack = "far"
     link = "https://www.endtoendprojects.com"
 
   #[[params.social]]
