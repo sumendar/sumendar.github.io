@@ -11,11 +11,9 @@
             "id": "036b775834560467",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "content/project/Telangana_MPTC_Results_Lists_including_Votes_in_2019.md",
-                "mode": "source",
-                "source": false
+                "file": "themes/hugo-academic/images/screenshot.png"
               }
             }
           }
@@ -65,7 +63,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/project/Telangana_MPTC_Results_Lists_including_Votes_in_2019.md",
+                "file": "themes/hugo-academic/images/screenshot.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,8 +112,14 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "036b775834560467",
+  "active": "6be75f7d9aab0403",
   "lastOpenFiles": [
+    "themes/hugo-academic/images/tn.png",
+    "themes/hugo-academic/images/screenshot.png",
+    "themes/hugo-academic/academic.png",
+    "content/home/about.md",
+    "README.md",
+    "content/project/Telangana_MPTC_Results_Lists_including_Votes_in_2019.md",
     "static/img/Image_Credit_Card.jpg",
     "static/img/Image_Credit_Card.jpg.crdownload",
     "content/project/Credit_Card_Fraud_Detection_ML.md",
@@ -124,7 +129,6 @@
     "Untitled.canvas",
     "qmd-as-md-obsidian.md",
     "content/home/posts.md",
-    "content/home/about.md",
     "content/publication/2015-nava-telangana-paper-article.md",
     "content/project/spatio-data-analysis.md",
     "content/project/sex-diffs-language.md",
