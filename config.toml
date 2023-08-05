@@ -164,9 +164,9 @@ defaultContentLanguageInSubdir = false
     icon = "kaggle"
     icon_pack = "fa"
     link = "https://www.kaggle.com/sumendar"
-	
+
   [[params.social]]
-	icon = "bold"	
+	icon = "etsy"	
     icon_pack = "fa"
     link = "https://www.endtoendprojects.com"
 
