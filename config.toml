@@ -141,14 +141,14 @@ defaultContentLanguageInSubdir = false
     link = "//in.linkedin.com/in/sumendar"
 
   [[params.social]]
-    icon = "telegram"
-    icon_pack = "fa"
-    link = "//telegram.me/Sumendar"
-
-  [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
     link = "//twitter.com/sumendar"
+
+  [[params.social]]
+    icon = "telegram"
+    icon_pack = "fa"
+    link = "//telegram.me/Sumendar"
 
   [[params.social]]
     icon = "medium"
