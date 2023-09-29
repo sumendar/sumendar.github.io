@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/home/teaching.md",
+                "file": "content/home/about.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/home/teaching.md",
+                "file": "content/home/about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,9 +115,9 @@
   },
   "active": "e370f24276bb0b88",
   "lastOpenFiles": [
+    "content/home/teaching.md",
     "content/home/talks.md",
     "content/home/publications_selected.md",
-    "content/home/teaching.md",
     "content/home/contact.md",
     "content/home/about.md",
     "Untitled.canvas",
