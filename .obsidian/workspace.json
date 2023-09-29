@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/home/about.md",
+                "file": "content/home/teaching.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/home/about.md",
+                "file": "content/home/teaching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,6 +115,9 @@
   },
   "active": "e370f24276bb0b88",
   "lastOpenFiles": [
+    "content/home/talks.md",
+    "content/home/publications_selected.md",
+    "content/home/teaching.md",
     "content/home/contact.md",
     "content/home/about.md",
     "Untitled.canvas",
@@ -138,7 +141,6 @@
     "content/project/language-outcomes.md",
     "content/post/2017-09-30-Conditions-Control-Structures.md",
     "content/post/2017-09-25-Python-Basics.md",
-    "themes/hugo-academic/exampleSite/content/talk/_index.md",
-    "content/home/teaching.md"
+    "themes/hugo-academic/exampleSite/content/talk/_index.md"
   ]
 }
