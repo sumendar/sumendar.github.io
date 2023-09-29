@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "5eed453a7585a494",
+        "id": "027bf30b81704f03",
         "type": "tabs",
         "children": [
           {
-            "id": "036b775834560467",
+            "id": "e370f24276bb0b88",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "themes/hugo-academic/images/screenshot.png"
+                "file": "content/home/about.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -63,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -84,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "themes/hugo-academic/images/screenshot.png",
+                "file": "content/home/about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,12 +113,14 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "6be75f7d9aab0403",
+  "active": "e370f24276bb0b88",
   "lastOpenFiles": [
+    "content/home/contact.md",
+    "content/home/about.md",
+    "Untitled.canvas",
     "themes/hugo-academic/images/tn.png",
     "themes/hugo-academic/images/screenshot.png",
     "themes/hugo-academic/academic.png",
-    "content/home/about.md",
     "README.md",
     "content/project/Telangana_MPTC_Results_Lists_including_Votes_in_2019.md",
     "static/img/Image_Credit_Card.jpg",
@@ -126,7 +129,6 @@
     "content/project/Telangana_MPTC_Results_Lists_including_Votes_in_2019 - Copy.md",
     "content/project/World-Population-Count.md",
     "content/home/projects.md",
-    "Untitled.canvas",
     "qmd-as-md-obsidian.md",
     "content/home/posts.md",
     "content/publication/2015-nava-telangana-paper-article.md",
