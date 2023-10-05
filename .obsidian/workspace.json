@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "babis",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -113,7 +114,7 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "e370f24276bb0b88",
+  "active": "6be75f7d9aab0403",
   "lastOpenFiles": [
     "content/home/teaching.md",
     "content/home/talks.md",
