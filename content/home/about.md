@@ -41,7 +41,7 @@ interests = [
 
 [[education.courses]]
   course = "Intermediate (MPC)"
-  institution = "Phani High School"
+  institution = "Phani High School (Neehar Jr. College, Prakasham)"
 #  year = 2005
 
 #[[education.courses]]
