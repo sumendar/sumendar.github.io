@@ -30,7 +30,7 @@ interests = [
 #  year = 2022
 
 [[education.courses]]
-  course = "Master of Computer Application(MCA)"
+  course = "Master of Computer Application (MCA)"
   institution = "RG Kedia College (Osmania University, Hyderabad)"
 #  year = 2008
 
