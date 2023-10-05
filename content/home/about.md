@@ -18,6 +18,7 @@ interests = [
   "Natural Language Processing (NLP)",
   "Big Data Analytics",  
   "Deep Learning, Computer Vision",
+  "Gen AI: Prompt Enginering (LLMs)",
   "ETL/ELT Pipeline, Data Engineering",
   "Artificial Intelligence (AI)"
   ]
@@ -36,6 +37,11 @@ interests = [
 [[education.courses]]
   course = "BSc (Mathematics, Statistics & Computer Science)"
   institution = "Aurora Degree College (Kakatiya University, Warangal)"
+#  year = 2005
+
+[[education.courses]]
+  course = "Intermediate (MPC)"
+  institution = "Phani High School"
 #  year = 2005
 
 #[[education.courses]]
