@@ -57,6 +57,6 @@ I am a data analyst by profession, I have experience in gathering, organizing, a
 
 I have a post-graduate degree in data science; previously, I earned undergraduate and master’s degrees in STEM disciplines with quantitative analytics specializations in mathematics, statistics, and computer science.
 
-My specialties include but are not limited to data acquisition, preprocessing, data cleansing, data manipulation, exploratory data analysis (EDA), data visualizations, and machine learning.
+My specialties include, but are not limited to data acquisition, preprocessing, data cleansing, data manipulations, exploratory data analysis (EDA), data visualizations, and machine learning.
 
 Please connect with me about any of your data science and analytical needs so we can discuss how I can help you and your team.
