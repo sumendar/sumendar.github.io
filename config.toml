@@ -149,6 +149,11 @@ defaultContentLanguageInSubdir = false
     icon = "telegram"
     icon_pack = "fa"
     link = "//telegram.me/Sumendar"
+	
+  [[params.social]]
+    icon = "bar-chart"
+    icon_pack = "fa"
+	link = "//public.tableau.com/app/profile/sumendar/vizzes"
 
   [[params.social]]
     icon = "medium"
