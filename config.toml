@@ -152,7 +152,7 @@ defaultContentLanguageInSubdir = false
 	
   [[params.social]]
     icon = "tableau-svgrepo-com.svg"
-    #icon_pack = "fa"
+    icon_pack = "fa"
 	link = "//public.tableau.com/app/profile/sumendar/vizzes"
 
   [[params.social]]
