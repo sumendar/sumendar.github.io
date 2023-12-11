@@ -33,7 +33,7 @@ defaultContentLanguageInSubdir = false
   office_hours = ""
   phone = "+919948880987"
   skype = "sumendar"
-  telegram = "sumendar"
+# telegram = "sumendar"
   twitter = "sumendar"  
   address = "Hyderabad, India - 500044"
 #  github = "sumendar"
@@ -150,10 +150,10 @@ defaultContentLanguageInSubdir = false
 #    icon_pack = "fa"
 #    link = "//twitter.com/sumendar"
 
-#  [[params.social]]
-#    icon = "telegram"
-#    icon_pack = "fa"
-#    link = "//telegram.me/Sumendar"
+   [[params.social]]
+    icon = "telegram"
+    icon_pack = "fa"
+    link = "//telegram.me/Sumendar"
 	
   [[params.social]]
     icon = "bar-chart"
