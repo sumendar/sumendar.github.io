@@ -30,12 +30,12 @@ defaultContentLanguageInSubdir = false
 #  organization_url = "http://www.ohsu.edu/xd/"
   avatar = "portrait.jpg"
   email = "sumendar@gmail.com"
-  address = "Hyderabad, India - 500044"
   office_hours = ""
   phone = "+919948880987"
   skype = "sumendar"
   telegram = "sumendar"
   twitter = "sumendar"
+    address = "Hyderabad, India - 500044"
 #  github = "sumendar"
 
   # Enable Keybase in Contact section by entering your keybase.io username.
