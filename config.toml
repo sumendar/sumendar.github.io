@@ -154,6 +154,16 @@ defaultContentLanguageInSubdir = false
     icon = "telegram"
     icon_pack = "fa"
     link = "//telegram.me/Sumendar"
+
+   [[params.social]]
+    icon = "youtube"
+    icon_pack = "fa"
+    link = "//youtube.com/@endtoendprojects" 
+
+   [[params.social]]
+    icon = "stack-exchange"
+    icon_pack = "fa"
+    link = "//stackexchange.com/users/6461567/karupakala"
 	
   [[params.social]]
     icon = "bar-chart"
