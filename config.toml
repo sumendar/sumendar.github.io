@@ -155,20 +155,20 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//telegram.me/Sumendar"
 
-   [[params.social]]
-    icon = "youtube"
-    icon_pack = "fa"
-    link = "//youtube.com/@endtoendprojects" 
+#  [[params.social]]
+#   icon = "youtube"
+#   icon_pack = "fa"
+#   link = "//youtube.com/@endtoendprojects" 
 
-   [[params.social]]
-    icon = "stack-exchange"
-    icon_pack = "fa"
-    link = "//stackexchange.com/users/6461567/karupakala"
+#  [[params.social]]
+#   icon = "stack-exchange"
+#   icon_pack = "fa"
+#   link = "//stackexchange.com/users/6461567/karupakala"
 
-   [[params.social]]
-    icon = "stack-overflow"
-    icon_pack = "fa"
-    link = "//stackoverflow.com/users/5005175/sumendar"
+#  [[params.social]]
+#   icon = "stack-overflow"
+#   icon_pack = "fa"
+#   link = "//stackoverflow.com/users/5005175/sumendar	"
 	
   [[params.social]]
     icon = "bar-chart"
