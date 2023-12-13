@@ -165,10 +165,10 @@ defaultContentLanguageInSubdir = false
 #   icon_pack = "fa"
 #   link = "//stackexchange.com/users/6461567/karupakala"
 
-#  [[params.social]]
-#   icon = "stack-overflow"
-#   icon_pack = "fa"
-#   link = "//stackoverflow.com/users/5005175/sumendar	"
+  [[params.social]]
+   icon = "stack-overflow"
+   icon_pack = "fa"
+   link = "//stackoverflow.com/users/5005175/sumendar"
 	
   [[params.social]]
     icon = "bar-chart"
