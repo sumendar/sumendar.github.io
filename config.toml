@@ -180,26 +180,26 @@ defaultContentLanguageInSubdir = false
     icon_pack = "fa"
     link = "//medium.com/@sumendar"
 
-  [[params.social]]
-    icon = "kaggle"
-    icon_pack = "fa"
-    link = "https://www.kaggle.com/sumendar"
+#  [[params.social]]
+#    icon = "kaggle"
+#    icon_pack = "fa"
+#    link = "https://www.kaggle.com/sumendar"
 
   [[params.social]]
 	icon = "etsy"	
     icon_pack = "fa"
     link = "https://www.endtoendprojects.com"
 	
-  [[params.social]]
-    icon = "stack-exchange"
-    icon_pack = "fa"
-    link = "https://substack.com/@sumendar"
+#  [[params.social]]
+#    icon = "substack"
+#    icon_pack = "fa"
+#    link = "https://substack.com/@sumendar"
 	
 	
-  #[[params.social]]
-  #  icon = "google-scholar"
-  #  icon_pack = "ai"
-  #  link = "https://scholar.google.com/citations?user=yGD9V6MAAAAJ&hl=en"
+# [[params.social]]
+#   icon = "google-scholar"
+#   icon_pack = "ai"
+#   link = "https://scholar.google.com/citations?user=yGD9V6MAAAAJ&hl=en"
 
     
   #[[params.social]]
