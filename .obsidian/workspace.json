@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "72cebc70aced7f3c",
+        "id": "a53a640e1add446f",
         "type": "tabs",
         "children": [
           {
-            "id": "15a60ffc32190435",
+            "id": "247d198135131dd6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/home/about.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/home/about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,14 +108,17 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "15a60ffc32190435",
+  "active": "247d198135131dd6",
   "lastOpenFiles": [
+    "url_custom.md",
+    "content/home/about.md",
+    "themes/hugo-academic/exampleSite/content/project/deep-learning.md",
+    "static/html/jamboree_heart_ggplot.md",
     "Untitled 3.canvas",
     "figs/hex1-1.png.md",
     "figs",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "content/home/about.md",
     "content/home/teaching.md",
     "content/home/talks.md",
     "content/home/publications_selected.md",
