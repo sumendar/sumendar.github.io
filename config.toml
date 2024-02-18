@@ -189,6 +189,12 @@ defaultContentLanguageInSubdir = false
 	icon = "etsy"	
     icon_pack = "fa"
     link = "https://www.endtoendprojects.com"
+	
+  [[params.social]]
+    icon = "substack"
+    icon_pack = "fa"
+    link = "//substack.com/@sumendar"
+	
 
   #[[params.social]]
   #  icon = "google-scholar"
