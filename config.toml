@@ -191,11 +191,11 @@ defaultContentLanguageInSubdir = false
     link = "https://www.endtoendprojects.com"
 	
   [[params.social]]
-    icon = "substack"
+    icon = "stack-exchange"
     icon_pack = "fa"
-    link = "//substack.com/@sumendar"
+    link = "https://substack.com/@sumendar"
 	
-
+	
   #[[params.social]]
   #  icon = "google-scholar"
   #  icon_pack = "ai"
