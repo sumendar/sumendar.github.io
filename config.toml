@@ -1,6 +1,6 @@
 #baseurl = "https://alison.rbind.io/"
-baseurl = "https://www.sumendar.com/"
-#baseurl = "https://karupakala.netlify.app/"
+#baseurl = "https://www.sumendar.com/"
+baseurl = "https://karupakala.netlify.app/"
 title = "Sumendar Karupakala"
 copyright = "&copy; 2017 Sumendar Karupakala"
 theme = "hugo-academic"
