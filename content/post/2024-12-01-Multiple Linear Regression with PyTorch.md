@@ -1,11 +1,13 @@
 ---
-title: Multiple Linear Regression with PyTorch
-author: sumendar
-date: '2024-12-01'
-slug: Python-Basics
-categories: ['python', 'blogdown']
-tags: ['basics']
-subtitle: 'subtitle'
+title: "Multiple Linear Regression with PyTorch"
+author: "sumendar"
+date: "2024-12-01"
+slug: "Python-Basics"
+categories:
+- python
+- blogdown
+tags: basics
+subtitle: subtitle
 ---
 
 
