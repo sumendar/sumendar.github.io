@@ -19,7 +19,8 @@ interests = [
   "Big Data Analytics",
   "Deep Learning, Computer Vision",
   "ETL/ELT Pipeline, Data Engineering",
-  "GenAI: Prompt Engineering  and LLMs",
+  "GenAI: Prompt Engineering, LLMs",
+  "Gen AI Agents (Autonomous)",
   "Artificial Intelligence (AI)"
   ]
 
