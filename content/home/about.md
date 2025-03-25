@@ -20,7 +20,7 @@ interests = [
   "Deep Learning, Computer Vision",
   "ETL/ELT Pipeline, Data Engineering",
   "GenAI: Prompt Engineering, LLMs",
-  "AI Agents (Autonomous)",
+  "GenAI Agents (Autonomous)",
   "Artificial Intelligence (AI)"
   ]
 
