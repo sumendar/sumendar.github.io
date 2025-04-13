@@ -16,7 +16,7 @@ summary = "The challenge is to recognize fraudulent credit card transactions so 
 image_preview = "Image_Credit_Card.jpg"
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://www.endtoendprojects.com/posts/credit-card-fraud-detection/notebook"
+# external_link = "https://www.endtoendprojects.com/posts/credit-card-fraud-detection/notebook"
 
 # Does the project detail page use math formatting?
 math = false
