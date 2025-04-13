@@ -16,7 +16,7 @@ summary = "World Population Yerly Cumulatively Added Count Since 1950 to current
 image_preview = "pswrd_oracle2.gif"
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://www.endtoendprojects.com/posts/post-with-code5/world_population_count"
+# external_link = "https://www.endtoendprojects.com/posts/post-with-code5/world_population_count"
 
 # Does the project detail page use math formatting?
 math = false
