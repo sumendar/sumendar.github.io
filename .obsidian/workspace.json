@@ -11,8 +11,14 @@
             "id": "247d198135131dd6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -34,8 +40,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -44,13 +53,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "babis",
+                "query": "994888",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,14 +69,17 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 281
+    "width": 522.5
   },
   "right": {
     "id": "47e5df2dd3715492",
@@ -81,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +103,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
             }
           }
         ]
@@ -108,21 +125,27 @@
       "open-vscode:VSCode": false
     }
   },
-  "active": "247d198135131dd6",
+  "active": "6be75f7d9aab0403",
   "lastOpenFiles": [
-    "url_custom.md",
-    "content/home/about.md",
-    "themes/hugo-academic/exampleSite/content/project/deep-learning.md",
+    "themes/hugo-lithium-theme/LICENSE.md",
+    "themes/hugo-lithium-theme/exampleSite/content/about.md",
+    "themes/hugo-lithium-theme/archetypes/default.md",
     "static/html/jamboree_heart_ggplot.md",
+    "content/home/teaching.md",
+    "content/home/talks.md",
+    "content/home/publications_selected.md",
+    "content/home/publications.md",
+    "content/home/projects.md",
+    "content/home/posts.md",
+    "content/home/contact.md",
+    "content/home/about.md",
+    "url_custom.md",
+    "themes/hugo-academic/exampleSite/content/project/deep-learning.md",
     "Untitled 3.canvas",
     "figs/hex1-1.png.md",
     "figs",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "content/home/teaching.md",
-    "content/home/talks.md",
-    "content/home/publications_selected.md",
-    "content/home/contact.md",
     "Untitled.canvas",
     "themes/hugo-academic/images/tn.png",
     "themes/hugo-academic/images/screenshot.png",
@@ -134,16 +157,11 @@
     "content/project/Credit_Card_Fraud_Detection_ML.md",
     "content/project/Telangana_MPTC_Results_Lists_including_Votes_in_2019 - Copy.md",
     "content/project/World-Population-Count.md",
-    "content/home/projects.md",
     "qmd-as-md-obsidian.md",
-    "content/home/posts.md",
     "content/publication/2015-nava-telangana-paper-article.md",
     "content/project/spatio-data-analysis.md",
     "content/project/sex-diffs-language.md",
     "content/project/maps.md",
-    "content/project/language-outcomes.md",
-    "content/post/2017-09-30-Conditions-Control-Structures.md",
-    "content/post/2017-09-25-Python-Basics.md",
-    "themes/hugo-academic/exampleSite/content/talk/_index.md"
+    "content/project/language-outcomes.md"
   ]
 }
