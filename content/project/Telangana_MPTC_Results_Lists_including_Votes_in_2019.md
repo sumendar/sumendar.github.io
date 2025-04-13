@@ -16,7 +16,7 @@ summary = "This graph will shows us about the Telangana election results of MPTC
 image_preview = "Polling-for-ZPTC-and-MPTC-elections-on-8th.jpg"
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://www.endtoendprojects.com/posts/post-with-code4/telangana_past_mptc_election_results"
+# external_link = "https://www.endtoendprojects.com/posts/post-with-code4/telangana_past_mptc_election_results"
 
 # Does the project detail page use math formatting?
 math = false
