@@ -33,7 +33,7 @@ Total execution time: 00:00:00.013
 - ORDER BY clause.
 - LIMIT and/or OFFSET clause.
 
-[https://www.shiksha.com/online-courses/articles/order-of-execution-in-sql/](https:\www.shiksha.com\online-courses\articles\order-of-execution-in-sql\)
+![https://www.shiksha.com/online-courses/articles/order-of-execution-in-sql/](https:\www.shiksha.com\online-courses\articles\order-of-execution-in-sql\)
 
 
 
