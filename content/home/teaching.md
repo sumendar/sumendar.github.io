@@ -14,7 +14,7 @@ weight = 60
 
 +++
 
-I have worked as a training instructor for Data Science Using Python, R, SQL, Tableau, PowerBI along with additional tools for Online Courses at LUCID IT Training, additionally worked as an adjunct professor for IIM students on weekends and freelancing trainer for various institutions.   
+At LUCID IT Training, I have taught Data Science Using Python, R, SQL, Tableau, PowerBI, and other tools for online courses. On the weekends, I have also served as an adjunct professor for IIM students and a freelance trainer for other organizations.
 
 Former part-time lecturer for B.Com. and B.Sc. (mathematics, statistics, and computer science) undergraduates at:    
   - Siva Sivani Degree College, Hyd    
